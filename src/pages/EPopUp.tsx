@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Globe, Newspaper, Languages, Clock, QrCode, LinkIcon, Users, Sparkles, Target, Users2, Building2, Handshake, UserPlus, BookOpen, Footprints, ArrowRightCircle } from "lucide-react";
 import bostonImage from "@/assets/boston.png";
-import louisImage from "@/assets/louis.png";
+import louisImage from "@/assets/Louis.png";
 
 const EPopUp = () => {
   const features = [
