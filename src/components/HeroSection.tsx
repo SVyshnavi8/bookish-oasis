@@ -15,46 +15,28 @@ const HeroSection = () => {
           <div className="space-y-8 animate-slide-up">
             <div className="space-y-6">
               <h1 className="editorial-headline text-balance">
-                Your Gateway to
+                Digital products and services that help libraries serve their
                 <span className="block font-serif italic text-primary">
-                  Boundless Reading
+                  communities—everywhere
                 </span>
               </h1>
               <p className="editorial-body max-w-lg">
-                Discover thousands of ebooks, audiobooks, and digital resources 
-                through your library. A premium reading experience designed for 
-                modern readers.
+                LibraryOne is the independent home of Boundless and a growing portfolio of digital platforms designed to expand access, strengthen engagement, and support libraries in fulfilling their role as essential community institutions
               </p>
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <Link to="/browse">
+              <Link to="/solutions">
                 <Button variant="hero" size="lg">
-                  Explore Collection
+                  Explore Our Products 
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </Link>
-              <Link to="/demo">
+              <Link to="/contact">
                 <Button variant="hero-outline" size="lg">
-                  Request Demo
+                  Talk to Us
                 </Button>
               </Link>
-            </div>
-
-            {/* Stats */}
-            <div className="flex gap-12 pt-8">
-              <div>
-                <p className="text-3xl md:text-4xl font-serif font-semibold">25K+</p>
-                <p className="text-sm text-muted-foreground mt-1">Libraries Served</p>
-              </div>
-              <div>
-                <p className="text-3xl md:text-4xl font-serif font-semibold">2M+</p>
-                <p className="text-sm text-muted-foreground mt-1">Titles Available</p>
-              </div>
-              <div>
-                <p className="text-3xl md:text-4xl font-serif font-semibold">50M+</p>
-                <p className="text-sm text-muted-foreground mt-1">Active Readers</p>
-              </div>
             </div>
           </div>
 

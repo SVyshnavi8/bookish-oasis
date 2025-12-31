@@ -17,11 +17,10 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: "Browse", path: "/browse" },
-    { name: "Solutions", path: "/solutions" },
-    { name: "Libraries", path: "/libraries" },
-    { name: "Resources", path: "/resources" },
+    { name: "Home", path: "/" },
+    { name: "Products and Services", path: "/solutions" },
     { name: "About", path: "/about" },
+    { name: "Contact", path: "/contact" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -44,7 +43,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (
               <Link
                 key={link.name}

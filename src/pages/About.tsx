@@ -32,48 +32,84 @@ const About = () => {
   return (
     <MainLayout>
       {/* Hero */}
-      <section className="pt-32 pb-20 md:pt-40 md:pb-28">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-20">
         <div className="editorial-container">
           <div className="max-w-3xl">
-            <h1 className="editorial-headline mb-6">
-              Connecting Readers
-              <span className="block font-serif italic text-primary">to Knowledge</span>
+            <h1 
+              className="editorial-headline mb-8"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <span className="text-foreground">Library</span>
+              <span className="text-primary">One</span>
             </h1>
-            <p className="editorial-body">
-              LibraryOne was founded on a simple belief: everyone deserves access to 
-              the world's knowledge. For over two decades, we've partnered with libraries 
-              to make that vision a reality.
+            <p 
+              className="editorial-body text-xl max-w-3xl"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              Built with purpose. Committed for the long term
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Vision */}
+      <section className="editorial-section bg-primary/5 py-16">
+        <div className="editorial-container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 
+              className="editorial-subheadline mb-6"
+              data-aos="fade-up"
+            >
+              Vision
+            </h2>
+            <p 
+              className="editorial-body text-xl leading-relaxed max-w-3xl mx-auto text-foreground/90"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              We envision a future where every library—regardless of size or budget—can reach every patron, support their community’s goals, and remain an essential civic institution in the digital age.
             </p>
           </div>
         </div>
       </section>
 
       {/* Story */}
-      <section className="editorial-section bg-secondary/20">
+      <section className="editorial-section bg-secondary/20 py-16">
         <div className="editorial-container">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="space-y-6">
-              <h2 className="editorial-subheadline">Our Story</h2>
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <h2 
+                className="editorial-subheadline"
+                data-aos="fade-right"
+              >
+                Our Story
+              </h2>
+              <div 
+                className="space-y-4 text-muted-foreground leading-relaxed"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <p>
-                  Founded in 2000, LibraryOne began with a vision to transform how 
-                  libraries connect with their communities in the digital age. What 
-                  started as a small team of librarians and technologists has grown 
-                  into a global platform serving millions of readers.
+                  LibraryOne was created to ensure continuity, stability, and focus for digital services that libraries depended on.
                 </p>
                 <p>
-                  Today, we partner with over 25,000 libraries worldwide, providing 
-                  access to millions of ebooks, audiobooks, magazines, and newspapers. 
-                  Our technology powers the digital collections of public libraries, 
-                  academic institutions, and corporate organizations across 150 countries.
+                  When Baker & Taylor made the decision to wind down Boundless and other digital products, we—former Baker & Taylor colleagues who built the product, served customers, and partnered with suppliers—and a few professionals with long-standing experience in publishing and media came together with a shared conviction: these platforms mattered too much to let them disappear.
                 </p>
                 <p>
-                  But our mission remains unchanged: to empower libraries and connect 
-                  readers with content that informs, inspires, and entertains.
+                  That conviction led us to form LibraryOne—providing Boundless and related products with a focused, independent home dedicated to their long-term stewardship.
+                </p>
+                <p>
+                  LibraryOne is not an experiment. It is the continuation of expertise, relationships, and institutional knowledge—now aligned under a single mission: to support libraries and the communities they serve.
                 </p>
               </div>
             </div>
-            <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
+            <div 
+              className="aspect-square rounded-2xl overflow-hidden shadow-lg"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
               <img
                 src={libraryInterior}
                 alt="LibraryOne headquarters"
@@ -84,19 +120,142 @@ const About = () => {
         </div>
       </section>
 
-      {/* Values */}
-      <section className="editorial-section">
+      {/* Continuity */}
+      <section className="editorial-section bg-primary/5 py-16">
         <div className="editorial-container">
-          <div className="text-center mb-16">
+          <div className="max-w-4xl mx-auto text-center space-y-6">
+            <h2 
+              className="editorial-subheadline mb-6"
+              data-aos="fade-up"
+            >
+              Continuity You Can Trust
+            </h2>
+            <p 
+              className="editorial-body text-lg leading-relaxed max-w-3xl mx-auto text-foreground/90"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              For publishers and library partners, continuity matters. The systems, workflows, and institutional knowledge that made this business valuable did not disappear—they were preserved intentionally.
+            </p>
+            <p 
+              className="editorial-body text-lg leading-relaxed max-w-3xl mx-auto text-foreground/90"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              The same experienced team remains in place, bringing decades of combined expertise in content distribution, library services, and publisher partnerships. We understand the operational realities of libraries, the commercial imperatives of publishers, and the importance of dependable execution on both sides.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Team */}
+      <section className="editorial-section bg-secondary/10 py-16">
+        <div className="editorial-container">
+          {/* Mission */}
+          <div 
+            className="max-w-4xl mx-auto text-center space-y-6 mb-16"
+            data-aos="fade-up"
+          >
+            <h2 className="editorial-subheadline mb-4">Our Mission</h2>
+            <p className="editorial-body text-xl leading-relaxed max-w-3xl mx-auto text-foreground/90">
+              We empower libraries with trusted digital content and services that help them serve patrons equitably, deepen community engagement, and support lifelong learning.
+            </p>
+          </div>
+
+          {/* Team */}
+          <div 
+            className="text-center mb-12"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h2 className="editorial-subheadline mb-4">Our Team</h2>
+            <p className="editorial-body max-w-2xl mx-auto text-muted-foreground">
+              A group of experienced professionals committed to libraries, publishers, and sustainable digital access.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div 
+              className="text-center space-y-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=800&q=80"
+                  alt="Leadership & Strategy"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <p className="font-medium">Leadership & Strategy</p>
+            </div>
+            <div 
+              className="text-center space-y-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1544725176-7c40e5a2c9f9?w=800&q=80"
+                  alt="Library Services"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <p className="font-medium">Library Services</p>
+            </div>
+            <div 
+              className="text-center space-y-4"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=800&q=80"
+                  alt="Publisher Partnerships"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <p className="font-medium">Publisher Partnerships</p>
+            </div>
+            <div 
+              className="text-center space-y-4"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=800&q=80"
+                  alt="Technology & Operations"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <p className="font-medium">Technology & Operations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section className="editorial-section py-16">
+        <div className="editorial-container">
+          <div 
+            className="text-center mb-12"
+            data-aos="fade-up"
+          >
             <h2 className="editorial-subheadline mb-4">What We Believe</h2>
             <p className="editorial-body max-w-2xl mx-auto">
               Our values guide every decision we make and every product we build.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            {values.map((value) => (
-              <div key={value.title} className="flex gap-6">
+          <div className="grid md:grid-cols-2 gap-10">
+            {values.map((value, index) => (
+              <div 
+                key={value.title} 
+                className="flex gap-6"
+                data-aos="fade-up"
+                data-aos-delay={100 + index * 150}
+              >
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <value.icon className="w-6 h-6 text-primary" />
@@ -115,41 +274,53 @@ const About = () => {
       </section>
 
       {/* Leadership Quote */}
-      <section className="editorial-section bg-foreground text-background">
+      <section className="editorial-section bg-foreground text-background py-16">
         <div className="editorial-container">
-          <div className="max-w-3xl mx-auto text-center">
-            <blockquote className="text-2xl md:text-3xl font-serif leading-relaxed mb-8">
-              "Libraries are more than buildings filled with books. They are 
-              community centers, learning hubs, and gateways to opportunity. 
+          <div 
+            className="max-w-3xl mx-auto text-center"
+            data-aos="fade-up"
+          >
+            <blockquote className="text-2xl md:text-3xl font-serif leading-relaxed">
+              "Libraries are more than buildings filled with books. They are
+              community centers, learning hubs, and gateways to opportunity.
               Our job is to help them thrive in the digital era."
             </blockquote>
-            <div>
-              <p className="font-medium text-background">Michael Chen</p>
-              <p className="text-background/60">CEO & Co-Founder</p>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="editorial-section">
+      {/* Looking Ahead */}
+      <section className="editorial-section py-16">
         <div className="editorial-container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="editorial-subheadline">Join Our Team</h2>
-              <p className="editorial-body">
-                We're always looking for passionate people who want to make a 
-                difference. Explore our open positions and become part of the 
-                LibraryOne story.
+              <h2 
+                className="editorial-subheadline"
+                data-aos="fade-left"
+              >
+                Looking Ahead
+              </h2>
+              <p 
+                className="editorial-body"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                LibraryOne was created with a clear mandate:
+                to be a stable, focused, and accountable partner to libraries for the long term.
               </p>
-              <Link to="/careers">
-                <Button variant="hero" size="lg">
-                  View Careers
-                  <ArrowRight className="w-5 h-5" />
-                </Button>
-              </Link>
+              <p 
+                className="editorial-body"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                We are building deliberately, investing responsibly, and listening closely—because the work libraries do deserves nothing less.
+              </p>
             </div>
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+            <div 
+              className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
               <img
                 src={readingRoom}
                 alt="Team collaboration"
