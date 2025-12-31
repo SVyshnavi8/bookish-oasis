@@ -17,7 +17,8 @@ import Resources from "./pages/Resources";
 import TS360 from "./pages/TS360";
 import Boundless from "./pages/Boundless";
 import ContentCafe from "./pages/ContentCafe";
-import PressReader from "./pages/PressReader";
+import EPopUp from "./pages/EPopUp";
+import Bibliostat from "./pages/Bibliostat"; // ← Added
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import ForgotPassword from "./pages/ForgotPassword";
@@ -40,7 +41,7 @@ const App = () => {
     AOS.init({
       duration: 800,
       easing: "ease-out-cubic",
-      once: true, // Animation happens only once
+      once: true,
       offset: 100,
     });
     AOS.refresh();
@@ -67,7 +68,8 @@ const App = () => {
             <Route path="/ts360" element={<TS360 />} />
             <Route path="/boundless" element={<Boundless />} />
             <Route path="/content-cafe" element={<ContentCafe />} />
-            <Route path="/pressreader" element={<PressReader />} />
+            <Route path="/epopup" element={<EPopUp />} />
+            <Route path="/bibliostat" element={<Bibliostat />} /> {/* ← Added route */}
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />

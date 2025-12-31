@@ -107,9 +107,9 @@ const Boundless = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="space-y-8">
               <span className="text-primary font-medium">Boundless</span>
-              <h1 className="editorial-headline">
+              <h3 className="editorial-headline">
                 The Digital Library Platform Built for Libraries
-              </h1>
+              </h3>
               <p className="editorial-body">
                 Boundless gives libraries a better way forward — with more control, deeper discounts, and a platform built for libraries, not against them. Give your patrons an extensive digital library of eBooks and audiobooks, from trending bestsellers to timeless classics, plus activities, customizable reading programs, and more.
               </p>
@@ -154,7 +154,7 @@ const Boundless = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               "https://static.libnet.info/frontend-images/tile/bettendorflibrary/Home/woman-reading-ebook-at-home.jpeg",
-              "https://thumbs.dreamstime.com/b/calm-woman-reading-ebook-lying-cozy-apartment-couch-morning-closeup-calm-woman-reading-ebook-lying-cozy-apartment-couch-412506966.jpg",
+              "https://img.mauritius-images.com/dsf/preview_watermarked/ME-PI-7647203/save_as_name/mauritius%20images%20-%2007600263%20-%20Senior%20woman%20siting%20in%20library%2C%20reading%20book.jpg",
               "https://hamiltoneastpl.org/wp-content/uploads/2025/06/audiobook-appreciation.png",
               "https://cdn.dribbble.com/userupload/18426632/file/original-0e47e3c9c03dd7e0412aa97f2a2a9248.png?resize=1200x900",
               "https://cdn.dribbble.com/userupload/11281094/file/original-10087d5dc187e939d80513bd1115fc6a.png?resize=1200x900",

@@ -1,19 +1,11 @@
 import MainLayout from "@/layouts/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, Sparkles, BookOpen, Headphones, Globe } from "lucide-react";
+import { ArrowRight, Sparkles, BarChart3, Globe, MessageSquare, PieChart } from "lucide-react";
 import libraryInterior from "@/assets/library-interior.jpg";
-import readingRoom from "@/assets/reading-room.jpg";
-import digitalReading from "@/assets/digital-reading.jpg";
 
 const Solutions = () => {
   const solutions = [
-    {
-      icon: BookOpen,
-      title: "TS360",
-      description: "Comprehensive collection management and analytics platform for modern libraries. Gain insights into patron behavior, optimize acquisitions, and maximize your collection's impact.",
-      link: "/ts360",
-    },
     {
       icon: Sparkles,
       title: "Boundless",
@@ -21,16 +13,28 @@ const Solutions = () => {
       link: "/boundless",
     },
     {
-      icon: Headphones,
+      icon: BarChart3,
+      title: "TS360",
+      description: "Comprehensive collection management and analytics platform for modern libraries. Gain insights into patron behavior, optimize acquisitions, and maximize your collection's impact.",
+      link: "/ts360",
+    },
+    {
+      icon: Globe,
+      title: "ePopUp",
+      description: "Access to thousands of newspapers and magazines from around the world. Keep your community connected to global news and perspectives.",
+      link: "/epopup",
+    },
+    {
+      icon: MessageSquare,
       title: "Content Cafe",
       description: "Rich metadata and content discovery tools to help patrons find their next favorite read. Beautiful book details, reviews, and recommendations.",
       link: "/content-cafe",
     },
     {
-      icon: Globe,
-      title: "PressReader",
-      description: "Access to thousands of newspapers and magazines from around the world. Keep your community connected to global news and perspectives.",
-      link: "/pressreader",
+      icon: PieChart,
+      title: "Bibliostat Collect & Connect",
+      description: "Powerful data collection and reporting tools to demonstrate your library's value and impact to stakeholders and funders.",
+      link: "/bibliostat", // adjust route if needed
     },
   ];
 
@@ -53,26 +57,30 @@ const Solutions = () => {
         </div>
       </section>
 
-      {/* Solutions Grid */}
+      {/* Solutions Grid - Correct Order Including Content Cafe */}
       <section className="pb-20">
         <div className="editorial-container">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-            {solutions.map((solution) => (
+            {solutions.map((solution, index) => (
               <Link
                 key={solution.title}
                 to={solution.link}
-                className="group p-8 md:p-10 rounded-2xl bg-secondary/30 hover:bg-secondary/50 transition-colors duration-300"
+                className={`group p-8 md:p-10 rounded-2xl bg-secondary/30 hover:bg-secondary/50 transition-all duration-300 ${
+                  index === 4 ? "md:col-span-2 md:max-w-2xl md:mx-auto" : ""
+                }`}
               >
                 <solution.icon className="w-10 h-10 text-primary mb-6" />
-                <h3 className="text-2xl md:text-3xl font-serif font-medium mb-4">
+                <h3 className="text-2xl md:text-3xl font-serif font-medium mb-4 text-center">
                   {solution.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed mb-6">
+                <p className="text-muted-foreground leading-relaxed mb-6 text-center">
                   {solution.description}
                 </p>
-                <span className="inline-flex items-center gap-2 text-sm font-medium text-foreground group-hover:gap-3 transition-all">
-                  Learn more <ArrowRight className="w-4 h-4" />
-                </span>
+                <div className="text-center">
+                  <span className="inline-flex items-center gap-2 text-sm font-medium text-foreground group-hover:gap-3 transition-all">
+                    Learn more <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
               </Link>
             ))}
           </div>
