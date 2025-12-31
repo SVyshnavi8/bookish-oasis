@@ -5,6 +5,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HashRouter, Routes, Route } from "react-router-dom";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Index from "./pages/Index";
 import Browse from "./pages/Browse";
 import Solutions from "./pages/Solutions";
@@ -27,9 +30,20 @@ const queryClient = new QueryClient();
 const App = () => {
   const [mounted, setMounted] = useState(false);
 
-  // 🔒 Prevent UI libraries from crashing on GitHub Pages
+  // Prevent UI libraries from crashing on GitHub Pages
   useEffect(() => {
     setMounted(true);
+  }, []);
+
+  // Initialize AOS for scroll animations
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-out-cubic",
+      once: true, // Animation happens only once
+      offset: 100,
+    });
+    AOS.refresh();
   }, []);
 
   if (!mounted) return null;
@@ -37,11 +51,11 @@ const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        {/* ✅ UI libraries safe mount */}
+        {/* UI libraries safe mount */}
         <Toaster />
         <Sonner />
 
-        {/* ✅ GitHub Pages SPA FIX */}
+        {/* GitHub Pages SPA FIX */}
         <HashRouter>
           <Routes>
             <Route path="/" element={<Index />} />
