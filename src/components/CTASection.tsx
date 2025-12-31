@@ -22,19 +22,18 @@ const CTASection = ({
   secondaryCTA,
 }: CTASectionProps) => {
   return (
-    <section className="editorial-section bg-foreground text-background">
+    <section className="py-12 md:py-16 bg-secondary/30">
       <div className="editorial-container">
-        <div className="max-w-3xl mx-auto text-center space-y-8">
-          <h2 className="editorial-headline text-background">{title}</h2>
-          <p className="text-xl text-background/70 leading-relaxed max-w-2xl mx-auto">
+        <div className="max-w-3xl mx-auto text-center space-y-5">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-medium">{title}</h2>
+          <p className="editorial-body leading-relaxed max-w-2xl mx-auto">
             {description}
           </p>
-          <div className="flex flex-wrap justify-center gap-4 pt-4">
+          <div className="flex flex-wrap justify-center gap-4 pt-2">
             <Link to={primaryCTA.link}>
               <Button
-                variant="default"
+                variant="hero"
                 size="lg"
-                className="bg-background text-foreground hover:bg-background/90"
               >
                 {primaryCTA.text}
                 <ArrowRight className="w-5 h-5" />
@@ -43,9 +42,8 @@ const CTASection = ({
             {secondaryCTA && (
               <Link to={secondaryCTA.link}>
                 <Button
-                  variant="outline"
+                  variant="hero-outline"
                   size="lg"
-                  className="border-background/30 text-background hover:bg-background/10"
                 >
                   {secondaryCTA.text}
                 </Button>
