@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -23,35 +24,49 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
+const App = () => {
+  const [mounted, setMounted] = useState(false);
 
-      {/* 🔥 CRITICAL FIX */}
-      <BrowserRouter basename="/bookish-oasis">
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/browse" element={<Browse />} />
-          <Route path="/solutions" element={<Solutions />} />
-          <Route path="/libraries" element={<Libraries />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resources" element={<Resources />} />
-          <Route path="/ts360" element={<TS360 />} />
-          <Route path="/boundless" element={<Boundless />} />
-          <Route path="/content-cafe" element={<ContentCafe />} />
-          <Route path="/pressreader" element={<PressReader />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/demo" element={<Demo />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+  // 🔒 Prevent UI libraries from crashing on GitHub Pages
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null; // prevents white screen crash
+  }
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        {/* ✅ SAFE UI MOUNTS */}
+        <Toaster />
+        <Sonner />
+
+        {/* ✅ GitHub Pages routing fix */}
+        <BrowserRouter basename="/bookish-oasis">
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/browse" element={<Browse />} />
+            <Route path="/solutions" element={<Solutions />} />
+            <Route path="/libraries" element={<Libraries />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="/ts360" element={<TS360 />} />
+            <Route path="/boundless" element={<Boundless />} />
+            <Route path="/content-cafe" element={<ContentCafe />} />
+            <Route path="/pressreader" element={<PressReader />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/demo" element={<Demo />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;
