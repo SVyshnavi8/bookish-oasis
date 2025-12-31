@@ -48,7 +48,7 @@ const Boundless = () => {
               <div className="flex flex-wrap gap-4">
                 <Link to="/demo">
                   <Button variant="hero" size="lg">
-                    Get Started
+                    Get Started(Schedule Demo)
                     <ArrowRight className="w-5 h-5" />
                   </Button>
                 </Link>
