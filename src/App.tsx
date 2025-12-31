@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Index from "./pages/Index";
 import Browse from "./pages/Browse";
@@ -32,19 +32,17 @@ const App = () => {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return null; // prevents white screen crash
-  }
+  if (!mounted) return null;
 
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        {/* ✅ SAFE UI MOUNTS */}
+        {/* ✅ UI libraries safe mount */}
         <Toaster />
         <Sonner />
 
-        {/* ✅ GitHub Pages routing fix */}
-        <BrowserRouter basename="/bookish-oasis">
+        {/* ✅ GitHub Pages SPA FIX */}
+        <HashRouter>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/browse" element={<Browse />} />
@@ -63,7 +61,7 @@ const App = () => {
             <Route path="/demo" element={<Demo />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </TooltipProvider>
     </QueryClientProvider>
   );
