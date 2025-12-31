@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import logoHeader from "@/assets/logoheader.png";
 
 const Footer = () => {
   return (
@@ -10,7 +11,11 @@ const Footer = () => {
           {/* Left: Brand & Tagline */}
           <div className="space-y-4">
             <Link to="/" className="inline-block">
-              <span className="font-serif text-2xl font-semibold">LibraryOne</span>
+              <img 
+                src={logoHeader} 
+                alt="LibraryOne" 
+                className="h-24 md:h-28 w-auto"
+              />
             </Link>
             <p className="text-sm text-background/60 leading-relaxed max-w-xs">
               Empowering libraries to connect communities with the world of knowledge.

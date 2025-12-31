@@ -31,7 +31,7 @@ const queryClient = new QueryClient();
 const App = () => {
   const [mounted, setMounted] = useState(false);
 
-  // Prevent UI libraries from crashing on GitHub Pages
+  // Prevent UI libraries from crashing on initial mount
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -56,7 +56,7 @@ const App = () => {
         <Toaster />
         <Sonner />
 
-        {/* GitHub Pages SPA FIX */}
+        {/* Router for client-side routing */}
         <HashRouter>
           <Routes>
             <Route path="/" element={<Index />} />

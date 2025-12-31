@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoHeader from "@/assets/logoheader.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,9 +38,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <span className="font-serif text-xl md:text-2xl font-semibold tracking-tight">
-              LibraryOne
-            </span>
+            <img 
+              src={logoHeader} 
+              alt="LibraryOne" 
+              className="h-20 md:h-24 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
