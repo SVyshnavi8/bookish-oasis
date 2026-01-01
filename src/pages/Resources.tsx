@@ -43,7 +43,7 @@ const Resources = () => {
           <div className="max-w-3xl">
             <h1 className="editorial-headline mb-6">
               Resources for
-              <span className="block font-serif italic text-primary">Library Success</span>
+              <span className="block font-serif italic bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">Library Success</span>
             </h1>
             <p className="editorial-body">
               Explore our library of case studies, webinars, and research to help 
@@ -64,7 +64,7 @@ const Resources = () => {
                 className="group p-8 md:p-10 rounded-2xl bg-secondary/30 hover:bg-secondary/50 transition-colors duration-300"
               >
                 <div className="flex items-start justify-between mb-6">
-                  <resource.icon className="w-10 h-10 text-primary" />
+                  <resource.icon className="w-10 h-10 text-[#2aa6a6]" />
                   <span className="text-sm text-muted-foreground">{resource.count}</span>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-serif font-medium mb-4">
@@ -95,7 +95,7 @@ const Resources = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 h-12 px-4 bg-background border-0 rounded-full text-base placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20"
+                className="flex-1 h-12 px-4 bg-background border-0 rounded-full text-base placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20/20"
               />
               <Button variant="hero">Subscribe</Button>
             </div>

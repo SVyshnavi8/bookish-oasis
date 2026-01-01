@@ -41,7 +41,7 @@ const About = () => {
               data-aos-delay="100"
             >
               <span className="text-foreground">Library</span>
-              <span className="text-primary">One</span>
+              <span className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">One</span>
             </h1>
             <p 
               className="editorial-body text-xl max-w-3xl"
@@ -55,7 +55,7 @@ const About = () => {
       </section>
 
       {/* Vision */}
-      <section className="editorial-section bg-primary/5 py-16">
+      <section className="editorial-section bg-gradient-to-r from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5 py-16">
         <div className="editorial-container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 
@@ -121,7 +121,7 @@ const About = () => {
       </section>
 
       {/* Continuity */}
-      <section className="editorial-section bg-primary/5 py-16">
+      <section className="editorial-section bg-gradient-to-r from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5 py-16">
         <div className="editorial-container">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h2 
@@ -257,8 +257,8 @@ const About = () => {
                 data-aos-delay={100 + index * 150}
               >
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <value.icon className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                    <value.icon className="w-6 h-6 text-[#2aa6a6]" />
                   </div>
                 </div>
                 <div>

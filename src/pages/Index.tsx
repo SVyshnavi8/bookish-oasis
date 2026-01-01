@@ -127,10 +127,10 @@ const Index = () => {
                 to="/boundless" 
                 className="group block rounded-2xl overflow-hidden bg-card border border-border hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                <div className="aspect-[4/3] bg-gradient-to-br from-[#0b5fa5]/20 to-[#4cc9c0]/5 flex items-center justify-center">
                   <div className="text-center space-y-3 p-8">
-                    <div className="w-16 h-16 rounded-full bg-primary/10 mx-auto flex items-center justify-center">
-                      <span className="text-2xl font-bold text-primary">B</span>
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 mx-auto flex items-center justify-center">
+                      <span className="text-2xl font-bold bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">B</span>
                     </div>
                     <h3 className="text-2xl font-serif font-semibold">Boundless</h3>
                   </div>
@@ -139,7 +139,7 @@ const Index = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     A trusted digital content platform that helps libraries extend access, discovery, and engagement beyond their physical walls.
                   </p>
-                  <span className="inline-flex items-center gap-2 mt-4 text-primary font-medium group-hover:gap-3 transition-all">
+                  <span className="inline-flex items-center gap-2 mt-4 bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium group-hover:gap-3 transition-all">
                     Learn more <ArrowRight className="w-4 h-4" />
                   </span>
                 </div>
@@ -150,10 +150,10 @@ const Index = () => {
                 to="/epopup" 
                 className="group block rounded-2xl overflow-hidden bg-card border border-border hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                <div className="aspect-[4/3] bg-gradient-to-br from-[#0b5fa5]/20 to-[#4cc9c0]/5 flex items-center justify-center">
                   <div className="text-center space-y-3 p-8">
-                    <div className="w-16 h-16 rounded-full bg-primary/10 mx-auto flex items-center justify-center">
-                      <span className="text-2xl font-bold text-primary">eP</span>
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 mx-auto flex items-center justify-center">
+                      <span className="text-2xl font-bold bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">eP</span>
                     </div>
                     <h3 className="text-2xl font-serif font-semibold">ePopUp Library</h3>
                   </div>
@@ -162,7 +162,7 @@ const Index = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     A community outreach platform that brings the library directly into neighborhoods, schools, events, and partner locations.
                   </p>
-                  <span className="inline-flex items-center gap-2 mt-4 text-primary font-medium group-hover:gap-3 transition-all">
+                  <span className="inline-flex items-center gap-2 mt-4 bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium group-hover:gap-3 transition-all">
                     Learn more <ArrowRight className="w-4 h-4" />
                   </span>
                 </div>
@@ -173,10 +173,10 @@ const Index = () => {
                 to="/ts360" 
                 className="group block rounded-2xl overflow-hidden bg-card border border-border hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                <div className="aspect-[4/3] bg-gradient-to-br from-[#0b5fa5]/20 to-[#4cc9c0]/5 flex items-center justify-center">
                   <div className="text-center space-y-3 p-8">
-                    <div className="w-16 h-16 rounded-full bg-primary/10 mx-auto flex items-center justify-center">
-                      <span className="text-2xl font-bold text-primary">T</span>
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 mx-auto flex items-center justify-center">
+                      <span className="text-2xl font-bold bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">T</span>
                     </div>
                     <h3 className="text-2xl font-serif font-semibold">TS360</h3>
                   </div>
@@ -185,7 +185,7 @@ const Index = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     Comprehensive collection management and analytics platform that helps libraries understand usage, optimize acquisitions, and maximize collection impact.
                   </p>
-                  <span className="inline-flex items-center gap-2 mt-4 text-primary font-medium group-hover:gap-3 transition-all">
+                  <span className="inline-flex items-center gap-2 mt-4 bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium group-hover:gap-3 transition-all">
                     Learn more <ArrowRight className="w-4 h-4" />
                   </span>
                 </div>
@@ -196,10 +196,10 @@ const Index = () => {
                 to="/bibliostat" 
                 className="group block rounded-2xl overflow-hidden bg-card border border-border hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                <div className="aspect-[4/3] bg-gradient-to-br from-[#0b5fa5]/20 to-[#4cc9c0]/5 flex items-center justify-center">
                   <div className="text-center space-y-3 p-8">
-                    <div className="w-16 h-16 rounded-full bg-primary/10 mx-auto flex items-center justify-center">
-                      <span className="text-2xl font-bold text-primary">B</span>
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 mx-auto flex items-center justify-center">
+                      <span className="text-2xl font-bold bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">B</span>
                     </div>
                     <h3 className="text-2xl font-serif font-semibold">Bibliostat Collect & Connect</h3>
                   </div>
@@ -208,7 +208,7 @@ const Index = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     Data, analytics, and insight tools that help libraries understand usage, demonstrate impact, and support strategic decision-making.
                   </p>
-                  <span className="inline-flex items-center gap-2 mt-4 text-primary font-medium group-hover:gap-3 transition-all">
+                  <span className="inline-flex items-center gap-2 mt-4 bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium group-hover:gap-3 transition-all">
                     Learn more <ArrowRight className="w-4 h-4" />
                   </span>
                 </div>
@@ -219,10 +219,10 @@ const Index = () => {
                 to="/content-cafe" 
                 className="group block rounded-2xl overflow-hidden bg-card border border-border hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                <div className="aspect-[4/3] bg-gradient-to-br from-[#0b5fa5]/20 to-[#4cc9c0]/5 flex items-center justify-center">
                   <div className="text-center space-y-3 p-8">
-                    <div className="w-16 h-16 rounded-full bg-primary/10 mx-auto flex items-center justify-center">
-                      <span className="text-2xl font-bold text-primary">C</span>
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 mx-auto flex items-center justify-center">
+                      <span className="text-2xl font-bold bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">C</span>
                     </div>
                     <h3 className="text-2xl font-serif font-semibold">Content Café</h3>
                   </div>
@@ -231,7 +231,7 @@ const Index = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     Content enrichment and discovery services that enhance patron engagement and improve visibility across collections.
                   </p>
-                  <span className="inline-flex items-center gap-2 mt-4 text-primary font-medium group-hover:gap-3 transition-all">
+                  <span className="inline-flex items-center gap-2 mt-4 bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium group-hover:gap-3 transition-all">
                     Learn more <ArrowRight className="w-4 h-4" />
                   </span>
                 </div>
@@ -258,7 +258,7 @@ const Index = () => {
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary">
+            <h2 className="font-serif text-4xl md:text-5xl font-semibold bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">
               Who We Serve
             </h2>
           </div>
@@ -266,8 +266,8 @@ const Index = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
             {whoweserve.map((item) => (
               <div key={item.title} className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-primary/10 flex items-center justify-center">
-                  <item.icon className="w-8 h-8 text-primary" />
+                <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                  <item.icon className="w-8 h-8 text-[#2aa6a6]" />
                 </div>
                 <h3 className="font-serif text-lg md:text-xl font-semibold text-foreground">
                   {item.title}

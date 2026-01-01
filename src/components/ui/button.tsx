@@ -26,7 +26,7 @@ const buttonVariants = cva(
         "hero-outline":
           "border-2 border-foreground/20 bg-transparent text-foreground hover:border-foreground/40 hover:bg-foreground/5 rounded-full",
         accent:
-          "bg-primary text-primary-foreground hover:bg-primary/90 rounded-full shadow-md hover:shadow-lg",
+          "bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] text-white hover:opacity-90 rounded-full shadow-md hover:shadow-lg",
       },
       size: {
         default: "h-11 px-6 py-2",

@@ -32,7 +32,7 @@ const Bibliostat = () => {
         <div className="editorial-container">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="space-y-8" data-aos="fade-right" data-aos-delay="200">
-              <span className="text-primary font-medium">Bibliostat Collect & Connect</span>
+              <span className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium">Bibliostat Collect & Connect</span>
               <h1 className="editorial-headline">
                 Turn library data into insight, impact, and advocacy
               </h1>
@@ -78,23 +78,23 @@ const Bibliostat = () => {
               <p className="editorial-body font-medium">Key capabilities include:</p>
               <ul className="space-y-4 text-muted-foreground">
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#2aa6a6] flex-shrink-0" />
                   Modern, intuitive survey management workflows
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#2aa6a6] flex-shrink-0" />
                   Real-time edit checks that reduce errors at entry
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#2aa6a6] flex-shrink-0" />
                   Automatic validation and resolution guidance
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#2aa6a6] flex-shrink-0" />
                   Support for multiple users and collaborative data entry
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#2aa6a6] flex-shrink-0" />
                   Access to up to six years of historical reference data
                 </li>
               </ul>
@@ -132,19 +132,19 @@ const Bibliostat = () => {
               <p className="editorial-body">Libraries and agencies can:</p>
               <ul className="space-y-4 text-muted-foreground">
                 <li className="flex items-center gap-3">
-                  <BarChart3 className="w-5 h-5 text-primary flex-shrink-0" />
+                  <BarChart3 className="w-5 h-5 text-[#2aa6a6] flex-shrink-0" />
                   Analyze performance over time across hundreds of data points
                 </li>
                 <li className="flex items-center gap-3">
-                  <Users className="w-5 h-5 text-primary flex-shrink-0" />
+                  <Users className="w-5 h-5 text-[#2aa6a6] flex-shrink-0" />
                   Compare against peer libraries using statistical and categorical criteria
                 </li>
                 <li className="flex items-center gap-3">
-                  <TrendingUp className="w-5 h-5 text-primary flex-shrink-0" />
+                  <TrendingUp className="w-5 h-5 text-[#2aa6a6] flex-shrink-0" />
                   Identify trends in circulation, digital lending, expenditures, and usage
                 </li>
                 <li className="flex items-center gap-3">
-                  <Globe className="w-5 h-5 text-primary flex-shrink-0" />
+                  <Globe className="w-5 h-5 text-[#2aa6a6] flex-shrink-0" />
                   Benchmark locally, regionally, or nationally
                 </li>
               </ul>
@@ -176,7 +176,7 @@ const Bibliostat = () => {
 
         <ul className="space-y-4 text-muted-foreground">
           <li className="flex items-start gap-3">
-            <Users className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+            <Users className="w-5 h-5 text-[#2aa6a6] flex-shrink-0 mt-1" />
             <span>
               <strong>Build custom peer groups</strong> based on multiple criteria,
               fine-tuning comparisons using demographic and operational data.
@@ -184,7 +184,7 @@ const Bibliostat = () => {
           </li>
 
           <li className="flex items-start gap-3">
-            <TrendingUp className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+            <TrendingUp className="w-5 h-5 text-[#2aa6a6] flex-shrink-0 mt-1" />
             <span>
               <strong>Analyze trends across peers and timeframes</strong>,
               ensuring results are credible, relevant, and defensible.
@@ -192,7 +192,7 @@ const Bibliostat = () => {
           </li>
 
           <li className="flex items-start gap-3">
-            <BarChart3 className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+            <BarChart3 className="w-5 h-5 text-[#2aa6a6] flex-shrink-0 mt-1" />
             <span>
               Use contextual insights to support informed decision-making and
               strengthen conversations with boards, funders, and stakeholders.
@@ -226,8 +226,8 @@ const Bibliostat = () => {
                 data-aos="fade-up"
                 data-aos-delay={100 + index * 200}
               >
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                  <tile.icon className="w-8 h-8 text-primary" />
+                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center mx-auto">
+                  <tile.icon className="w-8 h-8 text-[#2aa6a6]" />
                 </div>
                 <h3 className="text-2xl font-serif font-medium">{tile.title}</h3>
                 <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
@@ -240,10 +240,10 @@ const Bibliostat = () => {
       </section>
 
       {/* Closing Statement */}
-      <section className="editorial-section bg-primary/5 py-20" data-aos="fade-up">
+      <section className="editorial-section bg-gradient-to-r from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5 py-20" data-aos="fade-up">
         <div className="editorial-container text-center">
           <div className="max-w-4xl mx-auto space-y-8">
-            <Sparkles className="w-16 h-16 text-primary mx-auto" />
+            <Sparkles className="w-16 h-16 text-[#2aa6a6] mx-auto" />
             <p className="editorial-body text-2xl font-medium max-w-3xl mx-auto">
               Built for libraries. Trusted by agencies. Designed for impact.
             </p>

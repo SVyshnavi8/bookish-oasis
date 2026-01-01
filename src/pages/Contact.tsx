@@ -12,21 +12,21 @@ const Contact = () => (
             <p className="editorial-body mb-12">Have questions? We'd love to hear from you.</p>
             <div className="space-y-6">
               <div className="flex gap-4">
-                <Mail className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                <Mail className="w-5 h-5 text-[#2aa6a6] mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-medium">Email</p>
                   <p className="text-muted-foreground">info@libraryone.com</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <Phone className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                <Phone className="w-5 h-5 text-[#2aa6a6] mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-medium">Phone</p>
                   <p className="text-muted-foreground">1-800-775-1800</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-[#2aa6a6] mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-medium">Office</p>
                   <p className="text-muted-foreground">
@@ -43,7 +43,7 @@ const Contact = () => (
               <input
                 type="text"
                 placeholder="Your name"
-                className="w-full h-12 px-4 bg-secondary/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20"
+                className="w-full h-12 px-4 bg-secondary/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
               />
             </div>
             <div>
@@ -51,7 +51,7 @@ const Contact = () => (
               <input
                 type="email"
                 placeholder="you@example.com"
-                className="w-full h-12 px-4 bg-secondary/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20"
+                className="w-full h-12 px-4 bg-secondary/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
               />
             </div>
             <div>
@@ -59,7 +59,7 @@ const Contact = () => (
               <textarea
                 rows={5}
                 placeholder="How can we help?"
-                className="w-full p-4 bg-secondary/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 resize-none"
+                className="w-full p-4 bg-secondary/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20 resize-none"
               />
             </div>
             <Button variant="hero" size="lg" className="w-full">

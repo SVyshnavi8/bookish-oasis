@@ -38,7 +38,7 @@ const Libraries = () => {
             <div className="space-y-8">
               <h1 className="editorial-headline">
                 Empowering Libraries
-                <span className="block font-serif italic text-primary">Worldwide</span>
+                <span className="block font-serif italic bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">Worldwide</span>
               </h1>
               <p className="editorial-body">
                 From small community libraries to major academic institutions, 
@@ -78,8 +78,8 @@ const Libraries = () => {
             {benefits.map((benefit) => (
               <div key={benefit.title} className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <benefit.icon className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                    <benefit.icon className="w-6 h-6 text-[#2aa6a6]" />
                   </div>
                 </div>
                 <div>

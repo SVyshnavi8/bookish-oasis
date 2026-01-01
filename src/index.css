@@ -16,8 +16,8 @@
     --popover: 40 30% 98%;
     --popover-foreground: 220 20% 12%;
     
-    /* Warm amber accent */
-    --primary: 35 90% 50%;
+    /* Gradient accent - blue to teal */
+    --primary: 180 60% 41%;
     --primary-foreground: 0 0% 100%;
     
     --secondary: 40 20% 94%;
@@ -26,7 +26,7 @@
     --muted: 40 15% 92%;
     --muted-foreground: 220 10% 45%;
     
-    --accent: 35 85% 55%;
+    --accent: 180 60% 41%;
     --accent-foreground: 0 0% 100%;
     
     --destructive: 0 72% 51%;
@@ -34,7 +34,7 @@
     
     --border: 40 20% 88%;
     --input: 40 20% 90%;
-    --ring: 35 90% 50%;
+    --ring: 180 60% 41%;
     
     --radius: 0.75rem;
     
@@ -62,7 +62,7 @@
     --popover: 220 20% 10%;
     --popover-foreground: 40 20% 95%;
     
-    --primary: 35 85% 55%;
+    --primary: 180 60% 41%;
     --primary-foreground: 220 20% 8%;
     
     --secondary: 220 15% 18%;
@@ -71,7 +71,7 @@
     --muted: 220 15% 16%;
     --muted-foreground: 40 10% 60%;
     
-    --accent: 35 80% 50%;
+    --accent: 180 60% 41%;
     --accent-foreground: 220 20% 8%;
     
     --destructive: 0 62% 45%;
@@ -79,7 +79,7 @@
     
     --border: 220 15% 20%;
     --input: 220 15% 18%;
-    --ring: 35 85% 55%;
+    --ring: 180 60% 41%;
     
     --surface: 220 18% 10%;
     --surface-elevated: 220 16% 14%;

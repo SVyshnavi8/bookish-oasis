@@ -16,7 +16,7 @@ const HeroSection = () => {
             <div className="space-y-6">
               <h1 className="editorial-headline text-balance">
                 Digital products and services that help libraries serve their
-                <span className="block font-serif italic text-primary">
+                <span className="block font-serif italic bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">
                   communities—everywhere
                 </span>
               </h1>
@@ -50,8 +50,8 @@ const HeroSection = () => {
               />
             </div>
             {/* Floating accent */}
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />
-            <div className="absolute -top-6 -right-6 w-40 h-40 bg-primary/5 rounded-full blur-3xl" />
+            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 rounded-full blur-3xl" />
+            <div className="absolute -top-6 -right-6 w-40 h-40 bg-gradient-to-r from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5 rounded-full blur-3xl" />
           </div>
         </div>
       </div>

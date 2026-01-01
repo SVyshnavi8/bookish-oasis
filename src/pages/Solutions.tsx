@@ -46,7 +46,7 @@ const Solutions = () => {
           <div className="max-w-3xl">
             <h1 className="editorial-headline mb-6">
               Solutions Built for
-              <span className="block font-serif italic text-primary">Modern Libraries</span>
+              <span className="block font-serif italic bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">Modern Libraries</span>
             </h1>
             <p className="editorial-body">
               From collection management to patron engagement, our suite of solutions 
@@ -69,7 +69,7 @@ const Solutions = () => {
                   index === 4 ? "md:col-span-2 md:max-w-2xl md:mx-auto" : ""
                 }`}
               >
-                <solution.icon className="w-10 h-10 text-primary mb-6" />
+                <solution.icon className="w-10 h-10 text-[#2aa6a6] mb-6" />
                 <h3 className="text-2xl md:text-3xl font-serif font-medium mb-4 text-center">
                   {solution.title}
                 </h3>
@@ -100,19 +100,19 @@ const Solutions = () => {
               </p>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 bg-primary rounded-full" />
+                  <span className="w-1.5 h-1.5 bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] rounded-full" />
                   MARC record integration
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 bg-primary rounded-full" />
+                  <span className="w-1.5 h-1.5 bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] rounded-full" />
                   Single sign-on authentication
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 bg-primary rounded-full" />
+                  <span className="w-1.5 h-1.5 bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] rounded-full" />
                   Real-time usage analytics
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 bg-primary rounded-full" />
+                  <span className="w-1.5 h-1.5 bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] rounded-full" />
                   Automated collection development
                 </li>
               </ul>

@@ -73,7 +73,7 @@ const Boundless = () => {
       icon: UserCheck,
       title: "Age-Based Profiles",
       description: "Ensure that patrons only see age-appropriate content with profile-based filtering.",
-      image: "https://www.librarypoint.org/wp-content/uploads/sites/60/2022/07/image2.png",
+      image: "https://thgmwriters.com/wp-content/uploads/2023/01/Book-reading-data-statistics-United-States-2022-age.png",
       alt: "Parent setting up age-appropriate content filters on a library app",
     },
     {
@@ -106,7 +106,7 @@ const Boundless = () => {
         <div className="editorial-container">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="space-y-8">
-              <span className="text-primary font-medium">Boundless</span>
+              <span className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium">Boundless</span>
               <h3 className="editorial-headline">
                 The Digital Library Platform Built for Libraries
               </h3>
@@ -201,7 +201,7 @@ const Boundless = () => {
               },
             ].map((pillar, index) => (
               <div key={index} className="space-y-6 text-center md:text-left" data-aos="fade-up" data-aos-delay={index * 200}>
-                <div className="text-5xl font-bold text-primary">{pillar.num}</div>
+                <div className="text-5xl font-bold bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">{pillar.num}</div>
                 <h3 className="text-2xl font-serif font-medium">{pillar.title}</h3>
                 <h4 className="text-lg font-medium text-foreground/80 mb-4">{pillar.subtitle}</h4>
                 <p className="text-muted-foreground leading-relaxed">{pillar.desc}</p>
@@ -230,8 +230,8 @@ const Boundless = () => {
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
-                <div className="w-20 h-20 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                  <feature.icon className="w-10 h-10 text-primary" />
+                <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center mb-6">
+                  <feature.icon className="w-10 h-10 text-[#2aa6a6]" />
                 </div>
                 <h3 className="text-xl font-serif font-medium mb-3">{feature.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -271,8 +271,8 @@ const Boundless = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="w-20 h-20 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
-                  <benefit.icon className="w-10 h-10 text-primary" />
+                <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                  <benefit.icon className="w-10 h-10 text-[#2aa6a6]" />
                 </div>
                 <h3 className="text-xl font-serif font-medium">{benefit.title}</h3>
                 <p className="text-muted-foreground leading-relaxed px-4">
@@ -303,19 +303,19 @@ const Boundless = () => {
               <h3 className="text-2xl font-serif font-medium">What libraries can expect:</h3>
               <ul className="space-y-4 text-muted-foreground">
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] rounded-full mt-2 flex-shrink-0" />
                   <span>Continued stability and support</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] rounded-full mt-2 flex-shrink-0" />
                   <span>Leadership with deep library, publishing, and media experience</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] rounded-full mt-2 flex-shrink-0" />
                   <span>A platform stewarded with long-term commitment</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] rounded-full mt-2 flex-shrink-0" />
                   <span>Decisions guided by how libraries serve their communities</span>
                 </li>
               </ul>

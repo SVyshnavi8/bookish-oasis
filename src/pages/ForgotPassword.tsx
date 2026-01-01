@@ -37,7 +37,7 @@ const ForgotPassword = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="you@example.com"
-                    className="w-full h-12 px-4 bg-secondary/50 border-0 rounded-lg text-base placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20"
+                    className="w-full h-12 px-4 bg-secondary/50 border-0 rounded-lg text-base placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
                     required
                   />
                 </div>
@@ -57,8 +57,8 @@ const ForgotPassword = () => {
             </>
           ) : (
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="w-16 h-16 mx-auto bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 rounded-full flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>

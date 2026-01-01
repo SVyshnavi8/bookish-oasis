@@ -34,7 +34,7 @@ const TS360 = () => {
         <div className="editorial-container">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="space-y-8">
-              <span className="text-primary font-medium">TS360</span>
+              <span className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium">TS360</span>
               <h3 className="editorial-headline">
                 A trusted collection development platform—supporting both digital and print strategies
               </h3>
@@ -106,14 +106,14 @@ const TS360 = () => {
               </p>
               <ul className="space-y-6">
                 <li className="flex items-start gap-4">
-                  <Laptop className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                  <Laptop className="w-8 h-8 text-[#2aa6a6] flex-shrink-0 mt-1" />
                   <div>
                     <strong className="block mb-1">Digital collections:</strong>
                     TS360 will support digital ordering workflows, enabling libraries to plan and execute digital acquisitions within the platform.
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
-                  <BookOpen className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                  <BookOpen className="w-8 h-8 text-[#2aa6a6] flex-shrink-0 mt-1" />
                   <div>
                     <strong className="block mb-1">Print collections:</strong>
                     TS360 remains available as a subscription tool for print collection development, supporting evaluation, planning, and selection—without print ordering transactions.
@@ -156,19 +156,19 @@ const TS360 = () => {
               </p>
               <ul className="space-y-6">
                 <li className="flex items-start gap-4">
-                  <Target className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                  <Target className="w-8 h-8 text-[#2aa6a6] flex-shrink-0 mt-1" />
                   <span>Evaluating collection gaps and strengths</span>
                 </li>
                 <li className="flex items-start gap-4">
-                  <Layers className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                  <Layers className="w-8 h-8 text-[#2aa6a6] flex-shrink-0 mt-1" />
                   <span>Supporting selection decisions for digital and print materials</span>
                 </li>
                 <li className="flex items-start gap-4">
-                  <Users className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                  <Users className="w-8 h-8 text-[#2aa6a6] flex-shrink-0 mt-1" />
                   <span>Aligning acquisitions with community needs and budgets</span>
                 </li>
                 <li className="flex items-start gap-4">
-                  <DollarSign className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                  <DollarSign className="w-8 h-8 text-[#2aa6a6] flex-shrink-0 mt-1" />
                   <span>Maintaining consistency across subject areas and formats</span>
                 </li>
               </ul>
@@ -199,8 +199,8 @@ const TS360 = () => {
                 data-aos-delay={index * 100}
               >
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <feature.icon className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                    <feature.icon className="w-6 h-6 text-[#2aa6a6]" />
                   </div>
                 </div>
                 <div>

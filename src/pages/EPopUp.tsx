@@ -36,7 +36,7 @@ const EPopUp = () => {
         <div className="editorial-container">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="space-y-8" data-aos="fade-right" data-aos-delay="200">
-              <span className="text-primary font-medium">ePopUp Library</span>
+              <span className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium">ePopUp Library</span>
               <h1 className="editorial-headline mt-4 mb-6">
                 Extend your library beyond its walls
               </h1>
@@ -89,32 +89,32 @@ const EPopUp = () => {
             </h2>
             <ul className="space-y-10">
               <li className="flex items-start gap-6" data-aos="fade-right" data-aos-delay="100">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Sparkles className="w-6 h-6 text-primary" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                  <Sparkles className="w-6 h-6 text-[#2aa6a6]" />
                 </div>
                 <p className="editorial-body text-lg leading-relaxed">
                   Curate digital collections targeted for these locations.
                 </p>
               </li>
               <li className="flex items-start gap-6" data-aos="fade-right" data-aos-delay="200">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <QrCode className="w-6 h-6 text-primary" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                  <QrCode className="w-6 h-6 text-[#2aa6a6]" />
                 </div>
                 <p className="editorial-body text-lg leading-relaxed">
                   Deploy access through QR codes or simple links
                 </p>
               </li>
               <li className="flex items-start gap-6" data-aos="fade-left" data-aos-delay="300">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <LinkIcon className="w-6 h-6 text-primary" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                  <LinkIcon className="w-6 h-6 text-[#2aa6a6]" />
                 </div>
                 <p className="editorial-body text-lg leading-relaxed">
                   Provide immediate discovery without barriers
                 </p>
               </li>
               <li className="flex items-start gap-6" data-aos="fade-left" data-aos-delay="400">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Users className="w-6 h-6 text-primary" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                  <Users className="w-6 h-6 text-[#2aa6a6]" />
                 </div>
                 <p className="editorial-body text-lg leading-relaxed">
                   Guide users toward library membership and services
@@ -143,32 +143,32 @@ const EPopUp = () => {
             </p>
             <ul className="space-y-10">
               <li className="flex items-start gap-6" data-aos="fade-right" data-aos-delay="400">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Target className="w-6 h-6 text-primary" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                  <Target className="w-6 h-6 text-[#2aa6a6]" />
                 </div>
                 <p className="editorial-body text-lg leading-relaxed">
                   Support outreach and engagement initiatives
                 </p>
               </li>
               <li className="flex items-start gap-6" data-aos="fade-right" data-aos-delay="500">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Users2 className="w-6 h-6 text-primary" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                  <Users2 className="w-6 h-6 text-[#2aa6a6]" />
                 </div>
                 <p className="editorial-body text-lg leading-relaxed">
                   Reach new and underserved audiences
                 </p>
               </li>
               <li className="flex items-start gap-6" data-aos="fade-left" data-aos-delay="600">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Building2 className="w-6 h-6 text-primary" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                  <Building2 className="w-6 h-6 text-[#2aa6a6]" />
                 </div>
                 <p className="editorial-body text-lg leading-relaxed">
                   Align digital access with community programming
                 </p>
               </li>
               <li className="flex items-start gap-6" data-aos="fade-left" data-aos-delay="700">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Handshake className="w-6 h-6 text-primary" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                  <Handshake className="w-6 h-6 text-[#2aa6a6]" />
                 </div>
                 <p className="editorial-body text-lg leading-relaxed">
                   Reinforce the library’s role as a community partner
@@ -191,32 +191,32 @@ const EPopUp = () => {
             </p>
             <ul className="space-y-10">
               <li className="flex items-start gap-6" data-aos="fade-right" data-aos-delay="300">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <UserPlus className="w-6 h-6 text-primary" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                  <UserPlus className="w-6 h-6 text-[#2aa6a6]" />
                 </div>
                 <p className="editorial-body text-lg leading-relaxed">
                   Library card sign-ups
                 </p>
               </li>
               <li className="flex items-start gap-6" data-aos="fade-right" data-aos-delay="400">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <BookOpen className="w-6 h-6 text-primary" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                  <BookOpen className="w-6 h-6 text-[#2aa6a6]" />
                 </div>
                 <p className="editorial-body text-lg leading-relaxed">
                   Deeper digital engagement
                 </p>
               </li>
               <li className="flex items-start gap-6" data-aos="fade-left" data-aos-delay="500">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Footprints className="w-6 h-6 text-primary" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                  <Footprints className="w-6 h-6 text-[#2aa6a6]" />
                 </div>
                 <p className="editorial-body text-lg leading-relaxed">
                   Increased visits to library branches
                 </p>
               </li>
               <li className="flex items-start gap-6" data-aos="fade-left" data-aos-delay="600">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <ArrowRightCircle className="w-6 h-6 text-primary" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                  <ArrowRightCircle className="w-6 h-6 text-[#2aa6a6]" />
                 </div>
                 <p className="editorial-body text-lg leading-relaxed">
                   Stronger participation in programs and services
@@ -256,7 +256,7 @@ const EPopUp = () => {
                   href="https://www.bpl.org/news/browse-borrow-board/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-primary hover:text-primary/80 font-medium"
+                  className="inline-flex items-center text-[#2aa6a6] hover:text-[#2aa6a6]/80 font-medium"
                 >
                   Learn more
                   <ArrowRight className="w-5 h-5 ml-2" />
@@ -275,7 +275,7 @@ const EPopUp = () => {
                   href="https://www.slcl.org/resources/epop-up-library"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-primary hover:text-primary/80 font-medium"
+                  className="inline-flex items-center text-[#2aa6a6] hover:text-[#2aa6a6]/80 font-medium"
                 >
                   Learn more
                   <ArrowRight className="w-5 h-5 ml-2" />

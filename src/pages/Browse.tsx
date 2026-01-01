@@ -78,7 +78,7 @@ const Browse = () => {
           <div className="max-w-3xl">
             <h1 className="editorial-headline mb-6">
               Discover Your Next
-              <span className="block font-serif italic text-primary">Great Read</span>
+              <span className="block font-serif italic bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">Great Read</span>
             </h1>
             <p className="editorial-body mb-8">
               Explore our curated collection of ebooks, audiobooks, and digital content. 
@@ -91,7 +91,7 @@ const Browse = () => {
               <input
                 type="text"
                 placeholder="Search titles, authors, or genres..."
-                className="w-full h-14 pl-12 pr-4 bg-secondary/50 border-0 rounded-full text-base placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20"
+                className="w-full h-14 pl-12 pr-4 bg-secondary/50 border-0 rounded-full text-base placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
               />
             </div>
           </div>
