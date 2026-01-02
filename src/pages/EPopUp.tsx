@@ -59,7 +59,7 @@ const EPopUp = () => {
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="400">
               <img
                 // src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&q=80"
-                src={extendImage}  
+                src={extendImage}
                 alt="People reading digital news on tablets in public spaces like transit and waiting areas"
                 className="w-full h-full object-cover"
               />
@@ -366,7 +366,7 @@ const EPopUp = () => {
               {/* IMAGE */}
               <div className="rounded-xl overflow-hidden shadow-md bg-muted/10">
                 <img
-                  src={bostonImage}   
+                  src={bostonImage}
                   alt="Boston Public Library ePopUp deployment"
                   className="w-full h-auto object-contain md:h-96 md:object-cover"
                 />
@@ -470,6 +470,18 @@ const EPopUp = () => {
             <br />
             tell their story, and strengthen connections with the communities they serve
           </p>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="700"
+            className="mt-8 md:mt-10"
+          >
+            <Link to="/contact">
+              <Button variant="hero" size="lg">
+                Contact Us
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
