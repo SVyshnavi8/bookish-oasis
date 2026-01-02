@@ -1,7 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import logoHeader from "@/assets/logoheader.png";
 
 /* ---------- Solutions Dropdown Links ---------- */
@@ -19,9 +18,7 @@ const Header = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -37,21 +34,24 @@ const Header = () => {
       }`}
     >
       <nav className="editorial-container">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        {/* REDUCED HEADER HEIGHT */}
+        <div className="flex items-center justify-between h-[64px] md:h-[80px]">
+
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center">
             <img
               src={logoHeader}
               alt="LibraryOne"
-              className="h-20 md:h-24 w-auto"
+              className="h-24 md:h-28 w-auto"
             />
           </Link>
 
           {/* ================= Desktop Navigation ================= */}
-          <div className="hidden md:flex items-center gap-10">
+          <div className="hidden md:flex items-center h-full gap-10">
+
             <Link
               to="/"
-              className={`text-sm font-medium ${
+              className={`text-lg font-medium tracking-wide flex items-center h-full ${
                 isActive("/")
                   ? "text-foreground"
                   : "text-muted-foreground hover:text-foreground"
@@ -60,11 +60,11 @@ const Header = () => {
               Home
             </Link>
 
-            {/* Products & Services (Clickable + Dropdown) */}
-            <div className="relative group">
+            {/* Products and Services */}
+            <div className="relative group flex items-center h-full">
               <Link
                 to="/solutions"
-                className={`inline-flex items-center gap-1 text-sm font-medium ${
+                className={`inline-flex items-center gap-1 text-lg font-medium tracking-wide h-full ${
                   isActive("/solutions")
                     ? "text-foreground"
                     : "text-muted-foreground hover:text-foreground"
@@ -75,13 +75,13 @@ const Header = () => {
               </Link>
 
               {/* Dropdown */}
-              <div className="absolute left-0 top-full mt-3 w-64 rounded-xl bg-background border border-border/50 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <div className="absolute left-0 top-full mt-2 w-72 rounded-xl bg-background border border-border/50 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <div className="py-2">
                   {solutionLinks.map((item) => (
                     <Link
                       key={item.name}
                       to={item.path}
-                      className="block px-4 py-2 text-sm text-muted-foreground hover:bg-secondary/40 hover:text-foreground"
+                      className="block px-5 py-2 text-base tracking-wide text-muted-foreground hover:bg-secondary/40 hover:text-foreground"
                     >
                       {item.name}
                     </Link>
@@ -92,38 +92,24 @@ const Header = () => {
 
             <Link
               to="/about"
-              className={`text-sm font-medium ${
+              className={`text-lg font-medium tracking-wide flex items-center h-full ${
                 isActive("/about")
                   ? "text-foreground"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
-              About
+              About LibraryOne
             </Link>
 
             <Link
               to="/contact"
-              className={`text-sm font-medium ${
+              className={`text-lg font-medium tracking-wide flex items-center h-full ${
                 isActive("/contact")
                   ? "text-foreground"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Contact
-            </Link>
-          </div>
-
-          {/* ================= Desktop CTA ================= */}
-          <div className="hidden md:flex items-center gap-4">
-            <Link to="/login">
-              <Button variant="ghost" size="sm">
-                Sign In
-              </Button>
-            </Link>
-            <Link to="/demo">
-              <Button variant="default" size="sm">
-                Request Demo
-              </Button>
             </Link>
           </div>
 
@@ -143,33 +129,33 @@ const Header = () => {
 
         {/* ================= Mobile Menu ================= */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-6 border-t border-border/50 animate-fade-in">
-            <div className="flex flex-col gap-4">
+          <div className="md:hidden border-t border-border/50 bg-background">
+            <div className="flex flex-col gap-6 px-6 py-6">
+
               <Link
                 to="/"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-base font-medium text-muted-foreground"
+                className="text-xl font-medium"
               >
                 Home
               </Link>
 
-              {/* Mobile Products & Services */}
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-4">
                 <Link
                   to="/solutions"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-base font-medium text-foreground"
+                  className="text-xl font-medium"
                 >
                   Products and Services
                 </Link>
 
-                <div className="pl-4 flex flex-col gap-2">
+                <div className="pl-4 flex flex-col gap-3">
                   {solutionLinks.map((item) => (
                     <Link
                       key={item.name}
                       to={item.path}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="text-sm text-muted-foreground"
+                      className="text-lg text-muted-foreground"
                     >
                       {item.name}
                     </Link>
@@ -180,7 +166,7 @@ const Header = () => {
               <Link
                 to="/about"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-base font-medium text-muted-foreground"
+                className="text-xl font-medium"
               >
                 About
               </Link>
@@ -188,23 +174,11 @@ const Header = () => {
               <Link
                 to="/contact"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-base font-medium text-muted-foreground"
+                className="text-xl font-medium"
               >
                 Contact
               </Link>
 
-              <div className="flex flex-col gap-3 pt-4 border-t border-border/50">
-                <Link to="/login" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Button variant="outline" className="w-full">
-                    Sign In
-                  </Button>
-                </Link>
-                <Link to="/demo" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Button variant="default" className="w-full">
-                    Request Demo
-                  </Button>
-                </Link>
-              </div>
             </div>
           </div>
         )}
