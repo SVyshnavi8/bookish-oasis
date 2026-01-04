@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-secondary/50 via-background to-background" />
 
       <div className="editorial-container relative z-10 w-full">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center pt-16 md:pt-0">
 
           {/* ================= CONTENT ================= */}
           <div

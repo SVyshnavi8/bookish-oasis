@@ -215,12 +215,12 @@ const Index = () => {
         <div className="editorial-container">
           <h2
             data-aos="fade-up"
-            className="editorial-subheadline font-semibold text-center mb-10 whitespace-nowrap"
+            className="editorial-subheadline font-semibold text-center mb-10"
           >
             Turning digital strategy into measurable, real-world impact
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-12 lg:gap-x-16 gap-y-8 md:gap-y-12 max-w-5xl mx-auto">
             <div data-aos="fade-right" data-aos-delay="100" className="flex items-start gap-4 group">
               <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center font-semibold text-primary">A</div>
               <div>

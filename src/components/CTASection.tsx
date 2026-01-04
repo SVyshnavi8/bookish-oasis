@@ -31,17 +31,10 @@ const CTASection = ({
             {title}
           </h2>
 
-          {/* Description — forced two lines */}
-       <div className="editorial-body max-w-2xl mx-auto text-center leading-snug">
-  <div className="flex flex-col items-center gap-1">
-    <span>
-      Whether you're focused on access, outreach, discovery, or insight,
-    </span>
-    <span className="whitespace-nowrap">
-      LibraryOne partners with libraries to support meaningful outcomes for patrons and communities.
-    </span>
-  </div>
-</div>
+          {/* Description */}
+          <p className="editorial-body max-w-2xl mx-auto text-center leading-snug">
+            {description}
+          </p>
 
 
 

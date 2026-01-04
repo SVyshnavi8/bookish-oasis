@@ -16,7 +16,7 @@ const Footer = () => {
     <footer className="bg-foreground text-background">
       <div className="editorial-container pt-6 pb-8">
 
-        <div className="grid lg:grid-cols-3 gap-10">
+        <div className="grid lg:grid-cols-3 gap-8 md:gap-10">
 
           {/* Left: Brand & Tagline */}
           <div className="space-y-2">

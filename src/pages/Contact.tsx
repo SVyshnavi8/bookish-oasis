@@ -9,7 +9,7 @@ const Contact = () => (
       data-aos="fade-up"
     >
       <div className="editorial-container">
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
 
           {/* LEFT INFO */}
           <div data-aos="fade-right" data-aos-delay="100">

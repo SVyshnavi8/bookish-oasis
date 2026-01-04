@@ -35,14 +35,14 @@ const Header = () => {
     >
       <nav className="editorial-container">
         {/* REDUCED HEADER HEIGHT */}
-        <div className="flex items-center justify-between h-[64px] md:h-[80px]">
+        <div className="flex items-center justify-between h-[60px] sm:h-[64px] md:h-[80px]">
 
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
               src={logoHeader}
               alt="LibraryOne"
-              className="h-24 md:h-28 w-auto"
+              className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto"
             />
           </Link>
 

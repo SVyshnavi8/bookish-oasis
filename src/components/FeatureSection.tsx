@@ -25,7 +25,7 @@ const FeatureSection = ({
     <section className="editorial-section">
       <div className="editorial-container">
         <div
-          className={`grid lg:grid-cols-2 gap-12 lg:gap-20 items-center ${
+          className={`grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-20 items-center ${
             reverse ? "lg:grid-flow-dense" : ""
           }`}
         >
