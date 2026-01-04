@@ -6,29 +6,6 @@ import libraryInterior from "@/assets/library-interior.jpg";
 import readingRoom from "@/assets/reading-room.jpg";
 
 const About = () => {
-  const values = [
-    {
-      icon: Heart,
-      title: "Passion for Reading",
-      description: "We believe in the transformative power of reading. Every feature we build is designed to remove barriers between readers and great content.",
-    },
-    {
-      icon: Target,
-      title: "Library-First",
-      description: "Libraries are at the heart of communities. We build tools that empower libraries to serve their patrons better than ever before.",
-    },
-    {
-      icon: Users,
-      title: "Community Focused",
-      description: "We work closely with librarians, publishers, and readers to create solutions that truly meet their needs.",
-    },
-    {
-      icon: Lightbulb,
-      title: "Continuous Innovation",
-      description: "The digital landscape evolves constantly. We stay ahead by investing in research and development.",
-    },
-  ];
-
   return (
     <MainLayout>
       {/* Hero */}
@@ -44,7 +21,7 @@ const About = () => {
               <span className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">One</span>
             </h1>
             <p 
-              className="editorial-body text-xl max-w-3xl"
+              className="text-lg md:text-xl font-semibold text-foreground tracking-wide mt-8"
               data-aos="fade-up"
               data-aos-delay="300"
             >
@@ -55,25 +32,27 @@ const About = () => {
       </section>
 
       {/* Vision */}
-      <section className="editorial-section bg-gradient-to-r from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5 py-16">
-        <div className="editorial-container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 
-              className="editorial-subheadline mb-6"
-              data-aos="fade-up"
-            >
-              Vision
-            </h2>
-            <p 
-              className="editorial-body text-xl leading-relaxed max-w-3xl mx-auto text-foreground/90"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              We envision a future where every library—regardless of size or budget—can reach every patron, support their community’s goals, and remain an essential civic institution in the digital age.
-            </p>
-          </div>
-        </div>
-      </section>
+<section className="editorial-section bg-gradient-to-r from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5 py-16">
+  <div className="editorial-container">
+    <div className="max-w-5xl mx-auto text-center">
+      <h2 
+        className="editorial-subheadline font-semibold text-balance text-center mb-6"
+        data-aos="fade-up"
+      >
+        Vision
+      </h2>
+
+      <p 
+        className="editorial-body text-xl leading-relaxed max-w-5xl mx-auto text-foreground/90"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        We envision a future where every library—regardless of size or budget—can reach every patron, support their community’s goals, and remain an essential civic institution in the digital age.
+      </p>
+    </div>
+  </div>
+</section>
+
 
       {/* Story */}
       <section className="editorial-section bg-secondary/20 py-16">
@@ -81,7 +60,7 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="space-y-6">
               <h2 
-                className="editorial-subheadline"
+                className="editorial-subheadline font-semibold text-balance"
                 data-aos="fade-right"
               >
                 Our Story
@@ -125,7 +104,7 @@ const About = () => {
         <div className="editorial-container">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h2 
-              className="editorial-subheadline mb-6"
+              className="editorial-subheadline font-semibold text-balance text-center mb-6"
               data-aos="fade-up"
             >
               Continuity You Can Trust
@@ -156,7 +135,7 @@ const About = () => {
             className="max-w-4xl mx-auto text-center space-y-6 mb-16"
             data-aos="fade-up"
           >
-            <h2 className="editorial-subheadline mb-4">Our Mission</h2>
+            <h2 className="editorial-subheadline font-semibold text-balance text-center mb-4">Our Mission</h2>
             <p className="editorial-body text-xl leading-relaxed max-w-3xl mx-auto text-foreground/90">
               We empower libraries with trusted digital content and services that help them serve patrons equitably, deepen community engagement, and support lifelong learning.
             </p>
@@ -168,10 +147,7 @@ const About = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h2 className="editorial-subheadline mb-4">Our Team</h2>
-            <p className="editorial-body max-w-2xl mx-auto text-muted-foreground">
-              A group of experienced professionals committed to libraries, publishers, and sustainable digital access.
-            </p>
+            <h2 className="editorial-subheadline font-semibold text-balance text-center mb-4">Our Team</h2>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -235,44 +211,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Values */}
-      <section className="editorial-section py-16">
-        <div className="editorial-container">
-          <div 
-            className="text-center mb-12"
-            data-aos="fade-up"
-          >
-            <h2 className="editorial-subheadline mb-4">What We Believe</h2>
-            <p className="editorial-body max-w-2xl mx-auto">
-              Our values guide every decision we make and every product we build.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-10">
-            {values.map((value, index) => (
-              <div 
-                key={value.title} 
-                className="flex gap-6"
-                data-aos="fade-up"
-                data-aos-delay={100 + index * 150}
-              >
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
-                    <value.icon className="w-6 h-6 text-[#2aa6a6]" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-xl font-serif font-medium mb-2">{value.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {value.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Leadership Quote */}
       <section className="editorial-section bg-foreground text-background py-16">
         <div className="editorial-container">
@@ -295,7 +233,7 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 
-                className="editorial-subheadline"
+                className="editorial-subheadline font-semibold text-balance"
                 data-aos="fade-left"
               >
                 Looking Ahead

@@ -21,25 +21,23 @@ const Footer = () => {
           {/* Left: Brand & Tagline */}
           <div className="space-y-2">
             <Link to="/" className="inline-block -mt-2 md:-mt-1">
-  <img
-    src={logoHeader}
-    alt="LibraryOne"
-    className="h-20 md:h-24 lg:h-28 w-auto"
-  />
-</Link>
+              <img
+                src={logoHeader}
+                alt="LibraryOne"
+                className="h-20 md:h-24 lg:h-28 w-auto"
+              />
+            </Link>
 
             <p className="text-sm md:text-base text-background/70 leading-relaxed max-w-xs -mt-2">
-
-
-              Empowering libraries with innovative digital solutions 
+              Empowering libraries with innovative digital solutions
             </p>
           </div>
 
           {/* Center spacer */}
           <div className="hidden lg:block" />
 
-          {/* Right: Contact + Social */}
-          <div className="lg:pl-16 flex flex-col gap-4">
+          {/* Right: Contact + Social (balanced position) */}
+          <div className="lg:pl-6 lg:ml-auto flex flex-col gap-4 max-w-sm">
 
             {/* Contact Info */}
             <Link
@@ -75,42 +73,11 @@ const Footer = () => {
 
             {/* Social Icons */}
             <div className="flex gap-4 pt-2">
-              <a
-                href="#"
-                aria-label="Facebook"
-                className="text-background/60 hover:text-background transition-colors"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                aria-label="Twitter"
-                className="text-background/60 hover:text-background transition-colors"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                aria-label="LinkedIn"
-                className="text-background/60 hover:text-background transition-colors"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-    href="#"
-    aria-label="Instagram"
-    className="text-background/60 hover:text-background transition-colors"
-  >
-    <Instagram className="w-5 h-5" />
-  </a>
-
-  <a
-    href="#"
-    aria-label="YouTube"
-    className="text-background/60 hover:text-background transition-colors"
-  >
-    <Youtube className="w-5 h-5" />
-  </a>
+              <a className="text-background/60 hover:text-background"><Facebook className="w-5 h-5" /></a>
+              <a className="text-background/60 hover:text-background"><Twitter className="w-5 h-5" /></a>
+              <a className="text-background/60 hover:text-background"><Linkedin className="w-5 h-5" /></a>
+              <a className="text-background/60 hover:text-background"><Instagram className="w-5 h-5" /></a>
+              <a className="text-background/60 hover:text-background"><Youtube className="w-5 h-5" /></a>
             </div>
 
           </div>
@@ -128,6 +95,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
+
       </div>
     </footer>
   );

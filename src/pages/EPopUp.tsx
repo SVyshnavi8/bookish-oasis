@@ -75,14 +75,9 @@ const EPopUp = () => {
       >
         <div className="editorial-container">
           <div className="max-w-4xl mx-auto text-center space-y-3 py-2">
-            <h2
-              className="editorial-subheadline"
+            <h2 className="editorial-subheadline font-semibold text-balance"
               data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              What Is ePopUp Library
-            </h2>
-
+              data-aos-delay="200">What Is ePopUp Library?</h2>
             <p
               className="editorial-body text-lg leading-relaxed max-w-3xl mx-auto"
               data-aos="fade-up"
@@ -92,39 +87,45 @@ const EPopUp = () => {
               create temporary or location-based digital collections that introduce
               people to library resources, services, and stories—often for the first time.
             </p>
-            <p
-              className="editorial-body text-2xl md:text-3xl text-center mt-16 font-semibold max-w-4xl mx-auto text-black"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              It is designed not just to provide access, but to spark awareness,
-              connection, and participation
-            </p>
+            <div className="mt-8 text-center">
+              <p className="text-lg md:text-xl font-semibold text-foreground tracking-wide"
+                data-aos="fade-up"
+                data-aos-delay="600">
+                It is designed not just to provide access, but to spark awareness,
+                connection, and participation
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
 
       {/* How It Works */}
+      {/* How It Works */}
       <section
         className="editorial-section bg-secondary/20 py-12 md:py-16"
         data-aos="fade-up"
       >
-        <div className="editorial-container w-full">
-          {/* Section Title - Centered across full width */}
-          <h2
-            className="editorial-subheadline mb-12 text-center max-w-4xl mx-auto"
-            data-aos="fade-up"
-          >
-            How It Works
-          </h2>
+        <div className="editorial-container">
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-
             {/* LEFT : TEXT */}
-            <div className="flex flex-col">
-              <ul className="space-y-8">
-                <li className="flex items-start gap-6" data-aos="fade-right" data-aos-delay="100">
+            <div className="flex flex-col space-y-8">
+
+              {/* Section Title – centered within LEFT column */}
+              <h2
+                className="editorial-subheadline font-semibold text-balance text-center"
+                data-aos="fade-up"
+              >
+                How It Works
+              </h2>
+
+              <ul className="space-y-6">
+                <li
+                  className="flex items-start gap-5"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                >
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
                     <Sparkles className="w-6 h-6 text-[#2aa6a6]" />
                   </div>
@@ -133,7 +134,11 @@ const EPopUp = () => {
                   </p>
                 </li>
 
-                <li className="flex items-start gap-6" data-aos="fade-right" data-aos-delay="200">
+                <li
+                  className="flex items-start gap-5"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
                     <QrCode className="w-6 h-6 text-[#2aa6a6]" />
                   </div>
@@ -142,7 +147,11 @@ const EPopUp = () => {
                   </p>
                 </li>
 
-                <li className="flex items-start gap-6" data-aos="fade-left" data-aos-delay="300">
+                <li
+                  className="flex items-start gap-5"
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                >
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
                     <LinkIcon className="w-6 h-6 text-[#2aa6a6]" />
                   </div>
@@ -151,7 +160,11 @@ const EPopUp = () => {
                   </p>
                 </li>
 
-                <li className="flex items-start gap-6" data-aos="fade-left" data-aos-delay="400">
+                <li
+                  className="flex items-start gap-5"
+                  data-aos="fade-left"
+                  data-aos-delay="400"
+                >
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
                     <Users className="w-6 h-6 text-[#2aa6a6]" />
                   </div>
@@ -162,8 +175,12 @@ const EPopUp = () => {
               </ul>
             </div>
 
-            {/* RIGHT : IMAGE */}
-            <div className="relative w-full h-[420px] md:h-[500px] rounded-3xl overflow-hidden shadow-lg order-first lg:order-last" data-aos="zoom-in" data-aos-delay="200">
+            {/* RIGHT : IMAGE – slightly reduced height */}
+            <div
+              className="relative w-full h-[320px] md:h-[380px] rounded-3xl overflow-hidden shadow-lg order-first lg:order-last"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
               <img
                 src="https://images.prismic.io/msj-dev/b40a773a-f054-4a89-bb89-39907fa9d4e8_art-gallery-visitor-scanning-qr-code-2022-03-31-17-39-39-utc.jpg?auto=compress,format&w=1200"
                 alt="Visitor scanning a QR code poster to access digital content in a public space"
@@ -172,17 +189,13 @@ const EPopUp = () => {
             </div>
 
           </div>
-
-          {/* Punch line - Full-width centered below everything */}
-          <p
-            className="editorial-body text-2xl md:text-3xl text-center mt-16 font-semibold max-w-4xl mx-auto text-black"
-            data-aos="fade-up"
-            data-aos-delay="600"
-          >
-            Simple to deploy. Easy to engage. Purpose-built for outreach.
-          </p>
         </div>
       </section>
+
+
+      <p className="text-lg md:text-xl font-semibold text-foreground tracking-wide text-center mt-8">
+        Simple to deploy. Easy to engage. Purpose-built for outreach.
+      </p>
 
 
       {/* Meet people where they are */}
@@ -193,17 +206,17 @@ const EPopUp = () => {
         <div className="editorial-container w-full">
           {/* Section Title */}
           <h2
-            className="editorial-subheadline text-center mb-12 max-w-4xl mx-auto"
+            className="editorial-subheadline font-semibold text-balance text-center mb-10"
             data-aos="fade-up"
           >
             Meet people where they are
           </h2>
 
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-            {/* LEFT: IMAGE */}
+            {/* LEFT: IMAGE – further reduced height */}
             <div
-              className="relative w-full h-[500px] md:h-[600px] rounded-3xl overflow-hidden shadow-xl"
+              className="relative w-full h-[360px] md:h-[420px] rounded-3xl overflow-hidden shadow-xl"
               data-aos="zoom-in"
               data-aos-delay="300"
             >
@@ -215,7 +228,8 @@ const EPopUp = () => {
             </div>
 
             {/* RIGHT: TEXT */}
-            <div className="space-y-12">
+            <div className="space-y-8">
+
               <p
                 className="editorial-body text-lg text-center max-w-3xl mx-auto lg:text-left lg:mx-0"
                 data-aos="fade-up"
@@ -223,7 +237,7 @@ const EPopUp = () => {
               >
                 Libraries increasingly serve communities beyond their buildings.
                 ePopUp Library enables libraries to extend their presence into these
-                spaces with purpose and clarity
+                spaces with purpose and clarity.
               </p>
 
               <p
@@ -234,9 +248,13 @@ const EPopUp = () => {
                 With ePopUp Library, libraries can:
               </p>
 
-              {/* Staggered benefits */}
-              <div className="space-y-10">
-                <div className="flex items-center gap-6 max-w-lg" data-aos="fade-right" data-aos-delay="400">
+              {/* Staggered benefits – tightened but readable */}
+              <div className="space-y-6">
+                <div
+                  className="flex items-center gap-5 max-w-lg"
+                  data-aos="fade-right"
+                  data-aos-delay="400"
+                >
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
                     <Target className="w-6 h-6 text-[#2aa6a6]" />
                   </div>
@@ -245,7 +263,11 @@ const EPopUp = () => {
                   </p>
                 </div>
 
-                <div className="flex items-center gap-6 max-w-lg ml-auto" data-aos="fade-left" data-aos-delay="500">
+                <div
+                  className="flex items-center gap-5 max-w-lg ml-auto"
+                  data-aos="fade-left"
+                  data-aos-delay="500"
+                >
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
                     <Users2 className="w-6 h-6 text-[#2aa6a6]" />
                   </div>
@@ -254,7 +276,11 @@ const EPopUp = () => {
                   </p>
                 </div>
 
-                <div className="flex items-center gap-6 max-w-lg" data-aos="fade-right" data-aos-delay="600">
+                <div
+                  className="flex items-center gap-5 max-w-lg"
+                  data-aos="fade-right"
+                  data-aos-delay="600"
+                >
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
                     <Building2 className="w-6 h-6 text-[#2aa6a6]" />
                   </div>
@@ -263,7 +289,11 @@ const EPopUp = () => {
                   </p>
                 </div>
 
-                <div className="flex items-center gap-6 max-w-lg ml-auto" data-aos="fade-left" data-aos-delay="700">
+                <div
+                  className="flex items-center gap-5 max-w-lg ml-auto"
+                  data-aos="fade-left"
+                  data-aos-delay="700"
+                >
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
                     <Handshake className="w-6 h-6 text-[#2aa6a6]" />
                   </div>
@@ -272,11 +302,14 @@ const EPopUp = () => {
                   </p>
                 </div>
               </div>
+
             </div>
 
           </div>
         </div>
       </section>
+
+
 
 
       {/* From discovery to membership */}
@@ -285,7 +318,7 @@ const EPopUp = () => {
           <div className="max-w-6xl mx-auto text-center">
 
             {/* Heading */}
-            <h2 className="editorial-subheadline mb-6" data-aos="fade-up">
+            <h2 className="editorial-subheadline font-semibold text-balance text-center mb-10" data-aos="fade-up">
               From discovery to membership
             </h2>
 
@@ -331,25 +364,22 @@ const EPopUp = () => {
               </div>
 
             </div>
-
-            {/* Closing statement */}
-            <p
-              className="editorial-body text-2xl md:text-3xl text-center mt-16 font-semibold max-w-4xl mx-auto text-black"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              ePopUp Library doesn’t replace the physical library — it helps bring people to it
-            </p>
           </div>
         </div>
       </section>
+
+      <p className="text-lg md:text-xl font-semibold text-foreground tracking-wide text-center mt-8"
+        data-aos="fade-up"
+        data-aos-delay="600">
+        ePopUp Library doesn’t replace the physical library — it helps bring people to it
+      </p>
 
 
       {/* Case Studies - New Styling: Inline Image + Text (No Cards) */}
       <section className="editorial-section bg-secondary/10" data-aos="fade-up">
         <div className="editorial-container">
           <h2
-            className="editorial-subheadline text-center mb-12"
+            className="editorial-subheadline font-semibold text-balance text-center mb-10"
             data-aos="fade-up"
           >
             Case Studies
@@ -454,7 +484,7 @@ const EPopUp = () => {
 
         <div className="editorial-container text-center relative z-10">
           <h2
-            className="editorial-subheadline mb-4 text-balance"
+            className="editorial-subheadline font-semibold text-balance text-center mb-6"
             data-aos="fade-up"
             data-aos-delay="200"
           >

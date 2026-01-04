@@ -109,381 +109,369 @@ const Boundless = () => {
   return (
     <MainLayout>
       {/* Hero */}
-     <section
-  className="pt-20 pb-12 md:pt-28 md:pb-16"
-  data-aos="fade-up"
->
-  <div className="editorial-container">
-    <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-      
-      {/* Left Content */}
-      <div
-        className="space-y-6"
-        data-aos="fade-right"
-        data-aos-delay="200"
+      <section
+        className="pt-20 pb-12 md:pt-28 md:pb-16"
+        data-aos="fade-up"
       >
-        <span className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium">
-          Boundless
-        </span>
+        <div className="editorial-container">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-        <h1 className="editorial-headline mb-4">
-          The Digital Library Platform —
-          <span className="block font-serif italic bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">
-            Built for Libraries
-          </span>
-        </h1>
+            {/* Left Content */}
+            <div
+              className="space-y-6"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
+              <span className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium">
+                Boundless
+              </span>
 
-        <p className="editorial-body">
-          Boundless gives libraries a better way forward—with more control,
-          deeper discounts, and a platform built for libraries, not against
-          them. Given your patrons an extensive digital collection of eBooks
-          and audiobooks, from trending bestsellers to timeless classics, plus
-          activities, customizable reading programs, and more.
-        </p>
+              <h1 className="editorial-headline mb-4">
+                The Digital library platform —
+                <span className="block font-serif italic bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">
+                  Built for libraries
+                </span>
+              </h1>
 
-        <div className="flex flex-wrap gap-4 pt-1">
-          <Link to="/demo">
-            <Button variant="hero" size="lg">
-              Get Started (Schedule a Free Demo)
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
-          </Link>
+              <p className="editorial-body">
+                Boundless gives libraries a better way forward—with more control,
+                deeper discounts, and a platform built for libraries, not against
+                them. Given your patrons an extensive digital collection of eBooks
+                and audiobooks, from trending bestsellers to timeless classics, plus
+                activities, customizable reading programs, and more.
+              </p>
+
+              <div className="flex flex-wrap gap-4 pt-1">
+                <Link to="/demo">
+                  <Button variant="hero" size="lg">
+                    Request Demo
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Image */}
+            <div
+              className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <img
+                src={boundlessVisual}
+                alt="Boundless digital library platform experience"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+          </div>
         </div>
-      </div>
-
-      {/* Right Image */}
-      <div
-        className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg"
-        data-aos="zoom-in"
-        data-aos-delay="400"
-      >
-        <img
-          src={boundlessVisual}
-          alt="Boundless digital library platform experience"
-          className="w-full h-full object-cover"
-        />
-      </div>
-
-    </div>
-  </div>
-</section>
+      </section>
 
 
 
       {/* Designed for Libraries */}
       <section
-  className="editorial-section bg-secondary/10 py-10"
-  data-aos="fade-up"
->
-  <div className="editorial-container">
+        className="editorial-section bg-secondary/10 py-10"
+        data-aos="fade-up"
+      >
+        <div className="editorial-container">
 
-    {/* Heading */}
-    <div className="text-center mb-6">
-      <h2 className="editorial-subheadline font-semibold text-balance">
-        Designed for Libraries
-      </h2>
-    </div>
+          {/* Heading */}
+          <div className="text-center mb-6">
+            <h2 className="editorial-subheadline font-semibold text-balance">
+              Designed for Libraries
+            </h2>
+          </div>
 
-    {/* Description */}
-    <div className="max-w-3xl mx-auto text-center mb-8">
-      <p className="editorial-body text-base md:text-lg">
-        Boundless enables access to ebooks, audiobooks, videos, video books, and other digital formats through an intuitive, library-branded experience.
-      </p>
-    </div>
+          {/* Description */}
+          <div className="max-w-3xl mx-auto text-center mb-8">
+            <p className="editorial-body text-base md:text-lg">
+              Boundless enables access to ebooks, audiobooks, videos, video books, and other digital formats through an intuitive, library-branded experience.
+            </p>
+          </div>
 
-    {/* Images Gallery */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-  {[
-    img1,
-    img2,
-    img3,
-    img4,
-    img5,
-    img6,
-  ].map((src, index) => (
-    <div
-      key={index}
-      className="aspect-[4/3] rounded-2xl overflow-hidden shadow-md"
-      data-aos="fade-up"
-      data-aos-delay={index * 80}
-    >
-      <img
-        src={src}
-        alt={`Boundless feature ${index + 1}`}
-        className="w-full h-full object-cover"
-      />
-    </div>
-  ))}
-</div>
+          {/* Images Gallery */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {[
+              img1,
+              img2,
+              img3,
+              img4,
+              img5,
+              img6,
+            ].map((src, index) => (
+              <div
+                key={index}
+                className="aspect-[4/3] rounded-2xl overflow-hidden shadow-md"
+                data-aos="fade-up"
+                data-aos-delay={index * 80}
+              >
+                <img
+                  src={src}
+                  alt={`Boundless feature ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
 
 
-  </div>
-</section>
+        </div>
+      </section>
 
 
       {/* Why Boundless - 3 Main Pillars */}
-<section
-  className="editorial-section py-14 md:py-16"
-  data-aos="fade-up"
->
-  <div className="editorial-container">
+      <section className="editorial-section" data-aos="fade-up">
+        <div className="editorial-container">
+          <div className="text-center mb-16">
+            <h2 className="editorial-subheadline font-semibold text-balance mb-4">
+              Why Boundless?
+            </h2>
+          </div>
 
-    {/* Section Heading */}
-    <div className="text-center mb-14">
-      <h2 className="editorial-subheadline font-semibold text-balance text-3xl md:text-4xl">
-        Why Boundless?
-      </h2>
-    </div>
+          <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+            {[
+              {
+                num: "1",
+                title: "Reclaim Your Digital Identity",
+                desc: "Boundless keeps your library at the forefront. Your patrons see your branding — so your organization stays visible and in control. Libraries deserve recognition in the digital world, and Boundless makes that possible.",
+              },
+              {
+                num: "2",
+                title: "Unlock Budget Relief",
+                desc: "Boundless gives you access to discounted digital content, including premium eBooks and audiobooks. Stop paying more for less flexibility — save more with Boundless and reinvest in your library.",
+              },
+              {
+                num: "3",
+                title: "Meet Patrons Where They Are",
+                desc: "With Boundless, your digital collection goes wherever your community goes. It integrates with solutions like Palace, Solus, and your ILS so you can offer seamless access on your terms.",
+              },
+            ].map((pillar, index) => (
+              <div
+                key={index}
+                className="space-y-6 text-center md:text-left"
+                data-aos="fade-up"
+                data-aos-delay={index * 200}
+              >
+                <div className="text-5xl font-bold bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">
+                  {pillar.num}
+                </div>
 
-    {/* Pillars Grid */}
-    <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-      {[
-        {
-          title: "Reclaim Your Digital Identity",
-          subtitle: "Keep Your Library Front and Center",
-          desc: "Boundless keeps your library at the forefront. Your patrons see your branding — so your organization stays visible and in control. Libraries deserve recognition in the digital world, and Boundless makes that possible.",
-        },
-        {
-          title: "Unlock Budget Relief",
-          subtitle: "Do More with Your Digital Budget",
-          desc: "Boundless gives you access to discounted digital content, including premium eBooks and audiobooks. Stop paying more for less flexibility — save more with Boundless and reinvest in your library.",
-        },
-        {
-          title: "Meet Patrons Where They Are",
-          subtitle: "Seamless Access, On Your Terms",
-          desc: "With Boundless, your digital collection goes wherever your community goes. It integrates with solutions like Palace, Solus, and your ILS so you can offer seamless access on your terms.",
-        },
-      ].map((pillar, index) => (
-        <div
-          key={index}
-          className="space-y-4 text-center md:text-left"
-          data-aos="fade-up"
-          data-aos-delay={index * 120}
-        >
-          {/* Step 1: Main pillar title */}
-          <h3 className="font-serif font-medium text-xl md:text-2xl">
-            {pillar.title}
-          </h3>
+                <h3 className="text-2xl font-serif font-medium">
+                  {pillar.title}
+                </h3>
 
-          {/* Step 2: Supporting subtitle */}
-          <h4 className="font-medium text-base md:text-lg text-foreground/80">
-            {pillar.subtitle}
-          </h4>
-
-          {/* Step 3: Description */}
-          <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-            {pillar.desc}
-          </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  {pillar.desc}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
+      </section>
 
-  </div>
-</section>
 
 
 
       {/* Key Features */}
       <section
-  className="editorial-section bg-secondary/20 py-12 md:py-14"
-  data-aos="fade-up"
->
-  <div className="editorial-container">
-    
-    {/* Section Header */}
-    <div className="text-center mb-12">
-      <h2 className="editorial-subheadline font-semibold text-balance mb-4">
-        Everything You Need in One Platform
-      </h2>
+        className="editorial-section bg-secondary/20 py-12 md:py-14"
+        data-aos="fade-up"
+      >
+        <div className="editorial-container">
 
-      <p className="editorial-body text-lg max-w-4xl mx-auto leading-relaxed">
-        From migration to engagement, Boundless gives you the tools to build,
-        manage, and grow a powerful digital collection that truly belongs to
-        your library.
-      </p>
-    </div>
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <h2 className="editorial-subheadline font-semibold text-balance mb-4">
+              Everything You Need in One Platform
+            </h2>
 
-    {/* Features Grid */}
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      {keyFeatures.map((feature, index) => (
-        <div
-          key={feature.title}
-          className="text-center"
-          data-aos="fade-up"
-          data-aos-delay={index * 80}
-        >
-          <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center mb-5">
-            <feature.icon className="w-8 h-8 text-[#2aa6a6]" />
+            <p className="editorial-body text-lg max-w-4xl mx-auto leading-relaxed">
+              From migration to engagement, Boundless gives you the tools to build,
+              manage, and grow a powerful digital collection that truly belongs to
+              your library.
+            </p>
           </div>
 
-          <h3 className="text-lg font-serif font-medium mb-2">
-            {feature.title}
-          </h3>
+          {/* Features Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {keyFeatures.map((feature, index) => (
+              <div
+                key={feature.title}
+                className="text-center"
+                data-aos="fade-up"
+                data-aos-delay={index * 80}
+              >
+                <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center mb-5">
+                  <feature.icon className="w-8 h-8 text-[#2aa6a6]" />
+                </div>
 
-          <p className="text-muted-foreground leading-relaxed text-sm">
-            {feature.description}
-          </p>
+                <h3 className="text-lg font-serif font-medium mb-2">
+                  {feature.title}
+                </h3>
+
+                <p className="text-muted-foreground leading-relaxed text-sm">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
         </div>
-      ))}
-    </div>
-
-  </div>
-</section>
+      </section>
 
 
       {/* For Patrons - With Intro Paragraph */}
-<section
-  className="editorial-section bg-secondary/10 py-12 md:py-14"
-  data-aos="fade-up"
->
-  <div className="editorial-container">
+      <section
+        className="editorial-section bg-secondary/10 py-12 md:py-14"
+        data-aos="fade-up"
+      >
+        <div className="editorial-container">
 
-    {/* Section Heading */}
-    <div className="text-center mb-8">
-      
-      <h2 className="editorial-subheadline font-semibold text-balance">
-        For Patrons
-      </h2>
-    </div>
+          {/* Section Heading */}
+          <div className="text-center mb-8">
 
-    {/* Intro Paragraph */}
-    
-
-    {/* Patron Benefits Grid */}
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-      {patronBenefits.map((benefit, index) => (
-        <div
-          key={benefit.title}
-          className="space-y-4 text-center"
-          data-aos="fade-up"
-          data-aos-delay={index * 80}
-        >
-          {/* Image */}
-          <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-md mx-auto max-w-md">
-            <img
-              src={benefit.image}
-              alt={benefit.alt}
-              className="w-full h-full object-cover"
-            />
+            <h2 className="editorial-subheadline font-semibold text-balance">
+              A Delightful Patron Experience
+            </h2>
           </div>
 
-          {/* Title */}
-          <h3 className="text-lg font-serif font-medium">
-            {benefit.title}
-          </h3>
+          {/* Intro Paragraph */}
 
-          {/* Description */}
-          <p className="text-muted-foreground leading-relaxed text-sm px-3">
-            {benefit.description}
-          </p>
+
+          {/* Patron Benefits Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {patronBenefits.map((benefit, index) => (
+              <div
+                key={benefit.title}
+                className="space-y-4 text-center"
+                data-aos="fade-up"
+                data-aos-delay={index * 80}
+              >
+                {/* Image */}
+                <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-md mx-auto max-w-md">
+                  <img
+                    src={benefit.image}
+                    alt={benefit.alt}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Title */}
+                <h3 className="text-lg font-serif font-medium">
+                  {benefit.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-muted-foreground leading-relaxed text-sm px-3">
+                  {benefit.description}
+                </p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 text-center">
+            <p className="text-lg md:text-xl font-bold text-foreground leading-relaxed">
+              Built with library values at its core, Boundless supports access, privacy,usability,
+              <br />
+              and long-term stewardship while enabling libraries to expand their digital reach.
+            </p>
+          </div>
         </div>
-      ))}
-    </div>
-    <div className="mt-6 text-center">
-  <p className="text-lg md:text-xl font-bold text-foreground leading-relaxed">
-    Built with library values at its core, Boundless supports access, privacy,usability, 
-    <br />
-    and long-term stewardship while enabling libraries to expand their digital reach.
-  </p>
-</div>
+      </section>
 
+      {/* Boundless by LibraryOne - Replaced Reading Experience */}
+      <section className="editorial-section py-12" data-aos="fade-up">
+        <div className="editorial-container">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
+            {/* Image */}
+            <div
+              className="w-full max-w-xl"
+              data-aos="fade-right"
+            >
+              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src={digitalReading}
+                  alt="Person reading with Boundless"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
 
+            {/* Content */}
+            <div
+              className="max-w-xl space-y-4 pt-1"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
+              <h2 className="editorial-subheadline font-semibold text-balance">
+                Boundless
+              </h2>
 
-    
+              <p className="editorial-body">
+                Boundless represents continuity, focus, and accountability—supported
+                by leadership with deep experience in libraries, publishing, and
+                digital platforms.
+              </p>
 
-  </div>
-</section>
+              <h3 className="text-xl font-serif font-medium pt-2">
+                What libraries can expect:
+              </h3>
 
-{/* Boundless by LibraryOne - Replaced Reading Experience */}
-<section className="editorial-section py-12" data-aos="fade-up">
-  <div className="editorial-container">
-    <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+              <ul className="space-y-3 text-muted-foreground">
+                {[
+                  "Continued stability and support",
+                  "Leadership with deep library, publishing, and media experience",
+                  "A platform stewarded with long-term commitment",
+                  "Decisions guided by how libraries serve their communities",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 mt-2 rounded-full bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] flex-shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
 
-      {/* Image */}
-      <div
-        className="w-full max-w-xl"
-        data-aos="fade-right"
-      >
-        <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
-          <img
-            src={digitalReading}
-            alt="Person reading with Boundless"
-            className="w-full h-full object-cover"
-          />
+          {/* Section Closing Line */}
+          <div className="mt-8 text-center">
+            <p className="text-lg md:text-xl font-semibold text-foreground tracking-wide">
+              Same mission. Same platform. A renewed commitment to libraries
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
 
-      {/* Content */}
-      <div
-        className="max-w-xl space-y-4 pt-1"
-        data-aos="fade-left"
-        data-aos-delay="300"
+      {/* CTA – Full Background Image with Gradient */}
+      <section
+        className="relative editorial-section py-14 text-foreground bg-cover bg-center"
+        style={{
+          backgroundImage: `url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1800&q=80")`,
+        }}
+        data-aos="fade-up"
       >
-        <h2 className="editorial-subheadline font-semibold text-balance">
-          Boundless
-        </h2>
+        {/* Gradient overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background/90"></div>
 
-        <p className="editorial-body">
-          Boundless represents continuity, focus, and accountability—supported
-          by leadership with deep experience in libraries, publishing, and
-          digital platforms.
-        </p>
+        <div className="editorial-container text-center relative z-10">
+          <h2 className="editorial-subheadline font-semibold text-balance mb-8">
+            Ready for Boundless?
+          </h2>
 
-        <h3 className="text-xl font-serif font-medium pt-2">
-          What libraries can expect:
-        </h3>
-
-        <ul className="space-y-3 text-muted-foreground">
-          {[
-            "Continued stability and support",
-            "Leadership with deep library, publishing, and media experience",
-            "A platform stewarded with long-term commitment",
-            "Decisions guided by how libraries serve their communities",
-          ].map((item) => (
-            <li key={item} className="flex items-start gap-3">
-              <span className="w-1.5 h-1.5 mt-2 rounded-full bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] flex-shrink-0" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-
-    {/* Section Closing Line */}
-    <div className="mt-8 text-center">
-      <p className="text-lg md:text-xl font-semibold text-foreground tracking-wide">
-        Same mission. Same platform. A renewed commitment to libraries.
-      </p>
-    </div>
-  </div>
-</section>
-
-      {/* CTA */}
-<section
-  className="editorial-section bg-background text-foreground py-10"
-  data-aos="fade-up"
->
-  <div className="editorial-container text-center">
-    
-    <h2 className="editorial-subheadline font-semibold text-balance mb-6">
-        Ready for Boundless?
-      </h2>
-
-    <Link to="/demo">
-      <Button
-        variant="default"
-        size="lg"
-        className="inline-flex items-center gap-2"
-      >
-        Schedule Demo
-        <ArrowRight className="w-5 h-5" />
-      </Button>
-    </Link>
-
-  </div>
-</section>
-
+          <Link to="/contact">
+            <Button
+              variant="default"
+              size="lg"
+              className="inline-flex items-center gap-2 px-9"
+            >
+              Contact Us
+              <ArrowRight className="w-5 h-5" />
+            </Button>
+          </Link>
+        </div>
+      </section>
 
     </MainLayout>
   );

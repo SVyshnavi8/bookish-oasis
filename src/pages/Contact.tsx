@@ -4,28 +4,57 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 const Contact = () => (
   <MainLayout>
-    <section className="pt-32 pb-20 md:pt-40">
+    <section
+      className="pt-32 pb-20 md:pt-40"
+      data-aos="fade-up"
+    >
       <div className="editorial-container">
         <div className="grid lg:grid-cols-2 gap-16">
-          <div>
-            <h1 className="editorial-headline mb-6">Get in Touch</h1>
-            <p className="editorial-body mb-12">Have questions? We'd love to hear from you.</p>
+
+          {/* LEFT INFO */}
+          <div data-aos="fade-right" data-aos-delay="100">
+            <h1 className="editorial-headline mb-6">
+              Get in Touch
+            </h1>
+
+            <p
+              className="editorial-body mb-12"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Have questions? We'd love to hear from you.
+            </p>
+
             <div className="space-y-6">
-              <div className="flex gap-4">
+              <div
+                className="flex gap-4"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 <Mail className="w-5 h-5 text-[#2aa6a6] mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-medium">Email</p>
                   <p className="text-muted-foreground">info@libraryone.com</p>
                 </div>
               </div>
-              <div className="flex gap-4">
+
+              <div
+                className="flex gap-4"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <Phone className="w-5 h-5 text-[#2aa6a6] mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-medium">Phone</p>
                   <p className="text-muted-foreground">1-800-775-1800</p>
                 </div>
               </div>
-              <div className="flex gap-4">
+
+              <div
+                className="flex gap-4"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
                 <MapPin className="w-5 h-5 text-[#2aa6a6] mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-medium">Office</p>
@@ -37,8 +66,14 @@ const Contact = () => (
               </div>
             </div>
           </div>
-          <form className="space-y-5">
-            <div>
+
+          {/* FORM */}
+          <form
+            className="space-y-5"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <div data-aos="fade-up" data-aos-delay="300">
               <label className="block text-sm font-medium mb-2">Name</label>
               <input
                 type="text"
@@ -46,7 +81,26 @@ const Contact = () => (
                 className="w-full h-12 px-4 bg-secondary/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
               />
             </div>
-            <div>
+
+            <div data-aos="fade-up" data-aos-delay="350">
+              <label className="block text-sm font-medium mb-2">Organization</label>
+              <input
+                type="text"
+                placeholder="Your organization"
+                className="w-full h-12 px-4 bg-secondary/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
+              />
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="400">
+              <label className="block text-sm font-medium mb-2">Library</label>
+              <input
+                type="text"
+                placeholder="Library name"
+                className="w-full h-12 px-4 bg-secondary/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
+              />
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="450">
               <label className="block text-sm font-medium mb-2">Email</label>
               <input
                 type="email"
@@ -54,7 +108,8 @@ const Contact = () => (
                 className="w-full h-12 px-4 bg-secondary/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
               />
             </div>
-            <div>
+
+            <div data-aos="fade-up" data-aos-delay="500">
               <label className="block text-sm font-medium mb-2">Message</label>
               <textarea
                 rows={5}
@@ -62,10 +117,17 @@ const Contact = () => (
                 className="w-full p-4 bg-secondary/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20 resize-none"
               />
             </div>
-            <Button variant="hero" size="lg" className="w-full">
-              Send Message
-            </Button>
+
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="600"
+            >
+              <Button variant="hero" size="lg" className="w-full">
+                Send Message
+              </Button>
+            </div>
           </form>
+
         </div>
       </div>
     </section>
