@@ -189,7 +189,7 @@ const Index = () => {
               </h2>
             </div>
 
-            {/* Sub Heading */}
+            {/* Sub Heading  */}
             <h3
               data-aos="fade-up"
               data-aos-delay="200"
