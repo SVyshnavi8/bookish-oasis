@@ -24,7 +24,7 @@ const CTASection = ({
   return (
     <section className="py-12 md:py-16 bg-secondary/30">
       <div className="editorial-container">
-        <div className="max-w-3xl mx-auto text-center space-y-6">
+        <div className="max-w-3xl mx-auto text-center space-y-8">
 
           {/* Title */}
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-medium">

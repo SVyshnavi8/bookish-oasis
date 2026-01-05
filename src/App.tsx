@@ -8,6 +8,8 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import ScrollToTop from "@/components/ScrollToTop";
+
 import Index from "./pages/Index";
 import Browse from "./pages/Browse";
 import Solutions from "./pages/Solutions";
@@ -58,6 +60,7 @@ const App = () => {
 
         {/* Router for client-side routing */}
         <HashRouter>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/browse" element={<Browse />} />

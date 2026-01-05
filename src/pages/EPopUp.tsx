@@ -75,9 +75,9 @@ const EPopUp = () => {
       >
         <div className="editorial-container">
           <div className="max-w-4xl mx-auto text-center space-y-3 py-2">
-            <h2 className="editorial-subheadline font-semibold text-balance"
+            <h2 className="editorial-subheadline font-semibold text-balance mt-6"
               data-aos="fade-up"
-              data-aos-delay="200">What Is ePopUp Library?</h2>
+              data-aos-delay="200">What is ePopUp Library?</h2>
             <p
               className="editorial-body text-lg leading-relaxed max-w-3xl mx-auto"
               data-aos="fade-up"
@@ -87,7 +87,7 @@ const EPopUp = () => {
               create temporary or location-based digital collections that introduce
               people to library resources, services, and stories—often for the first time.
             </p>
-            <div className="mt-8 text-center">
+            <div className="mt-14 text-center">
               <p className="text-lg md:text-xl font-semibold text-foreground tracking-wide"
                 data-aos="fade-up"
                 data-aos-delay="600">
@@ -100,7 +100,6 @@ const EPopUp = () => {
       </section>
 
 
-      {/* How It Works */}
       {/* How It Works */}
       <section
         className="editorial-section bg-secondary/20 py-12 md:py-16"
@@ -117,7 +116,7 @@ const EPopUp = () => {
                 className="editorial-subheadline font-semibold text-balance text-center"
                 data-aos="fade-up"
               >
-                How It Works
+                How it works
               </h2>
 
               <ul className="space-y-6">
@@ -187,15 +186,14 @@ const EPopUp = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-
+          </div>
+          <div className="mt-12 text-center">
+            <p className="text-lg md:text-xl font-semibold text-foreground tracking-wide text-center mt-8">
+              Simple to deploy. Easy to engage. Purpose-built for outreach
+            </p>
           </div>
         </div>
       </section>
-
-
-      <p className="text-lg md:text-xl font-semibold text-foreground tracking-wide text-center mt-8">
-        Simple to deploy. Easy to engage. Purpose-built for outreach.
-      </p>
 
 
       {/* Meet people where they are */}
@@ -206,7 +204,7 @@ const EPopUp = () => {
         <div className="editorial-container w-full">
           {/* Section Title */}
           <h2
-            className="editorial-subheadline font-semibold text-balance text-center mb-10"
+            className="editorial-subheadline font-semibold text-balance text-center mb-14"
             data-aos="fade-up"
           >
             Meet people where they are
@@ -237,7 +235,7 @@ const EPopUp = () => {
               >
                 Libraries increasingly serve communities beyond their buildings.
                 ePopUp Library enables libraries to extend their presence into these
-                spaces with purpose and clarity.
+                spaces with purpose and clarity
               </p>
 
               <p
@@ -365,24 +363,25 @@ const EPopUp = () => {
 
             </div>
           </div>
+          <div className="mt-12 text-center">
+            <p className="text-lg md:text-xl font-semibold text-foreground tracking-wide text-center mt-8"
+              data-aos="fade-up"
+              data-aos-delay="600">
+              ePopUp Library doesn’t replace the physical library — it helps bring people to it
+            </p>
+          </div>
         </div>
       </section>
 
-      <p className="text-lg md:text-xl font-semibold text-foreground tracking-wide text-center mt-8"
-        data-aos="fade-up"
-        data-aos-delay="600">
-        ePopUp Library doesn’t replace the physical library — it helps bring people to it
-      </p>
-
 
       {/* Case Studies - New Styling: Inline Image + Text (No Cards) */}
-      <section className="editorial-section bg-secondary/10" data-aos="fade-up">
+      <section className="editorial-section bg-secondary/10 pt-8 pb-12" data-aos="fade-up">
         <div className="editorial-container">
           <h2
-            className="editorial-subheadline font-semibold text-balance text-center mb-10"
+            className="editorial-subheadline font-semibold text-balance text-center mb-14"
             data-aos="fade-up"
           >
-            Case Studies
+            Case studies
           </h2>
 
           <div className="space-y-16">
@@ -410,7 +409,7 @@ const EPopUp = () => {
 
                 <p className="editorial-body leading-relaxed text-muted-foreground">
                   Bringing digital collections to commuters on the MBTA with
-                  “Browse, Borrow, Board.”
+                  “Browse, Borrow, Board”
                 </p>
 
                 <a

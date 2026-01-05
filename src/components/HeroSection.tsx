@@ -31,9 +31,12 @@ const HeroSection = () => {
               >
                 Digital products and services that help libraries serve their
                 communities —
-                <span className="block font-serif italic bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">
+                <span className="block font-serif italic leading-[1.2] pb-1 
+                bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] 
+                bg-clip-text text-transparent">
                   Everywhere
                 </span>
+
               </h1>
 
               {/* Description */}
@@ -45,7 +48,7 @@ const HeroSection = () => {
                 LibraryOne is the independent home of Boundless and a growing
                 portfolio of digital platforms designed to expand access,
                 strengthen engagement, and support libraries in fulfilling their
-                role as essential community institutions.
+                role as essential community institutions
               </p>
 
               {/* CTAs */}

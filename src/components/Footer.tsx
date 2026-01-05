@@ -13,36 +13,33 @@ import logoHeader from "@/assets/logoheader.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground text-background">
+    <footer className="bg-foreground text-background text-sm font-body">
       <div className="editorial-container pt-6 pb-8">
 
-        <div className="grid lg:grid-cols-3 gap-8 md:gap-10">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-10 items-start">
 
           {/* Left: Brand & Tagline */}
           <div className="space-y-2">
-            <Link to="/" className="inline-block -mt-2 md:-mt-1">
+            <Link to="/" className="inline-block">
               <img
                 src={logoHeader}
                 alt="LibraryOne"
-                className="h-20 md:h-24 lg:h-28 w-auto"
+                className="h-28 md:h-32 lg:h-36 w-auto block"
               />
             </Link>
 
-            <p className="text-sm md:text-base text-background/70 leading-relaxed max-w-xs -mt-2">
+            <p className="text-background/70 leading-relaxed max-w-xs">
               Empowering libraries with innovative digital solutions
             </p>
           </div>
 
-          {/* Center spacer */}
-          <div className="hidden lg:block" />
-
-          {/* Right: Contact + Social (balanced position) */}
-          <div className="lg:pl-6 lg:ml-auto flex flex-col gap-4 max-w-sm">
+          {/* Right: Contact + Social */}
+          <div className="lg:pl-6 lg:ml-auto flex flex-col gap-4 max-w-sm mt-8">
 
             {/* Contact Info */}
             <Link
               to="/contact"
-              className="block space-y-2 text-sm group cursor-pointer"
+              className="block space-y-2 group cursor-pointer"
             >
               <p className="font-medium group-hover:text-background/90 transition-colors">
                 LibraryOne Digital Inc
@@ -71,20 +68,34 @@ const Footer = () => {
               </div>
             </Link>
 
-            {/* Social Icons */}
+            {/* Social Icons with Animation */}
             <div className="flex gap-4 pt-2">
-              <a className="text-background/60 hover:text-background"><Facebook className="w-5 h-5" /></a>
-              <a className="text-background/60 hover:text-background"><Twitter className="w-5 h-5" /></a>
-              <a className="text-background/60 hover:text-background"><Linkedin className="w-5 h-5" /></a>
-              <a className="text-background/60 hover:text-background"><Instagram className="w-5 h-5" /></a>
-              <a className="text-background/60 hover:text-background"><Youtube className="w-5 h-5" /></a>
+              {[Facebook, Twitter, Linkedin, Instagram, Youtube].map(
+                (Icon, index) => (
+                  <a
+                    key={index}
+                    href="#"
+                    className="
+                      cursor-pointer
+                      text-background/60
+                      transition-all duration-300 ease-out
+                      hover:text-background
+                      hover:-translate-y-1
+                      hover:scale-110
+                      hover:drop-shadow-[0_0_6px_rgba(76,201,192,0.6)]
+                    "
+                  >
+                    <Icon className="w-5 h-5" />
+                  </a>
+                )
+              )}
             </div>
 
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-6 pt-4 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-background/50">
+        <div className="mt-6 pt-4 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-3 text-background/50">
           <p>© 2025 LibraryOne. All rights reserved.</p>
           <div className="flex gap-5">
             <Link to="/privacy-policy" className="hover:text-background">

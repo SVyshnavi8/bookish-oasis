@@ -1,5 +1,7 @@
 import MainLayout from "@/layouts/MainLayout";
-import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import {
   BarChart3,
   TrendingUp,
@@ -12,59 +14,40 @@ import {
   Globe,
 } from "lucide-react";
 
-/* ---------- Motion presets ---------- */
-const fadeUp = {
-  hidden: { opacity: 0, y: 32 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.7, ease: "easeOut" },
+const tiles = [
+  {
+    icon: FileText,
+    title: "Turn data into stories that resonate",
+    description:
+      "Flexible reporting tools that allow libraries to design tables, charts, and visual outputs tailored to different audiences and use cases – Board & City Councils, Funding justifications, Strategic planning, and annual reporting.\n\nBy connecting performance data to outcomes, libraries can clearly articulate their value and needs",
   },
-};
-
-const fadeIn = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { duration: 0.8, ease: "easeOut" },
+  {
+    icon: Target,
+    title: "Measure what matters to your community",
+    description:
+      "Identify trends and outcomes that align with community goals:\n\n• Growth in digital lending\n• Changes in usage by audience level\n• Resource investment per capita\n• Longitudinal performance over time\n\nThese insights help libraries align services with community priorities and demonstrate responsiveness to changing needs",
   },
-};
+  {
+    icon: Lightbulb,
+    title: "From compliance to confidence",
+    description:
+      "By combining accurate data collection with powerful analysis and reporting, Bibliostat CollectConnect supports:\n\n• Evidence-based planning\n• Stronger funding narratives\n• Transparent accountability\n• Confident advocacy\n\nLibraries gain the ability to speak clearly and credibly about their impact—backed by data they trust",
+  },
+];
 
 const Bibliostat = () => {
-  const tiles = [
-    {
-      icon: FileText,
-      title: "Turn data into stories that resonate.",
-      description:
-        "Flexible reporting tools that allow libraries to design tables, charts, and visual outputs tailored to different audiences and use cases – Board & City Councils, Funding justifications, Strategic planning, and annual reporting.\n\nBy connecting performance data to outcomes, libraries can clearly articulate their value and needs.",
-    },
-    {
-      icon: Target,
-      title: "Measure what matters to your community.",
-      description:
-        "Identify trends and outcomes that align with community goals:\n\n• Growth in digital lending\n• Changes in usage by audience level\n• Resource investment per capita\n• Longitudinal performance over time\n\nThese insights help libraries align services with community priorities and demonstrate responsiveness to changing needs.",
-    },
-    {
-      icon: Lightbulb,
-      title: "From compliance to confidence.",
-      description:
-        "By combining accurate data collection with powerful analysis and reporting, Bibliostat Collect & Connect supports:\n\n• Evidence-based planning\n• Stronger funding narratives\n• Transparent accountability\n• Confident advocacy\n\nLibraries gain the ability to speak clearly and credibly about their impact—backed by data they trust.",
-    },
-  ];
-
   return (
     <MainLayout>
       {/* Hero */}
       <section className="pt-24 pb-16">
-        <motion.div
+        <div
           className="editorial-container grid lg:grid-cols-2 gap-10 items-center"
-          initial="hidden"
-          animate="visible"
-          variants={fadeUp}
+          data-aos="fade-up"
+          data-aos-duration="700"
         >
           <div className="space-y-5">
             <span className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium">
-              Bibliostat Collect & Connect
+              Bibliostat CollectConnect
             </span>
 
             <h1 className="editorial-headline">
@@ -74,59 +57,53 @@ const Bibliostat = () => {
             <p className="editorial-body">
               Comprehensive data collection, analysis, and reporting platform
               that helps libraries transform data into meaningful insight and
-              compelling stories.
+              compelling stories
             </p>
           </div>
 
-          <motion.div
-            variants={fadeIn}
+          <div
             className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg"
+            data-aos="fade"
+            data-aos-duration="800"
+            data-aos-delay="200"
           >
             <img
               src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80"
               alt="Library data analytics dashboard"
               className="w-full h-full object-cover"
             />
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </section>
 
       {/* Punch line */}
-      <motion.section
+      <section
         className="py-6 bg-secondary/10"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeIn}
+        data-aos="fade"
+        data-aos-duration="600"
       >
         <div className="editorial-container text-center">
           <p className="text-black font-bold text-xl">
-            Used by individual libraries, consortia, and State Library Agencies
+            Bibliostat CollectConnect supports the full data lifecycle—from survey collection and validation to peer comparison, trend analysis, and stakeholder-ready reporting
           </p>
         </div>
-      </motion.section>
+      </section>
 
       {/* Collect */}
-      <motion.section
-        className="py-12 bg-secondary/20"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-80px" }}
-        variants={fadeUp}
+      <section
+        className="pt-12 pb-20 bg-secondary/20"
+        data-aos="fade-up"
+        data-aos-duration="700"
       >
         <div className="editorial-container grid lg:grid-cols-2 gap-10 items-center">
           <div className="space-y-4">
-            <h2 className="editorial-subheadline">
+            <h2 className="editorial-subheadline font-semibold text-balance">
               Collect: Data Collection Made Reliable
             </h2>
 
             <p className="editorial-body">
               The Collect component provides a powerful, flexible survey
-              administration environment designed specifically for libraries.
-            </p>
-
-            <p className="editorial-body font-medium">
-              Key capabilities include:
+              administration environment designed specifically for libraries
             </p>
 
             <ul className="space-y-2 text-muted-foreground">
@@ -145,45 +122,40 @@ const Bibliostat = () => {
             </ul>
           </div>
 
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3 }}
-            className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg"
-          >
+          <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
             <img
               src="https://www.ala.org/sites/default/files/styles/image_gallery_sm/public/pla/content/data/benchmark/benchmarking1_327x250.png.webp"
               alt="Survey collection interface"
               className="w-full h-full object-cover"
             />
-          </motion.div>
+          </div>
         </div>
-      </motion.section>
+      </section>
+
 
       {/* Connect */}
-      <motion.section
+      <section
         className="py-12 bg-secondary/10"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
+        data-aos="fade-up"
+        data-aos-duration="700"
       >
         <div className="editorial-container grid lg:grid-cols-2 gap-10 items-center">
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3 }}
-            className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg"
-          >
+          <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
             <img
               src="https://cdnwebsite.databox.com/wp-content/uploads/2024/01/09012849/Screenshot-2024-01-09-at-09.28.22-1000x558.png"
               alt="Benchmark analytics"
               className="w-full h-full object-cover"
             />
-          </motion.div>
+          </div>
 
           <div className="space-y-4">
-            <h2 className="editorial-subheadline">
+            <h2 className="editorial-subheadline font-semibold text-balance">
               Connect: Analysis, Comparison, and Context
             </h2>
+
+            <p className="editorial-body mt-4">
+              The Connect component provides robust analytics, peer comparison tools, and reporting capabilities that help libraries interpret their data in context
+            </p>
 
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex gap-2">
@@ -205,60 +177,52 @@ const Bibliostat = () => {
             </ul>
           </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* Visibility */}
-      <motion.section
+      <section
         className="py-12 bg-secondary/20"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
+        data-aos="fade-up"
+        data-aos-duration="700"
       >
         <div className="editorial-container grid lg:grid-cols-2 gap-10 items-center">
           <div className="space-y-4">
-            <h2 className="editorial-subheadline">
+            <h2 className="editorial-subheadline font-semibold text-balance">
               Visibility at every level
             </h2>
 
             <p className="editorial-body">
-              Bibliostat Collect & Connect includes role-based dashboards that
-              provide at-a-glance insight into progress, performance, and data quality.
+              Bibliostat CollectConnect includes role-based dashboards that
+              provide at-a-glance insight into progress, performance, and data quality
             </p>
 
-            <ul className="space-y-2 text-muted-foreground">
+            {/* <ul className="space-y-2 text-muted-foreground">
               <li>• Survey completion tracking and milestone monitoring</li>
               <li>• Edit check summaries and resolution status</li>
               <li>• Drill-down access to individual libraries or datasets</li>
               <li>• Direct communication with participants from within the platform</li>
-            </ul>
+            </ul> */}
           </div>
 
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3 }}
-            className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg"
-          >
+          <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
             <img
               src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
               alt="Role-based dashboards"
               className="w-full h-full object-cover"
             />
-          </motion.div>
+          </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* Peer comparison */}
-      <motion.section
+      <section
         className="py-12 bg-secondary/10"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
+        data-aos="fade-up"
+        data-aos-duration="700"
       >
         <div className="editorial-container grid lg:grid-cols-2 gap-10 items-center">
           <div className="space-y-4">
-            <h2 className="editorial-subheadline">
+            <h2 className="editorial-subheadline font-semibold text-balance">
               Peer comparison that delivers meaningful context
             </h2>
 
@@ -270,27 +234,21 @@ const Bibliostat = () => {
             </ul>
           </div>
 
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3 }}
-            className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg"
-          >
+          <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
             <img
               src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
               alt="Peer comparison discussion"
               className="w-full h-full object-cover"
             />
-          </motion.div>
+          </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* Bridge punch line */}
-      <motion.section
+      <section
         className="py-6 bg-secondary/10"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeIn}
+        data-aos="fade"
+        data-aos-duration="600"
       >
         <div className="editorial-container text-center">
           <p className="text-black font-bold text-lg">
@@ -298,57 +256,74 @@ const Bibliostat = () => {
             with boards, funders, and stakeholders.
           </p>
         </div>
-      </motion.section>
+      </section>
 
       {/* Tiles */}
-      <motion.section
+      <section
         className="py-12 bg-secondary/20"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
+        data-aos="fade-up"
+        data-aos-duration="700"
       >
-        <div className="editorial-container grid lg:grid-cols-3 gap-8">
+        <div className="editorial-container grid lg:grid-cols-3 gap-10 text-center">
           {tiles.map((tile, i) => (
-            <motion.div
+            <div
               key={i}
-              whileHover={{ y: -6 }}
-              transition={{ duration: 0.3 }}
-              className="bg-white p-6 rounded-2xl shadow-lg text-center space-y-3"
+              className="space-y-4"
+              data-aos="fade-up"
+              data-aos-delay={i * 200}
             >
-              <tile.icon className="w-8 h-8 mx-auto text-[#2aa6a6]" />
-              <h3 className="text-xl font-serif font-medium">{tile.title}</h3>
-              <p className="text-muted-foreground whitespace-pre-line">
-                {tile.description}
-              </p>
-            </motion.div>
+              <tile.icon className="w-10 h-10 mx-auto text-[#2aa6a6]" />
+              <h3 className="editorial-subheadline font-semibold text-balance text-xl font-medium">
+                {tile.title}
+              </h3>
+            </div>
           ))}
         </div>
-      </motion.section>
+      </section>
+
 
       {/* Closing */}
-      <motion.section
-        className="py-12 bg-gradient-to-r from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeIn}
+      <section
+        className="py-10 md:py-14 bg-gradient-to-r from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5"
+        data-aos="fade"
+        data-aos-duration="800"
       >
-        <div className="editorial-container text-center max-w-3xl mx-auto space-y-4">
-          <div className="flex items-center justify-center gap-3">
-            <Sparkles className="w-6 h-6 text-[#2aa6a6]" />
-            <p className="text-black font-bold text-lg">
-              Built for libraries. Trusted by agencies. Designed for impact.
-            </p>
+        <div className="editorial-container text-center max-w-5xl mx-auto space-y-6">
+
+          {/* Logo */}
+          <div className="flex justify-center">
+            <Sparkles className="w-10 h-10 text-[#2aa6a6]" />
           </div>
 
-          <p className="editorial-body text-muted-foreground text-[0.75rem] leading-relaxed">
-            As part of LibraryOne, Bibliostat Collect & Connect continues to evolve as a
+          {/* Headline */}
+          <h2 className="editorial-subheadline font-semibold whitespace-nowrap">
+            Built for libraries. Trusted by agencies. Designed for impact
+          </h2>
+
+          {/* Body */}
+          <p className="editorial-body text-lg md:text-xl max-w-5xl mx-auto leading-snug text-muted-foreground">
+            As part of LibraryOne, Bibliostat CollectConnect continues to evolve as a
             platform dedicated to helping libraries use data not just to report—but to
-            lead, advocate, and plan with confidence.
+            lead, advocate, and plan with confidence
           </p>
+
+          {/* CTA Button */}
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="700"
+            className="mt-8 md:mt-10 flex justify-center"
+          >
+            <Link to="/contact">
+              <Button variant="hero" size="lg">
+                Contact Us
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </Link>
+          </div>
+
         </div>
-      </motion.section>
+      </section>
+
     </MainLayout>
   );
 };

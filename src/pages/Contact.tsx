@@ -22,7 +22,7 @@ const Contact = () => (
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              Have questions? We'd love to hear from you.
+              Have questions? We'd love to hear from you
             </p>
 
             <div className="space-y-6">

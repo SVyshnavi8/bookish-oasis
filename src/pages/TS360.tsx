@@ -367,7 +367,7 @@ const TS360 = () => {
               LibraryOne is committed to transparency, stability, and long-term stewardship
             </span>
             <span className="block">
-              as TS360 evolves to meet modern collection needs.
+              as TS360 evolves to meet modern collection needs
             </span>
           </p>
 
