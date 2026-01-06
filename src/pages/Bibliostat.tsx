@@ -62,7 +62,7 @@ const Bibliostat = () => {
           </div>
 
           <div
-            className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg"
+            className="aspect-[3/2] rounded-2xl overflow-hidden shadow-lg"
             data-aos="fade"
             data-aos-duration="800"
             data-aos-delay="200"
@@ -83,166 +83,187 @@ const Bibliostat = () => {
         data-aos-duration="600"
       >
         <div className="editorial-container text-center">
-          <p className="text-black font-bold text-xl">
-            Bibliostat CollectConnect supports the full data lifecycle—from survey collection and validation to peer comparison, trend analysis, and stakeholder-ready reporting
+          <p className="text-black font-semibold text-xl md:text-xl leading-snug">
+            Bibliostat CollectConnect supports the full data lifecycle— <br/>from survey collection 
+            and validation to peer comparison, trend analysis, and stakeholder-ready reporting
           </p>
         </div>
       </section>
 
       {/* Collect */}
       <section
-        className="pt-12 pb-20 bg-secondary/20"
-        data-aos="fade-up"
-        data-aos-duration="700"
-      >
-        <div className="editorial-container grid lg:grid-cols-2 gap-10 items-center">
-          <div className="space-y-4">
-            <h2 className="editorial-subheadline font-semibold text-balance">
-              Collect: Data Collection Made Reliable
-            </h2>
+  className="pt-12 pb-20 bg-secondary/20"
+  data-aos="fade-up"
+  data-aos-duration="700"
+>
+  <div className="editorial-container grid lg:grid-cols-2 gap-10 items-stretch">
 
-            <p className="editorial-body">
-              The Collect component provides a powerful, flexible survey
-              administration environment designed specifically for libraries
-            </p>
+    {/* LEFT CONTENT */}
+    <div className="flex flex-col justify-start space-y-4">
+      <h2 className="editorial-subheadline font-semibold text-balance">
+        Collect: Data Collection Made Reliable
+      </h2>
 
-            <ul className="space-y-2 text-muted-foreground">
-              {[
-                "Modern, intuitive survey management workflows",
-                "Real-time edit checks that reduce errors at entry",
-                "Automatic validation and resolution guidance",
-                "Support for multiple users and collaborative data entry",
-                "Access to up to six years of historical reference data",
-              ].map((item, i) => (
-                <li key={i} className="flex gap-2 items-start">
-                  <CheckCircle className="w-4 h-4 text-[#2aa6a6] mt-1" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
+      <p className="editorial-body">
+        The Collect component provides a powerful, flexible survey
+        administration environment designed specifically for libraries
+      </p>
 
-          <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
-            <img
-              src="https://www.ala.org/sites/default/files/styles/image_gallery_sm/public/pla/content/data/benchmark/benchmarking1_327x250.png.webp"
-              alt="Survey collection interface"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-      </section>
+      <ul className="space-y-2 text-muted-foreground">
+        {[
+          "Modern, intuitive survey management workflows",
+          "Real-time edit checks that reduce errors at entry",
+          "Automatic validation and resolution guidance",
+          "Support for multiple users and collaborative data entry",
+          "Access to up to six years of historical reference data",
+        ].map((item, i) => (
+          <li key={i} className="flex gap-2 items-start">
+            <CheckCircle className="w-4 h-4 text-[#2aa6a6] mt-1" />
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    {/* RIGHT IMAGE */}
+    <div className="flex items-start">
+      <div className="aspect-[3/2] w-full rounded-2xl overflow-hidden shadow-lg">
+        <img
+          src="https://www.ala.org/sites/default/files/styles/image_gallery_sm/public/pla/content/data/benchmark/benchmarking1_327x250.png.webp"
+          alt="Survey collection interface"
+          className="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
 
       {/* Connect */}
       <section
-        className="py-12 bg-secondary/10"
-        data-aos="fade-up"
-        data-aos-duration="700"
-      >
-        <div className="editorial-container grid lg:grid-cols-2 gap-10 items-center">
-          <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
-            <img
-              src="https://cdnwebsite.databox.com/wp-content/uploads/2024/01/09012849/Screenshot-2024-01-09-at-09.28.22-1000x558.png"
-              alt="Benchmark analytics"
-              className="w-full h-full object-cover"
-            />
-          </div>
+  className="py-12 bg-secondary/10"
+  data-aos="fade-up"
+  data-aos-duration="700"
+>
+  <div className="editorial-container grid lg:grid-cols-2 gap-10 items-start">
+    
+    {/* Image */}
+    <div className="aspect-[3/2] rounded-2xl overflow-hidden shadow-lg">
+      <img
+        src="https://cdnwebsite.databox.com/wp-content/uploads/2024/01/09012849/Screenshot-2024-01-09-at-09.28.22-1000x558.png"
+        alt="Benchmark analytics"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
-          <div className="space-y-4">
-            <h2 className="editorial-subheadline font-semibold text-balance">
-              Connect: Analysis, Comparison, and Context
-            </h2>
+    {/* Content */}
+    <div className="space-y-4 lg:pt-1">
+      <h2 className="editorial-subheadline font-semibold text-balance">
+        Connect: Analysis, Comparison, and Context
+      </h2>
 
-            <p className="editorial-body mt-4">
-              The Connect component provides robust analytics, peer comparison tools, and reporting capabilities that help libraries interpret their data in context
-            </p>
+      <p className="editorial-body mt-4">
+        The Connect component provides robust analytics, peer comparison tools,
+        and reporting capabilities that help libraries interpret their data in
+        context
+      </p>
 
-            <ul className="space-y-2 text-muted-foreground">
-              <li className="flex gap-2">
-                <BarChart3 className="w-4 h-4 text-[#2aa6a6]" />
-                Analyze performance over time across hundreds of data points
-              </li>
-              <li className="flex gap-2">
-                <Users className="w-4 h-4 text-[#2aa6a6]" />
-                Compare against peer libraries
-              </li>
-              <li className="flex gap-2">
-                <TrendingUp className="w-4 h-4 text-[#2aa6a6]" />
-                Identify trends in circulation and usage
-              </li>
-              <li className="flex gap-2">
-                <Globe className="w-4 h-4 text-[#2aa6a6]" />
-                Benchmark locally or nationally
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      <ul className="space-y-2 text-muted-foreground">
+        <li className="flex gap-2">
+          <BarChart3 className="w-4 h-4 text-[#2aa6a6] mt-1" />
+          Analyze performance over time across hundreds of data points
+        </li>
+        <li className="flex gap-2">
+          <Users className="w-4 h-4 text-[#2aa6a6] mt-1" />
+          Compare against peer libraries
+        </li>
+        <li className="flex gap-2">
+          <TrendingUp className="w-4 h-4 text-[#2aa6a6] mt-1" />
+          Identify trends in circulation and usage
+        </li>
+        <li className="flex gap-2">
+          <Globe className="w-4 h-4 text-[#2aa6a6] mt-1" />
+          Benchmark locally or nationally
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
 
       {/* Visibility */}
       <section
-        className="py-12 bg-secondary/20"
-        data-aos="fade-up"
-        data-aos-duration="700"
-      >
-        <div className="editorial-container grid lg:grid-cols-2 gap-10 items-center">
-          <div className="space-y-4">
-            <h2 className="editorial-subheadline font-semibold text-balance">
-              Visibility at every level
-            </h2>
+  className="py-12 bg-secondary/20"
+  data-aos="fade-up"
+  data-aos-duration="700"
+>
+  <div className="editorial-container grid lg:grid-cols-2 gap-10 items-start">
+    
+    {/* LEFT CONTENT */}
+    <div className="space-y-4">
+      <h2 className="editorial-subheadline font-semibold text-balance">
+        Visibility at every level
+      </h2>
 
-            <p className="editorial-body">
-              Bibliostat CollectConnect includes role-based dashboards that
-              provide at-a-glance insight into progress, performance, and data quality
-            </p>
+      <p className="editorial-body">
+        Bibliostat CollectConnect includes role-based dashboards that
+        provide at-a-glance insight into progress, performance, and data quality
+      </p>
+    </div>
 
-            {/* <ul className="space-y-2 text-muted-foreground">
-              <li>• Survey completion tracking and milestone monitoring</li>
-              <li>• Edit check summaries and resolution status</li>
-              <li>• Drill-down access to individual libraries or datasets</li>
-              <li>• Direct communication with participants from within the platform</li>
-            </ul> */}
-          </div>
+    {/* RIGHT IMAGE */}
+    <div className="aspect-[3/2] rounded-2xl overflow-hidden shadow-lg">
+      <img
+        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+        alt="Role-based dashboards"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
-          <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
-            <img
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
-              alt="Role-based dashboards"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-      </section>
+  </div>
+</section>
+
 
       {/* Peer comparison */}
-      <section
-        className="py-12 bg-secondary/10"
-        data-aos="fade-up"
-        data-aos-duration="700"
-      >
-        <div className="editorial-container grid lg:grid-cols-2 gap-10 items-center">
-          <div className="space-y-4">
-            <h2 className="editorial-subheadline font-semibold text-balance">
-              Peer comparison that delivers meaningful context
-            </h2>
+      
+     <section
+  className="py-12 bg-secondary/10"
+  data-aos="fade-up"
+  data-aos-duration="700"
+>
+  <div className="editorial-container">
+    <div className="grid lg:grid-cols-2 gap-10 items-start">
 
-            <ul className="space-y-2 text-muted-foreground">
-              <li>• Build custom peer groups based on multiple criteria</li>
-              <li>• Fine-tune comparisons using demographic data</li>
-              <li>• Analyze trends across selected peers</li>
-              <li>• Present results that are credible and defensible</li>
-            </ul>
-          </div>
+      {/* LEFT SIDE — IMAGE */}
+      <div className="aspect-[3/2] rounded-2xl overflow-hidden shadow-lg">
+        <img
+          src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
+          alt="Peer comparison discussion"
+          className="w-full h-full object-cover"
+        />
+      </div>
 
-          <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
-            <img
-              src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
-              alt="Peer comparison discussion"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-      </section>
+      {/* RIGHT SIDE — CONTENT */}
+      <div className="space-y-4">
+        <h2 className="editorial-subheadline font-semibold text-balance">
+          Peer comparison that delivers meaningful context
+        </h2>
+
+        <ul className="space-y-2 text-muted-foreground">
+          <li>• Build custom peer groups based on multiple criteria</li>
+          <li>• Fine-tune comparisons using demographic data</li>
+          <li>• Analyze trends across selected peers</li>
+          <li>• Present results that are credible and defensible</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
       {/* Bridge punch line */}
       <section
@@ -251,11 +272,12 @@ const Bibliostat = () => {
         data-aos-duration="600"
       >
         <div className="editorial-container text-center">
-          <p className="text-black font-bold text-lg">
-            These tools support informed decision-making and strengthen conversations
-            with boards, funders, and stakeholders.
-          </p>
-        </div>
+  <p className="text-black font-semibold text-xl md:text-2xl leading-snug">
+    These tools support informed decision-making and strengthen conversations
+    with boards, funders, and stakeholders.
+  </p>
+</div>
+
       </section>
 
       {/* Tiles */}
@@ -290,10 +312,20 @@ const Bibliostat = () => {
       >
         <div className="editorial-container text-center max-w-5xl mx-auto space-y-6">
 
-          {/* Logo */}
-          <div className="flex justify-center">
-            <Sparkles className="w-10 h-10 text-[#2aa6a6]" />
-          </div>
+          
+<h2 className="
+  editorial-subheadline 
+  font-semibold 
+  whitespace-nowrap
+  bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0]
+  bg-clip-text text-transparent
+">
+  Bibliostat CollectConnect
+</h2>
+
+
+
+          
 
           {/* Headline */}
           <h2 className="editorial-subheadline font-semibold whitespace-nowrap">
@@ -301,16 +333,12 @@ const Bibliostat = () => {
           </h2>
 
           {/* Body */}
-          <p className="editorial-body text-lg md:text-xl max-w-5xl mx-auto leading-snug text-muted-foreground">
-            As part of LibraryOne, Bibliostat CollectConnect continues to evolve as a
-            platform dedicated to helping libraries use data not just to report—but to
-            lead, advocate, and plan with confidence
-          </p>
+          
 
           {/* CTA Button */}
           <div
             data-aos="zoom-in"
-            data-aos-delay="700"
+            data-aos-delay="800"
             className="mt-8 md:mt-10 flex justify-center"
           >
             <Link to="/contact">
