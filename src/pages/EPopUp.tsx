@@ -501,7 +501,7 @@ const EPopUp = () => {
           <div
             data-aos="zoom-in"
             data-aos-delay="700"
-            className="mt-8 md:mt-10"
+            className="mt-6 md:mt-10"
           >
             <Link to="/contact">
               <Button variant="hero" size="lg">

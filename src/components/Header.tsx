@@ -9,7 +9,7 @@ const solutionLinks = [
   { name: "TS360", path: "/ts360" },
   { name: "ePopUp", path: "/epopup" },
   { name: "Content Café", path: "/content-cafe" },
-  { name: "Bibliostat Collect & Connect", path: "/bibliostat" },
+  { name: "Bibliostat CollectConnect", path: "/bibliostat" },
 ];
 
 const Header = () => {

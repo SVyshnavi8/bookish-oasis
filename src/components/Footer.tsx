@@ -46,13 +46,6 @@ const Footer = () => {
               </p>
 
               <div className="flex items-start gap-3">
-                <Phone className="w-4 h-4 text-background/60 mt-0.5" />
-                <span className="text-background/60 group-hover:text-background/90">
-                  1-800-775-1800
-                </span>
-              </div>
-
-              <div className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-background/60 mt-0.5" />
                 <span className="text-background/60 group-hover:text-background/90">
                   info@libraryone.com
@@ -69,7 +62,7 @@ const Footer = () => {
             </Link>
 
             {/* Social Icons with Animation */}
-            <div className="flex gap-4 pt-2">
+            <div className="flex gap-6 pt-6">
               {[Facebook, Twitter, Linkedin, Instagram, Youtube].map(
                 (Icon, index) => (
                   <a
