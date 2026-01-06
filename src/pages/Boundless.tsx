@@ -155,7 +155,7 @@ const Boundless = () => {
               </p>
 
               <div className="flex flex-wrap gap-4 pt-1">
-                <Link to="/demo">
+                <Link to="/demo?product=boundless">
                   <Button variant="hero" size="lg">
                     Request Demo
                     <ArrowRight className="w-5 h-5 ml-2" />
@@ -533,7 +533,7 @@ const Boundless = () => {
             Ready for Boundless?
           </h2>
 
-          <Link to="/contact">
+          <Link to="/contact?product=boundless">
             <Button
               variant="default"
               size="lg"

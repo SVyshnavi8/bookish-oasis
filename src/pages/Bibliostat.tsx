@@ -61,7 +61,7 @@ const Bibliostat = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 pt-1">
-              <Link to="/demo">
+              <Link to="/demo?product=bibliostat">
                 <Button variant="hero" size="lg">
                   Request Demo
                   <ArrowRight className="w-5 h-5 ml-2" />
@@ -350,7 +350,7 @@ const Bibliostat = () => {
             data-aos-delay="800"
             className="mt-8 md:mt-10 flex justify-center"
           >
-            <Link to="/contact">
+            <Link to="/contact?product=bibliostat">
               <Button variant="hero" size="lg">
                 Contact Us
                 <ArrowRight className="w-5 h-5 ml-2" />

@@ -15,7 +15,8 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 const products = [
@@ -29,6 +30,24 @@ const products = [
 const Demo = () => {
   const [selectedProducts, setSelectedProducts] = useState<string[]>([]);
   const [open, setOpen] = useState(false);
+  const [searchParams] = useSearchParams();
+
+  // Auto-select product from query parameter
+  useEffect(() => {
+    const productParam = searchParams.get("product");
+    if (productParam) {
+      // Check if the product value exists in the products array
+      const productExists = products.some((p) => p.value === productParam);
+      if (productExists) {
+        setSelectedProducts((prev) => {
+          if (!prev.includes(productParam)) {
+            return [productParam];
+          }
+          return prev;
+        });
+      }
+    }
+  }, [searchParams]);
 
   return (
     <MainLayout>

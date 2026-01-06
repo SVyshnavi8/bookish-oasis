@@ -42,9 +42,7 @@ const ContentCafe = () => {
               data-aos="fade-right"
               data-aos-delay="200"
             >
-              <span className="editorial-subheadline font-semibold text-balance text-center mb-6">
-                Content Café
-              </span>
+              <span className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium">Content Café</span>
 
               <h1 className="editorial-headline leading-tight">
                 Enrich discovery. Deepen engagement. Do more with your collections
@@ -56,7 +54,7 @@ const ContentCafe = () => {
               </p>
 
               <div className="flex flex-wrap gap-4 pt-1">
-                <Link to="/demo">
+                <Link to="/demo?product=content-cafe">
                   <Button variant="hero" size="lg">
                     Request Demo
                     <ArrowRight className="w-5 h-5 ml-2" />
@@ -382,7 +380,7 @@ const ContentCafe = () => {
 
           {/* CTA */}
           <div data-aos="zoom-in" data-aos-delay="700">
-            <Link to="/contact">
+            <Link to="/contact?product=content-cafe">
               <Button variant="hero" size="lg">
                 Contact Us
                 <ArrowRight className="w-5 h-5 ml-2" />

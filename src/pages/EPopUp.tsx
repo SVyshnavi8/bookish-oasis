@@ -49,7 +49,7 @@ const EPopUp = () => {
                 ePopUp Library helps libraries meet their community outreach goals by making digital resources visible, accessible, and relevant in the places where people already are. Take your digital collection directly into their communities—at hospitals, public transport, schools, neighborhoods and more
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link to="/demo">
+                <Link to="/demo?product=epopup">
                   <Button variant="hero" size="lg">
                     Request Demo
                     <ArrowRight className="w-5 h-5 ml-2" />
@@ -374,7 +374,7 @@ const EPopUp = () => {
 
 
       {/* Case Studies - New Styling: Inline Image + Text (No Cards) */}
-      <section className="editorial-section bg-secondary/10 pt-8 pb-12" data-aos="fade-up">
+      <section className="editorial-section bg-secondary/10 pt-16 md:pt-20 pb-12" data-aos="fade-up">
         <div className="editorial-container">
           <h2
             className="editorial-subheadline font-semibold text-balance text-center mb-14"
@@ -503,7 +503,7 @@ const EPopUp = () => {
             data-aos-delay="700"
             className="mt-6 md:mt-10"
           >
-            <Link to="/contact">
+            <Link to="/contact?product=epopup">
               <Button variant="hero" size="lg">
                 Contact Us
                 <ArrowRight className="w-5 h-5 ml-2" />

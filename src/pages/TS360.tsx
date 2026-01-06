@@ -116,7 +116,7 @@ const TS360 = () => {
               data-aos="zoom-in"
               data-aos-delay="550"
             >
-              <Link to="/demo">
+              <Link to="/demo?product=ts360">
                 <Button
                   size="lg"
                   variant="outline"
@@ -414,7 +414,7 @@ const TS360 = () => {
             data-aos-delay="700"
             className="mt-8 md:mt-10"
           >
-            <Link to="/contact">
+            <Link to="/contact?product=ts360">
               <Button variant="hero" size="lg">
                 Contact Us
                 <ArrowRight className="w-5 h-5 ml-2" />
