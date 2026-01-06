@@ -18,6 +18,8 @@ import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
 
 import lib1 from "@/assets/lib1.jpg";
+import bgImage from "@/assets/img1.jpeg";
+
 
 import bookCover1 from "@/assets/book-cover-1.jpg";
 import bookCover2 from "@/assets/book-cover-2.jpg";
@@ -77,172 +79,89 @@ const Index = () => {
   return (
     <MainLayout>
       <HeroSection />
-
-      {/* ================= EDITORIAL SECTION (DEPRECATED) ================= */}
-      {/* <section
-        className="py-14 md:py-16 bg-muted/30"
-        data-aos="fade-up"
-      >
-        <div className="editorial-container">
-          <div
-            className="max-w-4xl mx-auto text-center rounded-3xl
-                 border border-border bg-background
-                 px-8 py-10 shadow-md"
-            data-aos="zoom-in"
-            data-aos-delay="150"
-          >
-            <h2
-              className="editorial-subheadline font-semibold mb-5"
-              data-aos="fade-up"
-              data-aos-delay="250"
-            >
-              Digital library services company dedicated to supporting libraries
-              and their communities
-            </h2>
-
-            <p
-              className="editorial-body max-w-3xl mx-auto"
-              data-aos="fade-up"
-              data-aos-delay="350"
-            >
-              We provide trusted digital products and services that help libraries
-              expand access, engage patrons, and fulfill their mission in a
-              digital-first world
-            </p>
-          </div>
-        </div>
-      </section> */}
-
-
-      {/* <section
-        data-aos="fade-up"
-        className="relative py-10 md:py-14 lg:py-16 bg-gradient-to-br from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5 overflow-hidden"
-      >
-        <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]" />
-
-        <div className="editorial-container relative z-10">
-          <div className="max-w-5xl mx-auto">
-            <h3
-              data-aos="fade-up"
-              data-aos-delay="200"
-              className="text-2xl md:text-3xl font-serif font-medium text-center mb-10"
-            >
-              As an independent company solely focused on libraries, LibraryOne provides:
-            </h3>
-
-            <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-4xl mx-auto">
-            
-              <div>
-                <div data-aos="fade-right" data-aos-delay="300" className="flex items-start gap-4 mb-7">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 to-[#4cc9c0]/10 flex items-center justify-center flex-shrink-0">
-                    <ShieldCheck className="w-5 h-5 text-[#2aa6a6]" />
-                  </div>
-                  <h4 className="font-semibold text-xl">Continuity of service</h4>
-                </div>
-
-                <div data-aos="fade-right" data-aos-delay="400" className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 to-[#4cc9c0]/10 flex items-center justify-center flex-shrink-0">
-                    <Users className="w-5 h-5 text-[#2aa6a6]" />
-                  </div>
-                  <h4 className="font-semibold text-xl">Clear accountability</h4>
-                </div>
-              </div>
-
-              <div>
-                <div data-aos="fade-left" data-aos-delay="300" className="flex items-start gap-4 mb-7">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 to-[#4cc9c0]/10 flex items-center justify-center flex-shrink-0">
-                    <BarChart3 className="w-5 h-5 text-[#2aa6a6]" />
-                  </div>
-                  <h4 className="font-semibold text-xl">
-                    A roadmap guided by library needs
-                  </h4>
-                </div>
-
-                <div data-aos="fade-left" data-aos-delay="400" className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 to-[#4cc9c0]/10 flex items-center justify-center flex-shrink-0">
-                    <HeartHandshake className="w-5 h-5 text-[#2aa6a6]" />
-                  </div>
-                  <h4 className="font-semibold text-xl">
-                    A long-term steward dedicated to Boundless and related services
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/* ================= CLEAN INTRO SECTION ================= */}
       <section
         data-aos="fade-up"
-        className="relative py-10 md:py-14 lg:py-16 bg-gradient-to-br from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5 overflow-hidden"
+        className="relative py-12 md:py-16 lg:py-20 bg-background overflow-hidden"
       >
-        <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]" />
+        <div className="editorial-container">
+          <div className="max-w-6xl mx-auto grid lg:grid-cols-[0.9fr_1.1fr] gap-12 lg:gap-20 items-center">
 
-        <div className="editorial-container relative z-10">
-          <div className="max-w-5xl mx-auto">
-
-            {/* Top Heading */}
-            <div data-aos="fade-up" data-aos-delay="100" className="text-center mb-12">
-              <h2 className="editorial-subheadline font-semibold text-balance">
-                Digital library services company dedicated to supporting libraries and their communities
-              </h2>
+            {/* LEFT : IMAGE (Reduced Width) */}
+            <div
+              className="relative w-full h-[300px] md:h-[360px] rounded-3xl overflow-hidden shadow-lg"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <img
+                src={bgImage}   // replace with your image
+                alt="LibraryOne supporting libraries and communities"
+                className="w-full h-full object-cover"
+              />
             </div>
 
-            {/* Sub Heading  */}
-            <h3
-              data-aos="fade-up"
-              data-aos-delay="200"
-              className="text-2xl md:text-3xl font-serif font-medium text-center mb-10"
-            >
-              As an independent company solely focused on libraries, LibraryOne provides:
-            </h3>
+            {/* RIGHT : TEXT CONTENT */}
+            <div className="space-y-10">
 
-            {/* Features */}
-            <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-4xl mx-auto">
+              {/* Top Heading */}
+              <div data-aos="fade-up" data-aos-delay="100">
+                <h2 className="editorial-subheadline font-semibold text-balance text-left">
+                  Digital library services company dedicated to supporting libraries and their communities
+                </h2>
+              </div>
 
-              {/* Left Column */}
-              <div>
-                <div data-aos="fade-right" data-aos-delay="300" className="flex items-start gap-4 mb-7">
+              {/* Sub Heading */}
+              <h3
+                data-aos="fade-up"
+                data-aos-delay="200"
+                className="text-2xl md:text-3xl font-serif font-medium text-left"
+              >
+                As an independent company solely focused on libraries, LibraryOne provides:
+              </h3>
+
+              {/* Features */}
+              <div className="grid sm:grid-cols-2 gap-8 max-w-xl">
+
+                <div data-aos="fade-up" data-aos-delay="300" className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 to-[#4cc9c0]/10 flex items-center justify-center flex-shrink-0">
                     <ShieldCheck className="w-5 h-5 text-[#2aa6a6]" />
                   </div>
-                  <h4 className="font-semibold text-xl">Continuity of service</h4>
+                  <h4 className="font-semibold text-lg">Continuity of service</h4>
                 </div>
 
-                <div data-aos="fade-right" data-aos-delay="400" className="flex items-start gap-4">
+                <div data-aos="fade-up" data-aos-delay="400" className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 to-[#4cc9c0]/10 flex items-center justify-center flex-shrink-0">
                     <Users className="w-5 h-5 text-[#2aa6a6]" />
                   </div>
-                  <h4 className="font-semibold text-xl">Clear accountability</h4>
+                  <h4 className="font-semibold text-lg">Clear accountability</h4>
                 </div>
-              </div>
 
-              {/* Right Column */}
-              <div>
-                <div data-aos="fade-left" data-aos-delay="300" className="flex items-start gap-4 mb-7">
+                <div data-aos="fade-up" data-aos-delay="500" className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 to-[#4cc9c0]/10 flex items-center justify-center flex-shrink-0">
                     <BarChart3 className="w-5 h-5 text-[#2aa6a6]" />
                   </div>
-                  <h4 className="font-semibold text-xl">
-                    A roadmap guided by library needs
-                  </h4>
+                  <h4 className="font-semibold text-lg">A roadmap guided by library needs</h4>
                 </div>
 
-                <div data-aos="fade-left" data-aos-delay="400" className="flex items-start gap-4">
+                <div data-aos="fade-up" data-aos-delay="600" className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 to-[#4cc9c0]/10 flex items-center justify-center flex-shrink-0">
                     <HeartHandshake className="w-5 h-5 text-[#2aa6a6]" />
                   </div>
-                  <h4 className="font-semibold text-xl">
+                  <h4 className="font-semibold text-lg">
                     A long-term steward dedicated to Boundless and related services
                   </h4>
                 </div>
-              </div>
 
+              </div>
             </div>
+
           </div>
         </div>
       </section>
+
+
+
+
 
       {/* ================= BOUNDLESS CONTINUES ================= */}
       <section className="py-16 md:py-20 bg-gradient-to-r from-[#2aa6a6]/10 via-[#4cc9c0]/10 to-[#ecfeff]">

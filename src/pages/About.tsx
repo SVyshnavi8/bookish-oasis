@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Heart, Target, Users, Lightbulb } from "lucide-react";
 import libraryInterior from "@/assets/library-interior.jpg";
 import readingRoom from "@/assets/reading-room.jpg";
+import aboutImage1 from "@/assets/about1.jpg";
+import aboutImage2 from "@/assets/about2.jpg";
 
 const About = () => {
   return (
@@ -11,15 +13,18 @@ const About = () => {
       {/* Hero */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-20">
         <div className="editorial-container">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl mx-auto text-center">
             <h1
               className="editorial-headline mb-8"
               data-aos="fade-up"
               data-aos-delay="100"
             >
               <span className="text-foreground">Library</span>
-              <span className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">One</span>
+              <span className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">
+                One
+              </span>
             </h1>
+
             <p
               className="text-lg md:text-xl font-semibold text-foreground tracking-wide mt-8"
               data-aos="fade-up"
@@ -99,45 +104,90 @@ const About = () => {
         </div>
       </section>
 
-      {/* Continuity */}
-      <section className="editorial-section bg-gradient-to-r from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5 py-16">
+      <section className="editorial-section bg-gradient-to-r from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5 py-14">
         <div className="editorial-container">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
+
+          {/* Section Heading */}
+          <div className="max-w-4xl mx-auto text-center">
             <h2
-              className="editorial-subheadline font-semibold text-balance text-center mb-6"
+              className="editorial-subheadline font-semibold text-balance mb-10"
               data-aos="fade-up"
             >
               Continuity You Can Trust
             </h2>
-            <p
-              className="editorial-body text-lg leading-relaxed max-w-3xl mx-auto text-foreground/90"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              For publishers and library partners, continuity matters. The systems, workflows, and institutional knowledge that made this business valuable did not disappear—they were preserved intentionally
-            </p>
-            <p
-              className="editorial-body text-lg leading-relaxed max-w-3xl mx-auto text-foreground/90"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              The same experienced team remains in place, bringing decades of combined expertise in content distribution, library services, and publisher partnerships. We understand the operational realities of libraries, the commercial imperatives of publishers, and the importance of dependable execution on both sides
-            </p>
           </div>
+
+          {/* First block: Image LEFT, Text RIGHT */}
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center mb-14">
+            <div className="flex justify-center">
+              <img
+                src={aboutImage1}
+                alt="Team ensuring knowledge transfer and business continuity"
+                className="rounded-lg shadow-xl w-full max-w-md h-64 object-cover"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              />
+            </div>
+
+            <div>
+              <p
+                className="editorial-body text-lg leading-relaxed text-foreground/90"
+                data-aos="fade-left"
+                data-aos-delay="300"
+              >
+                For publishers and library partners, continuity matters. The systems,
+                workflows, and institutional knowledge that made this business valuable
+                did not disappear—they were preserved intentionally
+              </p>
+            </div>
+          </div>
+
+          {/* Second block: Text LEFT, Image RIGHT */}
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p
+                className="editorial-body text-lg leading-relaxed text-foreground/90"
+                data-aos="fade-right"
+                data-aos-delay="200"
+              >
+                The same experienced team remains in place, bringing decades of combined
+                expertise in content distribution, library services, and publisher
+                partnerships. We understand the operational realities of libraries, the
+                commercial imperatives of publishers, and the importance of dependable
+                execution on both sides
+              </p>
+            </div>
+
+            <div className="flex justify-center">
+              <img
+                src={aboutImage2}
+                alt="Professional handshake symbolizing trust and strong partnerships"
+                className="rounded-lg shadow-xl w-full max-w-md h-64 object-cover"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              />
+            </div>
+          </div>
+
         </div>
       </section>
+
 
       {/* Mission & Team */}
       <section className="editorial-section bg-secondary/10 py-16">
         <div className="editorial-container">
           {/* Mission */}
           <div
-            className="max-w-4xl mx-auto text-center space-y-6 mb-16"
+            className="max-w-6xl mx-auto text-center space-y-6 mb-16"
             data-aos="fade-up"
           >
-            <h2 className="editorial-subheadline font-semibold text-balance text-center mb-4">Our Mission</h2>
-            <p className="editorial-body text-xl leading-relaxed max-w-3xl mx-auto text-foreground/90">
-              We empower libraries with trusted digital content and services that help them serve patrons equitably, deepen community engagement, and support lifelong learning
+            <h2 className="editorial-subheadline font-semibold text-balance mb-4">
+              Mission
+            </h2>
+            <p className="editorial-body text-xl leading-relaxed max-w-5xl mx-auto text-foreground/90">
+              We empower libraries with trusted digital content and services that help
+              them serve patrons equitably, deepen community engagement, and support
+              lifelong learning
             </p>
           </div>
 
@@ -147,7 +197,9 @@ const About = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h2 className="editorial-subheadline font-semibold text-balance text-center mb-4">Our Team</h2>
+            <h2 className="editorial-subheadline font-semibold text-balance mb-4">
+              Our Team
+            </h2>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -165,6 +217,7 @@ const About = () => {
               </div>
               <p className="font-medium">Leadership & Strategy</p>
             </div>
+
             <div
               className="text-center space-y-4"
               data-aos="fade-up"
@@ -179,6 +232,7 @@ const About = () => {
               </div>
               <p className="font-medium">Library Services</p>
             </div>
+
             <div
               className="text-center space-y-4"
               data-aos="fade-up"
@@ -193,6 +247,7 @@ const About = () => {
               </div>
               <p className="font-medium">Publisher Partnerships</p>
             </div>
+
             <div
               className="text-center space-y-4"
               data-aos="fade-up"
@@ -210,6 +265,7 @@ const About = () => {
           </div>
         </div>
       </section>
+
 
       {/* Leadership Quote */}
       <section className="editorial-section bg-foreground text-background py-16">

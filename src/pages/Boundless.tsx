@@ -118,7 +118,7 @@ const Boundless = () => {
         <div className="editorial-container">
 
           {/* Centered Logo + Text */}
-          <div className="flex justify-center items-center gap-4 mb-10">
+          <div className="flex justify-start items-center gap-4 mb-10">
             <img
               src={boundlessLogo}
               alt="Boundless logo"
@@ -446,7 +446,7 @@ const Boundless = () => {
 
           {/* Bottom Statement */}
           <div className="mt-16 text-center">
-            <p className="text-lg md:text-xl font-bold text-foreground leading-relaxed">
+            <p className="text-lg md:text-2xl font-bold text-foreground leading-relaxed">
               Built with library values at its core, Boundless supports access, privacy, usability,
               <br />
               and long-term stewardship while enabling libraries to expand their digital reach
@@ -510,7 +510,7 @@ const Boundless = () => {
 
           {/* Section Closing Line */}
           <div className="mt-10 text-center">
-            <p className="text-lg md:text-xl font-semibold text-foreground tracking-wide">
+            <p className="text-lg md:text-2xl font-semibold text-foreground tracking-wide">
               Same mission. Same platform. A renewed commitment to libraries
             </p>
           </div>

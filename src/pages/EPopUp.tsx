@@ -5,6 +5,7 @@ import { ArrowRight, Globe, Newspaper, Languages, Clock, QrCode, LinkIcon, Users
 import bostonImage from "@/assets/boston1.png";
 import louisImage from "@/assets/Louis.png";
 import extendImage from "@/assets/beyond2.jpg";
+import epopupImage from "@/assets/epopup.jpg";
 
 const EPopUp = () => {
   const features = [
@@ -188,7 +189,7 @@ const EPopUp = () => {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <p className="text-lg md:text-xl font-semibold text-foreground tracking-wide text-center mt-8">
+            <p className="text-lg md:text-2xl font-semibold text-foreground tracking-wide text-center mt-8">
               Simple to deploy. Easy to engage. Purpose-built for outreach
             </p>
           </div>
@@ -219,7 +220,7 @@ const EPopUp = () => {
               data-aos-delay="300"
             >
               <img
-                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80"
+                src={epopupImage}
                 alt="People using digital devices together in a public community space"
                 className="w-full h-full object-cover"
               />
@@ -308,8 +309,6 @@ const EPopUp = () => {
       </section>
 
 
-
-
       {/* From discovery to membership */}
       <section className="editorial-section bg-secondary/20 py-14 md:py-18" data-aos="fade-up">
         <div className="editorial-container">
@@ -364,7 +363,7 @@ const EPopUp = () => {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <p className="text-lg md:text-xl font-semibold text-foreground tracking-wide text-center mt-8"
+            <p className="text-lg md:text-2xl font-semibold text-foreground tracking-wide text-center mt-8"
               data-aos="fade-up"
               data-aos-delay="600">
               ePopUp Library doesn’t replace the physical library — it helps bring people to it
