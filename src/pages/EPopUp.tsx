@@ -39,7 +39,7 @@ const EPopUp = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="space-y-8" data-aos="fade-right" data-aos-delay="200">
               <span className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium">ePopUp Library</span>
-              <h1 className="editorial-headline mt-4 mb-6">
+              <h1 className="editorial-headline mb-0 leading-none">
                 Extend your library beyond its walls -
                 <span className="block font-serif italic bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">
                   The possibilities are boundless
@@ -76,29 +76,44 @@ const EPopUp = () => {
       >
         <div className="editorial-container">
           <div className="max-w-4xl mx-auto text-center space-y-3 py-2">
-            <h2 className="editorial-subheadline font-semibold text-balance mt-6"
+
+            <h2
+              className="editorial-subheadline font-semibold text-balance mt-6"
               data-aos="fade-up"
-              data-aos-delay="200">What is ePopUp Library?</h2>
+              data-aos-delay="200"
+            >
+              What is ePopUp Library?
+            </h2>
+
             <p
-              className="editorial-body text-lg leading-relaxed max-w-3xl mx-auto"
+              className="editorial-body text-lg leading-relaxed max-w-4xl mx-auto mt-10"
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              ePopUp Library is a community outreach platform that enables libraries to
+              A community outreach platform that enables libraries to
               create temporary or location-based digital collections that introduce
-              people to library resources, services, and stories—often for the first time.
+              people to library resources—
+              <strong className="font-semibold text-muted-foreground">
+                often for the first time
+              </strong>
             </p>
-            <div className="mt-14 text-center">
-              <p className="text-lg md:text-xl font-semibold text-foreground tracking-wide"
+
+            {/* Increased spacing before final line */}
+            <div className="mt-25 text-center">
+              <p
+                className="text-lg md:text-xl font-semibold text-muted-foreground tracking-wide"
                 data-aos="fade-up"
-                data-aos-delay="600">
+                data-aos-delay="600"
+              >
                 It is designed not just to provide access, but to spark awareness,
                 connection, and participation
               </p>
             </div>
+
           </div>
         </div>
       </section>
+
 
 
       {/* How It Works */}
@@ -189,7 +204,7 @@ const EPopUp = () => {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <p className="text-lg md:text-2xl font-semibold text-foreground tracking-wide text-center mt-8">
+            <p className="text-lg md:text-xl font-semibold text-muted-foreground tracking-wide text-center mt-8">
               Simple to deploy. Easy to engage. Purpose-built for outreach
             </p>
           </div>
@@ -363,7 +378,7 @@ const EPopUp = () => {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <p className="text-lg md:text-2xl font-semibold text-foreground tracking-wide text-center mt-8"
+            <p className="text-lg md:text-xl font-semibold text-muted-foreground tracking-wide text-center mt-8"
               data-aos="fade-up"
               data-aos-delay="600">
               ePopUp Library doesn’t replace the physical library — it helps bring people to it
@@ -494,7 +509,7 @@ const EPopUp = () => {
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            ePopUp Library reflects our commitment to helping libraries expand their impact,
+            It reflects our commitment to helping libraries expand their impact,
             <br />
             tell their story, and strengthen connections with the communities they serve
           </p>

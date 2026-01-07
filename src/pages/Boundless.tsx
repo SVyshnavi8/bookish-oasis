@@ -112,13 +112,13 @@ const Boundless = () => {
     <MainLayout>
       {/* Hero */}
       <section
-        className="pt-20 pb-[4.5rem]md:pt-28 md:pb-[5.5rem]"
+        className="pt-20 pb-16"
         data-aos="fade-up"
       >
         <div className="editorial-container">
 
           {/* Centered Logo + Text */}
-          <div className="flex justify-start items-center gap-4 mb-10">
+          <div className="flex justify-center items-center gap-4 mb-10">
             <img
               src={boundlessLogo}
               alt="Boundless logo"
@@ -139,11 +139,11 @@ const Boundless = () => {
 
             {/* Left Content */}
             <div
-              className="space-y-6"
+              className="space-y-5"
               data-aos="fade-right"
               data-aos-delay="200"
             >
-              <h1 className="editorial-headline mb-4 leading-tight">
+              <h1 className="editorial-headline mb-0 leading-none">
                 The Digital library platform —
                 <span className="block font-serif italic bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">
                   Built for libraries
@@ -192,7 +192,7 @@ const Boundless = () => {
           {/* Heading */}
           <div className="text-center mb-6">
             <h2 className="editorial-subheadline font-semibold text-balance">
-              Designed for Libraries
+              Designed for libraries
             </h2>
           </div>
 
@@ -239,7 +239,7 @@ const Boundless = () => {
           {/* Section Heading with balanced spacing */}
           <div className="text-center mb-14">
             <h2 className="editorial-subheadline font-semibold text-balance mb-6">
-              Why Boundless?
+              Why boundless?
             </h2>
           </div>
 
@@ -353,15 +353,26 @@ const Boundless = () => {
 
       {/* Key Features */}
       <section
-        className="editorial-section bg-secondary/20 py-12 md:py-14"
+        className="editorial-section py-12 md:py-14 relative overflow-hidden"
+        style={{
+          backgroundImage: `
+      linear-gradient(135deg, rgba(11, 95, 165, 0.06) 0%, rgba(42, 166, 166, 0.09) 50%, rgba(76, 201, 192, 0.06) 100%),
+      url('https://thumbs.dreamstime.com/b/abstract-blurred-public-library-interior-background-space-blurry-room-bookshelves-defocused-effect-use-backdrop-118217287.jpg')
+    `,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundBlendMode: 'overlay',
+        }}
         data-aos="fade-up"
       >
-        <div className="editorial-container">
+        {/* Strong overlay for maximum text readability */}
+        <div className="absolute inset-0 bg-white/80 dark:bg-black/70"></div>
 
+        <div className="editorial-container relative z-10">
           {/* Section Header */}
           <div className="text-center mb-12">
             <h2 className="editorial-subheadline font-semibold text-balance mb-6">
-              Everything You Need in One Platform
+              Everything you need in one platform
             </h2>
 
             <p className="editorial-body text-lg max-w-4xl mx-auto leading-relaxed">
@@ -394,7 +405,6 @@ const Boundless = () => {
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
@@ -409,7 +419,7 @@ const Boundless = () => {
           {/* Section Heading */}
           <div className="text-center mb-10">
             <h2 className="editorial-subheadline font-semibold text-balance">
-              A Delightful Patron Experience
+              A delightful patron experience
             </h2>
           </div>
 
@@ -445,8 +455,8 @@ const Boundless = () => {
           </div>
 
           {/* Bottom Statement */}
-          <div className="mt-16 text-center">
-            <p className="text-lg md:text-2xl font-bold text-foreground leading-relaxed">
+          <div className="mt-14 text-center">
+            <p className="text-lg md:text-xl font-bold text-muted-foreground leading-relaxed">
               Built with library values at its core, Boundless supports access, privacy, usability,
               <br />
               and long-term stewardship while enabling libraries to expand their digital reach
@@ -482,7 +492,7 @@ const Boundless = () => {
               data-aos="fade-left"
               data-aos-delay="300"
             >
-              <p className="editorial-body text-lg md:text-xl font-bold text-foreground">
+              <p className="editorial-body text-lg md:text-2xl font-bold text-foreground">
                 Boundless represents continuity, focus, and accountability—supported
                 by leadership with deep experience in libraries, publishing, and
                 digital platforms
@@ -509,8 +519,8 @@ const Boundless = () => {
           </div>
 
           {/* Section Closing Line */}
-          <div className="mt-10 text-center">
-            <p className="text-lg md:text-2xl font-semibold text-foreground tracking-wide">
+          <div className="mt-14 text-center">
+            <p className="text-lg md:text-xl font-semibold text-muted-foreground tracking-wide">
               Same mission. Same platform. A renewed commitment to libraries
             </p>
           </div>
@@ -530,7 +540,7 @@ const Boundless = () => {
 
         <div className="editorial-container text-center relative z-10">
           <h2 className="editorial-subheadline font-semibold text-balance mb-8">
-            Ready for Boundless?
+            Ready for boundless?
           </h2>
 
           <Link to="/contact?product=boundless">

@@ -1,7 +1,7 @@
 import MainLayout from "@/layouts/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, Search, Star, Bookmark, MessageSquare, Sparkles, FileText, BookMarked, Eye, Link2, Heart, Target, Wrench, DollarSign, CheckCircle } from "lucide-react";
+import { ArrowRight, Search, Star, Bookmark, MessageSquare, Sparkles, FileText, BookMarked, Eye, Link2, Heart, Target, Wrench, DollarSign, CheckCircle, BookOpen, Database, TrendingUp } from "lucide-react";
 
 const ContentCafe = () => {
   const features = [
@@ -31,29 +31,32 @@ const ContentCafe = () => {
     <MainLayout>
       {/* Hero */}
       <section
-        className="pt-20 pb-16 md:pt-28 md:pb-20"
+        className="pt-32 pb-12 md:pt-40 md:pb-16"
         data-aos="fade-up"
       >
         <div className="editorial-container">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
+            {/* LEFT CONTENT */}
             <div
-              className="space-y-5"
+              className="space-y-8"
               data-aos="fade-right"
               data-aos-delay="200"
             >
-              <span className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium">Content Café</span>
+              <span className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium">
+                Content Café
+              </span>
 
-              <h1 className="editorial-headline leading-tight">
+              <h1 className="editorial-headline mb-0 leading-none">
                 Enrich discovery. Deepen engagement. Do more with your collections
               </h1>
 
               <p className="editorial-body max-w-xl">
                 Enhance your library collections through rich content enrichment
-                that improves discovery, understanding, and engagement for patrons.
+                that improves discovery, understanding, and engagement for patrons
               </p>
 
-              <div className="flex flex-wrap gap-4 pt-1">
+              <div className="flex flex-wrap gap-4">
                 <Link to="/demo?product=content-cafe">
                   <Button variant="hero" size="lg">
                     Request Demo
@@ -63,8 +66,9 @@ const ContentCafe = () => {
               </div>
             </div>
 
+            {/* RIGHT IMAGE */}
             <div
-              className="aspect-[4/3] rounded-xl overflow-hidden shadow-md"
+              className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg"
               data-aos="zoom-in"
               data-aos-delay="400"
             >
@@ -80,32 +84,76 @@ const ContentCafe = () => {
       </section>
 
 
-      <section className="py-16 bg-secondary/10">
-        <div className="editorial-container">
-          <div className="max-w-4xl mx-auto text-center space-y-5">
 
-            {/* Heading */}
-            <h2
-              className="editorial-subheadline font-semibold"
-              data-aos="fade-up"
-            >
-              Why Content Café?
-            </h2>
+      <section
+        className="relative py-16 overflow-hidden
+       bg-gradient-to-br from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5"
+      >
+        {/* subtle texture */}
+        <div className="absolute inset-0 opacity-10 pointer-events-none
+            bg-[radial-gradient(#e5e7eb_1px,transparent_1px)]
+            [background-size:18px_18px]" />
 
-            {/* Accent Line */}
+        <div className="editorial-container relative z-10">
+          <div className="max-w-4xl mx-auto text-center space-y-8">
 
+            {/* Icon strip */}
+            <div className="flex justify-center gap-6">
+              <div className="w-12 h-12 rounded-full bg-[#2aa6a6]/10 flex items-center justify-center">
+                <BookOpen className="w-6 h-6 text-[#2aa6a6]" />
+              </div>
+              <div className="w-12 h-12 rounded-full bg-[#2aa6a6]/10 flex items-center justify-center">
+                <Database className="w-6 h-6 text-[#2aa6a6]" />
+              </div>
+              <div className="w-12 h-12 rounded-full bg-[#2aa6a6]/10 flex items-center justify-center">
+                <TrendingUp className="w-6 h-6 text-[#2aa6a6]" />
+              </div>
+            </div>
 
-            {/* Supporting Paragraph (unchanged content) */}
+            {/* Heading with gradient underline */}
+            <div className="inline-block">
+              <h2
+                className="editorial-subheadline font-semibold text-balance"
+                data-aos="fade-up"
+              >
+                Why Content Café?
+              </h2>
+
+              {/* underline */}
+              <div className="h-1 w-24 mx-auto mt-3 rounded-full
+                  bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0]" />
+            </div>
+
+            {/* Added images for visual enhancement */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="https://gethublet.com/hubfs/Photos%20for%20Website/Handheld%20Library%20RFID%20Loan%202.jpg"
+                  alt="Library patron using a tablet for digital content discovery"
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="https://www.crowntv-us.com/wp-content/uploads/2025/01/AD_4nXfcfI8O382hJvL-uDuu_Oy7m57p_-qOGsz9hQYmocDLrlVCnzAHMGzcjkbhMQukkPn0CAY_mPwId_9nrT4vEZTkwcYm3PE2x6X4sr_DNiFLGUp3KykFlWK1w5tOWx0VVs0wjHJvCw.jpg"
+                  alt="Modern library with digital signage helping patrons discover content"
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            {/* Text */}
             <p
-              className="text-lg md:text-xl leading-relaxed
-                   text-muted-foreground
-                   max-w-4xl mx-auto"
+              className="text-lg md:text-xl leading-relaxed text-muted-foreground"
               data-aos="fade-up"
+              data-aos-delay="150"
             >
               Libraries invest heavily in their collections, yet too often those materials
-              remain under-discovered or under-used. Content Café addresses this challenge
-              by adding meaningful context—descriptions, reviews, and related content—that
-              helps patrons understand what materials are about and why they matter.
+              remain under-discovered or under-used. Content Café adds meaningful context—
+              descriptions, reviews, and related content—so patrons understand what materials
+              are about and why they matter
             </p>
 
           </div>
@@ -113,13 +161,11 @@ const ContentCafe = () => {
       </section>
 
 
-
-
       {/* ================= CONTENT ENRICHMENT ================= */}
       <section className="py-20 bg-secondary/20">
         <div className="editorial-container">
           <h2 className="editorial-subheadline text-center font-semibold mb-12">
-            Content Enrichment Capabilities
+            Content enrichment capabilities
           </h2>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -310,7 +356,7 @@ const ContentCafe = () => {
 
           </div>
           <div className="mt-12 text-center">
-            <p className="text-lg md:text-xl font-semibold text-foreground tracking-wide text-center mt-8" data-aos="fade-up"
+            <p className="text-lg md:text-xl font-semibold text-muted-foreground tracking-wide text-center mt-8" data-aos="fade-up"
               data-aos-delay="800">
               Libraries can enhance discovery and engagement without over-investing in
               features they don’t need
@@ -355,17 +401,11 @@ const ContentCafe = () => {
 
           {/* Heading */}
           <h2
-            className="
-        editorial-subheadline
-        font-semibold
-        whitespace-normal sm:whitespace-nowrap
-        mb-6
-        bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0]
-        bg-clip-text text-transparent
-      "
+            className="editorial-subheadline font-semibold text-balance text-center mb-6 text-foreground"
           >
-            Content Cafe
+            Content Café
           </h2>
+
 
           {/* Description */}
           <p
@@ -373,7 +413,7 @@ const ContentCafe = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            Content Café reflects LibraryOne’s commitment to providing focused,
+            LibraryOne’s commitment to providing focused,
             high-value digital services that help libraries maximize impact while
             respecting budgets and workflows
           </p>

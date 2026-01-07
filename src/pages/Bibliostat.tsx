@@ -12,6 +12,7 @@ import {
   CheckCircle,
   Sparkles,
   Globe,
+  Sliders,
 } from "lucide-react";
 
 const tiles = [
@@ -39,65 +40,96 @@ const Bibliostat = () => {
   return (
     <MainLayout>
       {/* Hero */}
-      <section className="pt-24 pb-16">
-        <div
-          className="editorial-container grid lg:grid-cols-2 gap-10 items-center"
-          data-aos="fade-up"
-          data-aos-duration="700"
-        >
-          <div className="space-y-5">
-            <span className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium">
-              Bibliostat CollectConnect
-            </span>
+      <section
+        className="pt-32 pb-12 md:pt-40 md:pb-16"
+        data-aos="fade-up"
+      >
+        <div className="editorial-container">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-            <h1 className="editorial-headline">
-              Turn library data into insight, impact, and advocacy
-            </h1>
+            {/* LEFT CONTENT */}
+            <div
+              className="space-y-8"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
+              <span className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium">
+                Bibliostat CollectConnect
+              </span>
 
-            <p className="editorial-body">
-              Comprehensive data collection, analysis, and reporting platform
-              that helps libraries transform data into meaningful insight and
-              compelling stories
-            </p>
+              <h1 className="editorial-headline mb-0 leading-none">
+                Turn library data into insight, impact, and advocacy
+              </h1>
 
-            <div className="flex flex-wrap gap-4 pt-1">
-              <Link to="/demo?product=bibliostat">
-                <Button variant="hero" size="lg">
-                  Request Demo
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
-              </Link>
+              <p className="editorial-body max-w-xl">
+                Comprehensive data collection, analysis, and reporting platform
+                that helps libraries transform data into meaningful insight and
+                compelling stories
+              </p>
+
+              <div className="flex flex-wrap gap-4">
+                <Link to="/demo?product=bibliostat">
+                  <Button variant="hero" size="lg">
+                    Request Demo
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </Link>
+              </div>
             </div>
-          </div>
 
-          <div
-            className="aspect-[3/2] rounded-2xl overflow-hidden shadow-lg"
-            data-aos="fade"
-            data-aos-duration="800"
-            data-aos-delay="200"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80"
-              alt="Library data analytics dashboard"
-              className="w-full h-full object-cover"
-            />
+            {/* RIGHT IMAGE */}
+            <div
+              className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80"
+                alt="Library data analytics dashboard"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
           </div>
         </div>
       </section>
 
       {/* Punch line */}
       <section
-        className="py-6 bg-secondary/10"
-        data-aos="fade"
-        data-aos-duration="600"
+        className="relative py-16 md:py-20 overflow-hidden"
+        data-aos="fade-up"
       >
-        <div className="editorial-container text-center">
-          <p className="text-black font-semibold text-xl md:text-xl leading-snug">
-            Bibliostat CollectConnect supports the full data lifecycle— <br />from survey collection
-            and validation to peer comparison, trend analysis, and stakeholder-ready reporting
-          </p>
+        {/* Layered gradient background */}
+        <div className="absolute inset-0 bg-gradient-to-r
+                  from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10" />
+
+        {/* Soft glow blobs */}
+        <div className="absolute -top-24 left-1/4 w-72 h-72 bg-[#2aa6a6]/20 rounded-full blur-3xl opacity-40" />
+        <div className="absolute -bottom-24 right-1/4 w-72 h-72 bg-[#0b5fa5]/20 rounded-full blur-3xl opacity-40" />
+
+        {/* Content */}
+        <div className="relative editorial-container">
+          <div className="max-w-5xl mx-auto text-center space-y-6">
+
+            {/* Accent line */}
+            <div className="mx-auto h-1 w-24 rounded-full
+                      bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0]" />
+
+            {/* Text */}
+            <p className="text-xl md:text-2xl font-semibold text-foreground leading-snug">
+              Bibliostat CollectConnect supports the full data lifecycle
+            </p>
+
+            <p className="text-base md:text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              From survey collection and validation to peer comparison,
+              trend analysis, and stakeholder-ready reporting
+            </p>
+
+          </div>
         </div>
       </section>
+
+
 
       {/* Collect */}
       <section
@@ -110,7 +142,7 @@ const Bibliostat = () => {
           {/* LEFT CONTENT */}
           <div className="flex flex-col justify-start space-y-4">
             <h2 className="editorial-subheadline font-semibold text-balance">
-              Collect: Data Collection Made Reliable
+              Collect: Data collection made reliable
             </h2>
 
             <p className="editorial-body">
@@ -152,7 +184,7 @@ const Bibliostat = () => {
 
       {/* Connect */}
       <section
-        className="py-12 bg-secondary/10"
+        className="py-16 bg-secondary/10"
         data-aos="fade-up"
         data-aos-duration="700"
       >
@@ -204,7 +236,7 @@ const Bibliostat = () => {
 
       {/* Visibility */}
       <section
-        className="py-12 bg-secondary/20"
+        className="py-16 bg-secondary/20"
         data-aos="fade-up"
         data-aos-duration="700"
       >
@@ -238,7 +270,7 @@ const Bibliostat = () => {
       {/* Peer comparison */}
 
       <section
-        className="py-12 bg-secondary/10"
+        className="py-16 bg-secondary/10"
         data-aos="fade-up"
         data-aos-duration="700"
       >
@@ -255,16 +287,39 @@ const Bibliostat = () => {
             </div>
 
             {/* RIGHT SIDE — CONTENT */}
-            <div className="space-y-4">
+            <div className="space-y-5">
               <h2 className="editorial-subheadline font-semibold text-balance">
                 Peer comparison that delivers meaningful context
               </h2>
 
-              <ul className="space-y-2 text-muted-foreground">
-                <li>• Build custom peer groups based on multiple criteria</li>
-                <li>• Fine-tune comparisons using demographic data</li>
-                <li>• Analyze trends across selected peers</li>
-                <li>• Present results that are credible and defensible</li>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <Users className="w-5 h-5 text-[#2aa6a6] mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground leading-relaxed">
+                    Build custom peer groups based on multiple criteria
+                  </span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <Sliders className="w-5 h-5 text-[#2aa6a6] mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground leading-relaxed">
+                    Fine-tune comparisons using demographic data
+                  </span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <TrendingUp className="w-5 h-5 text-[#2aa6a6] mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground leading-relaxed">
+                    Analyze trends across selected peers
+                  </span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-[#2aa6a6] mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground leading-relaxed">
+                    Present results that are credible and defensible
+                  </span>
+                </li>
               </ul>
             </div>
 
@@ -274,16 +329,17 @@ const Bibliostat = () => {
 
 
 
+
       {/* Bridge punch line */}
       <section
-        className="py-6 bg-secondary/10"
+        className="py-2 bg-secondary/10"
         data-aos="fade"
         data-aos-duration="600"
       >
         <div className="editorial-container text-center">
-          <p className="text-black font-semibold text-xl md:text-2xl leading-snug">
+          <p className="text-black font-semibold text-xl text-muted-foreground md:text-xl leading-snug">
             These tools support informed decision-making and strengthen conversations
-            with boards, funders, and stakeholders.
+            with boards, funders, and stakeholders
           </p>
         </div>
 
@@ -291,7 +347,7 @@ const Bibliostat = () => {
 
       {/* Tiles */}
       <section
-        className="py-12 bg-secondary/20"
+        className="py-16 bg-secondary/20"
         data-aos="fade-up"
         data-aos-duration="700"
       >
@@ -315,42 +371,31 @@ const Bibliostat = () => {
 
       {/* Closing */}
       <section
-        className="py-10 md:py-14 bg-gradient-to-r from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5"
-        data-aos="fade"
-        data-aos-duration="800"
+        className="editorial-section bg-gradient-to-r from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5 py-16"
+        data-aos="fade-up"
       >
-        <div className="editorial-container text-center max-w-5xl mx-auto space-y-6">
+        <div className="editorial-container text-center">
 
-
-          <h2 className="
-  editorial-subheadline 
-  font-semibold 
-  whitespace-nowrap
-  bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0]
-  bg-clip-text text-transparent
-">
+          {/* Heading */}
+          <h2
+            className="editorial-subheadline font-semibold text-balance text-center mb-6 text-foreground"
+          >
             Bibliostat CollectConnect
           </h2>
 
 
-
-
-
-          {/* Headline */}
-          <h2 className="editorial-subheadline font-semibold whitespace-nowrap">
-            Built for libraries. Trusted by agencies. Designed for impact
-          </h2>
-
-          {/* Body */}
-
-
-          {/* CTA Button */}
-          <div
-            data-aos="zoom-in"
-            data-aos-delay="800"
-            className="mt-8 md:mt-10 flex justify-center"
+          {/* Description */}
+          <p
+            className="editorial-body text-lg md:text-xl max-w-5xl mx-auto mb-8 leading-snug text-muted-foreground"
+            data-aos="fade-up"
+            data-aos-delay="100"
           >
-            <Link to="/contact?product=bibliostat">
+            Built for libraries. Trusted by agencies. Designed for impact
+          </p>
+
+          {/* CTA */}
+          <div data-aos="zoom-in" data-aos-delay="700">
+            <Link to="/contact?product=content-cafe">
               <Button variant="hero" size="lg">
                 Contact Us
                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -360,6 +405,7 @@ const Bibliostat = () => {
 
         </div>
       </section>
+
 
     </MainLayout>
   );

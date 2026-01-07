@@ -27,7 +27,7 @@ const CTASection = ({
         <div className="max-w-3xl mx-auto text-center space-y-8">
 
           {/* Title */}
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-medium">
+          <h2 className="editorial-subheadline font-semibold text-balance text-center mb-6">
             {title}
           </h2>
 

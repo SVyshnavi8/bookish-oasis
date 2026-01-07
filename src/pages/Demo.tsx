@@ -19,12 +19,18 @@ import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
+/* Products + enquiry types */
 const products = [
   { value: "boundless", label: "Boundless" },
   { value: "ts360", label: "TS360" },
   { value: "epopup", label: "ePopUp" },
   { value: "content-cafe", label: "Content Café" },
   { value: "bibliostat", label: "Bibliostat CollectConnect" },
+
+  // New options
+  { value: "general-enquiry", label: "General enquiry" },
+  { value: "partnership", label: "Partnership" },
+  { value: "other-enquiry", label: "Other enquiry" },
 ];
 
 const Demo = () => {
@@ -36,15 +42,11 @@ const Demo = () => {
   useEffect(() => {
     const productParam = searchParams.get("product");
     if (productParam) {
-      // Check if the product value exists in the products array
       const productExists = products.some((p) => p.value === productParam);
       if (productExists) {
-        setSelectedProducts((prev) => {
-          if (!prev.includes(productParam)) {
-            return [productParam];
-          }
-          return prev;
-        });
+        setSelectedProducts((prev) =>
+          prev.includes(productParam) ? prev : [productParam]
+        );
       }
     }
   }, [searchParams]);
@@ -54,8 +56,10 @@ const Demo = () => {
       <section className="pt-32 pb-20 md:pt-40">
         <div className="editorial-container">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
+
             {/* FORM – LEFT */}
             <form className="space-y-6">
+
               {/* First Name + Last Name */}
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
@@ -65,7 +69,8 @@ const Demo = () => {
                   <input
                     type="text"
                     placeholder="First name"
-                    className="w-full h-12 px-4 bg-secondary/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
+                    className="w-full h-12 px-4 bg-secondary/50 rounded-lg
+                               focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
                   />
                 </div>
                 <div>
@@ -75,7 +80,8 @@ const Demo = () => {
                   <input
                     type="text"
                     placeholder="Last name"
-                    className="w-full h-12 px-4 bg-secondary/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
+                    className="w-full h-12 px-4 bg-secondary/50 rounded-lg
+                               focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
                   />
                 </div>
               </div>
@@ -89,7 +95,8 @@ const Demo = () => {
                   <input
                     type="email"
                     placeholder="you@library.org"
-                    className="w-full h-12 px-4 bg-secondary/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
+                    className="w-full h-12 px-4 bg-secondary/50 rounded-lg
+                               focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
                   />
                 </div>
                 <div>
@@ -99,12 +106,13 @@ const Demo = () => {
                   <input
                     type="text"
                     placeholder="Your library"
-                    className="w-full h-12 px-4 bg-secondary/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
+                    className="w-full h-12 px-4 bg-secondary/50 rounded-lg
+                               focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
                   />
                 </div>
               </div>
 
-              {/* Products & Services – Multi Select with Tags */}
+              {/* Products & Services */}
               <div>
                 <label className="block text-sm font-medium mb-2">
                   Products & Services of Interest{" "}
@@ -119,19 +127,21 @@ const Demo = () => {
                       variant="outline"
                       role="combobox"
                       aria-expanded={open}
-                      className="w-full justify-between h-12 bg-secondary/50 text-left font-normal"
+                      className="w-full justify-between h-12 bg-secondary/50
+                                 text-left font-normal"
                     >
                       {selectedProducts.length > 0
                         ? `${selectedProducts.length} selected`
-                        : "Select products..."}
-                      <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+                        : "Select products or enquiry type…"}
+                      <ChevronsUpDown className="ml-2 h-4 w-4 opacity-50" />
                     </Button>
                   </PopoverTrigger>
+
                   <PopoverContent className="w-full p-0" align="start">
                     <Command>
-                      <CommandInput placeholder="Search products..." />
+                      <CommandInput placeholder="Search…" />
                       <CommandList>
-                        <CommandEmpty>No product found.</CommandEmpty>
+                        <CommandEmpty>No option found.</CommandEmpty>
                         <CommandGroup>
                           {products.map((product) => (
                             <CommandItem
@@ -169,7 +179,9 @@ const Demo = () => {
                       return (
                         <div
                           key={value}
-                          className="inline-flex items-center gap-2 rounded-full bg-[#2aa6a6]/10 px-3 py-1.5 text-sm font-medium text-[#2aa6a6]"
+                          className="inline-flex items-center gap-2 rounded-full
+                                     bg-[#2aa6a6]/10 px-3 py-1.5
+                                     text-sm font-medium text-[#2aa6a6]"
                         >
                           {product?.label}
                           <button
@@ -179,7 +191,7 @@ const Demo = () => {
                                 current.filter((item) => item !== value)
                               )
                             }
-                            className="rounded-full hover:bg-[#2aa6a6]/20 focus:outline-none transition"
+                            className="rounded-full hover:bg-[#2aa6a6]/20 transition"
                           >
                             <X className="h-3.5 w-3.5" />
                           </button>
@@ -198,7 +210,9 @@ const Demo = () => {
                 <textarea
                   rows={4}
                   placeholder="Tell us about your goals or questions..."
-                  className="w-full p-4 bg-secondary/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20 resize-none"
+                  className="w-full p-4 bg-secondary/50 rounded-lg
+                             focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20
+                             resize-none"
                 />
               </div>
 
@@ -232,6 +246,7 @@ const Demo = () => {
                 ))}
               </ul>
             </div>
+
           </div>
         </div>
       </section>
