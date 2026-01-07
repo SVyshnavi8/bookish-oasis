@@ -73,7 +73,7 @@ const TS360 = () => {
       {/* Hero */}
       {/* ================= TS360 HERO SECTION ================= */}
       <section
-        className="relative flex items-center overflow-hidden pt-20 pb-16"
+        className="relative flex items-center overflow-hidden pt-24 md:pt-32 pb-16"
         style={{
           backgroundImage: `url(${libraryBg})`,
           backgroundSize: "cover",

@@ -16,6 +16,13 @@ import {
 
 import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 import lib1 from "@/assets/lib1.jpg";
 import bgImage from "@/assets/img1.jpeg";
@@ -189,7 +196,41 @@ const Index = () => {
             A connected suite of digital products built for modern libraries
           </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-6 gap-8 max-w-6xl mx-auto">
+          {/* Mobile Carousel - shows 1 card at a time */}
+          <div className="md:hidden max-w-sm mx-auto relative">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {productFeatures.map((feature, index) => (
+                  <CarouselItem key={feature.title} className="pl-2 md:pl-4">
+                    <Link
+                      to={feature.link}
+                      className="group rounded-2xl bg-card border border-border px-6 py-8 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 flex flex-col h-full"
+                    >
+                      <div className="w-14 h-14 mx-auto mb-4 rounded-xl bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
+                        <feature.icon className="w-7 h-7 text-[#2aa6a6]" />
+                      </div>
+                      <h3 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
+                      <p className="text-muted-foreground leading-relaxed mb-4 flex-1">{feature.description}</p>
+                      <span className="mt-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent font-medium group-hover:gap-3 transition-all">
+                        Learn more <ArrowRight className="w-4 h-4" />
+                      </span>
+                    </Link>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="-left-4 h-10 w-10 bg-background/80 backdrop-blur-sm" />
+              <CarouselNext className="-right-4 h-10 w-10 bg-background/80 backdrop-blur-sm" />
+            </Carousel>
+          </div>
+
+          {/* Desktop Grid - shows 2 cards on tablet, 3 on desktop */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-6 gap-8 max-w-6xl mx-auto">
             {productFeatures.map((feature, index) => (
               <div
                 key={feature.title}

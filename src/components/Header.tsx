@@ -27,10 +27,10 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
         isScrolled
           ? "bg-background/95 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
+          : "bg-background/80 backdrop-blur-sm"
       }`}
     >
       <nav className="editorial-container">
@@ -129,7 +129,7 @@ const Header = () => {
 
         {/* ================= Mobile Menu ================= */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-border/50 bg-background">
+          <div className="md:hidden border-t border-border/50 bg-background/95 backdrop-blur-md">
             <div className="flex flex-col gap-6 px-6 py-6">
 
               <Link

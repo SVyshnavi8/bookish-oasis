@@ -6,7 +6,7 @@ import heroImage from "@/assets/hero-library.jpg";
 const HeroSection = () => {
   return (
     <section
-      className="relative flex items-center py-14 md:py-16 lg:py-24 overflow-hidden"
+      className="relative flex items-center pt-24 md:pt-32 pb-14 md:pb-16 lg:pb-24 overflow-hidden"
       data-aos="fade-up"
     >
       {/* Background */}

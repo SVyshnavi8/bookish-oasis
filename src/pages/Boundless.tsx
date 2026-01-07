@@ -112,7 +112,7 @@ const Boundless = () => {
     <MainLayout>
       {/* Hero */}
       <section
-        className="pt-20 pb-16"
+        className="pt-24 md:pt-32 pb-16"
         data-aos="fade-up"
       >
         <div className="editorial-container">
