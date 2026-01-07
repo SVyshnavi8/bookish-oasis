@@ -96,7 +96,7 @@ const TS360 = () => {
             {/* Product Badge */}
             <h2
               className="font-display font-medium tracking-tight
-               text-5xl md:text-6xl lg:text-7xl
+               text-4xl sm:text-5xl md:text-6xl lg:text-7xl
                text-[#2aa6a6] text-center mb-2"
               data-aos="fade-up"
               data-aos-delay="100"
@@ -106,7 +106,7 @@ const TS360 = () => {
 
             {/* Headline */}
             <h1
-              className="font-display text-3xl md:text-4xl lg:text-5xl
+              className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl
                font-medium leading-none tracking-tight
                text-primary-foreground mb-0"
               data-aos="fade-up"
@@ -186,11 +186,16 @@ const TS360 = () => {
             <div className="relative overflow-hidden rounded-xl bg-white/80 shadow-lg backdrop-blur-sm border border-[#2aa6a6]/20">
               <div className="px-8 py-6">
                 {/* Carousel Container */}
-                <div className="relative h-32 md:h-28">
+                <div className="relative min-h-[180px] md:min-h-[112px]">
                   {updates.map((update, index) => (
                     <div
                       key={index}
-                      className={`absolute inset-0 flex items-center gap-6 transition-opacity duration-1000 ${index === currentIndex ? "opacity-100" : "opacity-0"
+                      className={`absolute inset-0
+                        flex flex-col md:flex-row
+                        items-start md:items-center
+                        gap-4 md:gap-6
+                        transition-opacity duration-1000 ${
+                          index === currentIndex ? "opacity-100" : "opacity-0"
                         }`}
                     >
                       <div className="flex-shrink-0">
@@ -258,7 +263,7 @@ const TS360 = () => {
             {/* Text */}
             <div className="space-y-4 order-2 lg:order-1">
 
-              <h2 className="editorial-subheadline font-semibold text-balance -mt-12">
+            <h2 className="editorial-subheadline font-semibold text-balance mt-0 md:-mt-12">
                 A clear focus
               </h2>
 
@@ -335,8 +340,8 @@ const TS360 = () => {
             {/* Content */}
             <div className="space-y-4">
 
-              <h2 className="editorial-subheadline font-semibold text-balance -mt-12">
-                <span className="block">Collection development for</span>
+            <h2 className="editorial-subheadline font-semibold text-balance mt-0 md:-mt-12">
+            <span className="block">Collection development for</span>
                 <span className="block">digital and print</span>
               </h2>
 
@@ -374,7 +379,7 @@ const TS360 = () => {
               </ul>
 
               {/* Supporting line — NOT a closing */}
-              <p className="editorial-body mt-18 text-muted-foreground">
+              <p className="editorial-body mt-6 text-muted-foreground">
                 In addition to the TS360 platform, LibraryOne offers collection
                 development services that support both digital and print strategies
               </p>
