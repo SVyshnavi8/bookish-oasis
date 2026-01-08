@@ -62,7 +62,7 @@ const Index = () => {
     },
     {
       icon: BarChart3,
-      title: "Bibliostat Collect & Connect",
+      title: "Bibliostat CollectConnect",
       description:
         "Data, analytics, and insight tools that help libraries demonstrate impact and support strategic decision-making",
       link: "/bibliostat",

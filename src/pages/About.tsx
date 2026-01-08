@@ -239,12 +239,12 @@ const About = () => {
         data-aos="fade-up"
       >
         <div className="editorial-container">
-          <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-10 items-start">
+          <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-10 items-center">
 
             {/* Left rail — label */}
             <div className="lg:col-span-3">
               <h3
-                  className="editorial-subheadline"
+                  className="editorial-subheadline font-semibold text-balance"
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >

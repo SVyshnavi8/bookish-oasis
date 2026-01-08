@@ -239,7 +239,7 @@ const Boundless = () => {
           {/* Section Heading with balanced spacing */}
           <div className="text-center mb-14">
             <h2 className="editorial-subheadline font-semibold text-balance mb-6">
-              Why boundless?
+              Why Boundless?
             </h2>
           </div>
 
@@ -540,7 +540,7 @@ const Boundless = () => {
 
         <div className="editorial-container text-center relative z-10">
           <h2 className="editorial-subheadline font-semibold text-balance mb-8">
-            Ready for boundless?
+            Ready for Boundless?
           </h2>
 
           <Link to="/contact?product=boundless">

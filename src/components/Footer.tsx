@@ -14,7 +14,7 @@ import logoHeader from "@/assets/logoheader.png";
 const Footer = () => {
   return (
     <footer className="bg-foreground text-background text-sm font-body">
-      <div className="editorial-container pt-6 pb-8">
+      <div className="editorial-container pt-1 pb-8">
 
         <div className="grid lg:grid-cols-2 gap-8 md:gap-10 items-start">
 

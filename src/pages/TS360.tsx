@@ -112,7 +112,7 @@ const TS360 = () => {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              A Trusted collection development platform—
+              A trusted collection development platform—
               <span className="block mt-1 italic gradient-text">
                 Supporting both digital and print strategies
               </span>
@@ -180,73 +180,56 @@ const TS360 = () => {
 
 
       {/* Important Updates – Automatic Carousel with Arrow Navigation */}
-      <section className="py-8 bg-gradient-to-r from-[#2aa6a6]/10 via-[#2aa6a6]/5 to-[#2aa6a6]/10" data-aos="fade-up">
+      <section
+        className="py-6 bg-[#2aa6a6]/5"
+        data-aos="fade-up"
+      >
         <div className="editorial-container">
-          <div className="max-w-5xl mx-auto">
-            <div className="relative overflow-hidden rounded-xl bg-white/80 shadow-lg backdrop-blur-sm border border-[#2aa6a6]/20">
-              <div className="px-8 py-6">
-                {/* Carousel Container */}
-                <div className="relative min-h-[180px] md:min-h-[112px]">
-                  {updates.map((update, index) => (
-                    <div
-                      key={index}
-                      className={`absolute inset-0
-                        flex flex-col md:flex-row
-                        items-start md:items-center
-                        gap-4 md:gap-6
-                        transition-opacity duration-1000 ${
-                          index === currentIndex ? "opacity-100" : "opacity-0"
-                        }`}
-                    >
-                      <div className="flex-shrink-0">
-                        <div className="w-12 h-12 rounded-full bg-[#2aa6a6]/10 flex items-center justify-center">
-                          <update.icon className="w-7 h-7 text-[#2aa6a6]" />
-                        </div>
-                      </div>
-                      <div className="space-y-2">
-                        <h3 className="text-lg md:text-xl font-semibold text-[#2aa6a6]">
-                          {update.title}
-                        </h3>
-                        <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                          {update.text}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+          <div className="max-w-4xl mx-auto">
 
-                {/* Arrow Navigation */}
-                <div className="flex justify-between items-center mt-6">
-                  <button
-                    onClick={goToPrevious}
-                    className="p-2 rounded-full bg-[#2aa6a6]/10 hover:bg-[#2aa6a6]/20 transition-colors"
-                    aria-label="Previous update"
-                  >
-                    <ChevronLeft className="w-6 h-6 text-[#2aa6a6]" />
-                  </button>
+            <div className="flex gap-5 items-start
+                      border-l-4 border-[#2aa6a6]
+                      pl-5">
 
-                  <div className="flex gap-2">
-                    {updates.map((_, index) => (
-                      <div
-                        key={index}
-                        className={`w-2 h-2 rounded-full transition-all ${index === currentIndex
-                            ? "bg-[#2aa6a6] w-8"
-                            : "bg-[#2aa6a6]/30"
-                          }`}
-                      />
-                    ))}
-                  </div>
+              {/* Icon */}
+              <div className="flex-shrink-0 mt-1">
+                <AlertCircle className="w-7 h-7 text-[#2aa6a6]" />
+              </div>
 
-                  <button
-                    onClick={goToNext}
-                    className="p-2 rounded-full bg-[#2aa6a6]/10 hover:bg-[#2aa6a6]/20 transition-colors"
-                    aria-label="Next update"
-                  >
-                    <ChevronRight className="w-6 h-6 text-[#2aa6a6]" />
-                  </button>
+              {/* Content */}
+              <div className="space-y-3">
+
+                <h2
+                  className="text-lg md:text-xl font-serif font-semibold
+                       text-[#2aa6a6]"
+                >
+                  Important Update
+                </h2>
+
+                <div className="space-y-2 text-slate-700 leading-relaxed text-sm md:text-base">
+
+                  <p>
+                    <strong className="text-slate-900">
+                      Print ordering is no longer supported on TS360.
+                    </strong>{" "}
+                    TS360 remains available as a subscription product for print and
+                    digital collection development.
+                  </p>
+
+                  <p>
+                    <strong className="text-slate-900">
+                      Digital ordering functionality will resume on TS360.
+                    </strong>{" "}
+                    Systems are currently transitioning to LibraryOne’s infrastructure.
+                    Communication and guidance will be shared as functionality becomes
+                    available.
+                  </p>
+
                 </div>
               </div>
+
             </div>
+
           </div>
         </div>
       </section>
@@ -263,7 +246,7 @@ const TS360 = () => {
             {/* Text */}
             <div className="space-y-4 order-2 lg:order-1">
 
-            <h2 className="editorial-subheadline font-semibold text-balance mt-0 md:-mt-12">
+              <h2 className="editorial-subheadline font-semibold text-balance mt-0 md:-mt-12">
                 A clear focus
               </h2>
 
@@ -340,8 +323,8 @@ const TS360 = () => {
             {/* Content */}
             <div className="space-y-4">
 
-            <h2 className="editorial-subheadline font-semibold text-balance mt-0 md:-mt-12">
-            <span className="block">Collection development for</span>
+              <h2 className="editorial-subheadline font-semibold text-balance mt-0 md:-mt-12">
+                <span className="block">Collection development for</span>
                 <span className="block">digital and print</span>
               </h2>
 

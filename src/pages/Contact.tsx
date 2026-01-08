@@ -30,7 +30,6 @@ const products = [
   // New non-product options
   { value: "general-enquiry", label: "General enquiry" },
   { value: "partnership", label: "Partnership" },
-  { value: "other-enquiry", label: "Other enquiry" },
 ];
 
 const Contact = () => {
