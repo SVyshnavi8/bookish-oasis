@@ -19,10 +19,10 @@ const NotFound = () => {
         description="The page you’re looking for could not be found on LibraryOne. Return home to explore our digital library solutions."
         path={location.pathname}
       />
-      <section className="min-h-screen flex items-center justify-center py-20">
+      <section className="min-h-screen flex items-center justify-center py-20" aria-labelledby="notfound-heading">
         <div className="text-center px-6">
           <p className="text-8xl font-serif font-bold bg-gradient-to-r from-[#0b5fa5]/20 via-[#2aa6a6]/20 to-[#4cc9c0]/20 mb-4">404</p>
-          <h1 className="text-3xl font-serif font-semibold mb-4">Page Not Found</h1>
+          <h1 id="notfound-heading" className="text-3xl font-serif font-semibold mb-4">Page Not Found</h1>
           <p className="text-muted-foreground mb-8 max-w-md mx-auto">
             The page you're looking for doesn't exist or has been moved.
           </p>

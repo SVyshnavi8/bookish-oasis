@@ -6,11 +6,11 @@ import logoHeader from "@/assets/logoheader.png";
 
 /* ---------- Solutions Dropdown Links ---------- */
 const solutionLinks = [
-  { name: "Boundless", path: "/boundless" },
+  { name: "Boundless", path: "/products/boundless" },
   { name: "TS360", path: "/ts360" },
-  { name: "ePopUp", path: "/epopup" },
-  { name: "Content Café", path: "/content-cafe" },
-  { name: "Bibliostat CollectConnect", path: "/bibliostat" },
+  { name: "ePopUp", path: "/products/epopup" },
+  { name: "Content Café", path: "/products/content-cafe" },
+  { name: "Bibliostat CollectConnect", path: "/products/bibliostat" },
 ];
 
 const Header = () => {
@@ -23,6 +23,17 @@ const Header = () => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsSolutionsOpen(false);
+        setIsMobileMenuOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
   const isActive = (path: string) => location.pathname === path;

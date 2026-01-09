@@ -99,6 +99,7 @@ const Contact = () => {
                     placeholder="Your name"
                     className="w-full h-12 px-4 bg-secondary/50 rounded-lg
                                focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
+                    aria-label="Your name"
                   />
                 </div>
                 <div data-aos="fade-up" data-aos-delay="300">
@@ -108,6 +109,7 @@ const Contact = () => {
                     placeholder="Library name"
                     className="w-full h-12 px-4 bg-secondary/50 rounded-lg
                                focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
+                    aria-label="Library name"
                   />
                 </div>
               </div>
@@ -121,6 +123,7 @@ const Contact = () => {
                     placeholder="you@example.com"
                     className="w-full h-12 px-4 bg-secondary/50 rounded-lg
                                focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
+                    aria-label="Email address"
                   />
                 </div>
               </div>

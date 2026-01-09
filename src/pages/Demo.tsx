@@ -98,6 +98,7 @@ const Demo = () => {
                   <input
                     type="text"
                     placeholder="First name"
+                    aria-label="First name"
                     className="w-full h-12 px-4 bg-secondary/50 rounded-lg
                                focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
                   />
@@ -109,6 +110,7 @@ const Demo = () => {
                   <input
                     type="text"
                     placeholder="Last name"
+                    aria-label="Last name"
                     className="w-full h-12 px-4 bg-secondary/50 rounded-lg
                                focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
                   />
@@ -124,6 +126,7 @@ const Demo = () => {
                   <input
                     type="email"
                     placeholder="you@library.org"
+                    aria-label="Work email"
                     className="w-full h-12 px-4 bg-secondary/50 rounded-lg
                                focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
                   />
@@ -135,6 +138,7 @@ const Demo = () => {
                   <input
                     type="text"
                     placeholder="Your library"
+                    aria-label="Library name"
                     className="w-full h-12 px-4 bg-secondary/50 rounded-lg
                                focus:outline-none focus:ring-2 focus:ring-[#2aa6a6]/20"
                   />
