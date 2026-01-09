@@ -1,6 +1,6 @@
 import MainLayout from "@/layouts/MainLayout";
 import { Button } from "@/components/ui/button";
-import { Mail, MapPin, Check, ChevronsUpDown, X } from "lucide-react";
+import { Mail, MapPin, Check, ChevronsUpDown, X, Sparkles } from "lucide-react";
 
 import {
   Command,
@@ -52,12 +52,37 @@ const Contact = () => {
 
   return (
     <MainLayout>
-      <section className="pt-32 pb-20 md:pt-40" data-aos="fade-up">
-        <div className="editorial-container">
+      <section className="relative pt-32 pb-20 md:pt-40 overflow-hidden" data-aos="fade-up">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0b5fa5]/6 via-[#2aa6a6]/6 to-transparent pointer-events-none" />
+        <div className="editorial-container relative">
+
+          {/* Page Heading */}
+          <div className="mb-10 space-y-3 text-center lg:text-left" data-aos="fade-up">
+            <p className="uppercase text-xs tracking-[0.25em] text-muted-foreground">Contact</p>
+            <h1 className="editorial-headline text-4xl md:text-5xl">Get in Touch</h1>
+            <p className="editorial-body max-w-3xl mx-auto lg:mx-0">
+              Have questions? We’d love to hear from you. Share a bit about what you need and we’ll connect you with the right team.
+            </p>
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
 
             {/* FORM – LEFT */}
-            <form className="space-y-6" data-aos="fade-right" data-aos-delay="100">
+            <form
+              className="space-y-6 bg-background/70 border border-border/60 rounded-2xl p-6 md:p-8 shadow-lg shadow-black/5 backdrop-blur-sm"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <div className="space-y-2">
+                <div className="inline-flex items-center gap-2 rounded-full bg-secondary/40 px-3 py-1 text-xs font-semibold text-foreground">
+                  <Sparkles className="w-4 h-4 text-[#2aa6a6]" />
+                  We respond within 1 business day
+                </div>
+                <h2 className="text-2xl md:text-3xl font-semibold text-foreground">Tell us how we can help</h2>
+                <p className="text-muted-foreground">
+                  Share your details and we’ll connect you with the right team.
+                </p>
+              </div>
 
               {/* Name + Organization */}
               <div className="grid md:grid-cols-2 gap-4">
@@ -109,8 +134,7 @@ const Contact = () => {
                       variant="outline"
                       role="combobox"
                       aria-expanded={open}
-                      className="w-full justify-between h-12 bg-secondary/50
-                                 text-left font-normal"
+                      className="w-full justify-between h-12 bg-secondary/50 text-left font-normal border-border"
                     >
                       {selectedProducts.length > 0
                         ? `${selectedProducts.length} selected`
@@ -204,26 +228,34 @@ const Contact = () => {
             </form>
 
             {/* RIGHT INFO */}
-            <div data-aos="fade-left" data-aos-delay="200">
-              <h1 className="editorial-headline mb-6">Get in Touch</h1>
+            <div
+              className="space-y-6 bg-background/70 border border-border/60 rounded-2xl p-6 md:p-8 shadow-lg shadow-black/5 backdrop-blur-sm"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
+              <div className="space-y-2">
+                <p className="uppercase text-xs tracking-[0.25em] text-muted-foreground">
+                  Contact
+                </p>
+                <h2 className="text-2xl font-semibold">Reach us directly</h2>
+                <p className="text-muted-foreground">
+                  Prefer a quick note? Email or visit—whatever is easiest for you.
+                </p>
+              </div>
 
-              <p className="editorial-body mb-12">
-                Have questions? We’d love to hear from you
-              </p>
-
-              <div className="space-y-6">
-                <div className="flex gap-4">
+              <div className="space-y-4">
+                <div className="flex gap-4 rounded-xl border border-border/70 bg-secondary/30 p-4">
                   <Mail className="w-5 h-5 text-[#2aa6a6] mt-1" />
                   <div>
-                    <p className="font-medium">Email</p>
+                    <p className="font-semibold">Email</p>
                     <p className="text-muted-foreground">info@libraryone.com</p>
                   </div>
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex gap-4 rounded-xl border border-border/70 bg-secondary/30 p-4">
                   <MapPin className="w-5 h-5 text-[#2aa6a6] mt-1" />
                   <div>
-                    <p className="font-medium">Office</p>
+                    <p className="font-semibold">Office</p>
                     <p className="text-muted-foreground">
                       3540 Toringdon Way, Suite 200<br />
                       #391 Charlotte, NC 28277
