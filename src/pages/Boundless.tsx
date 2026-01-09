@@ -8,6 +8,14 @@ import img4 from "@/assets/audio_book.png";
 import img5 from "@/assets/kids.png";
 import img6 from "@/assets/kids_book.png";
 import boundlessLogo from "@/assets/boundlesslogo.png";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "@/components/ui/carousel";
 
 import {
   ArrowRight,
@@ -27,8 +35,18 @@ import {
 import boundlessVisual from "@/assets/boundless-visual.jpg";
 import digitalReading from "@/assets/digital-reading.jpg";
 import Seo from "@/components/Seo";
+import { useEffect, useState } from "react";
 
 const Boundless = () => {
+  const [carouselApi, setCarouselApi] = useState<CarouselApi | null>(null);
+
+  useEffect(() => {
+    if (!carouselApi) return;
+    const id = setInterval(() => {
+      carouselApi.scrollNext();
+    }, 3500);
+    return () => clearInterval(id);
+  }, [carouselApi]);
   const keyFeatures = [
     {
       icon: Users,
@@ -209,29 +227,46 @@ const Boundless = () => {
             </p>
           </div>
 
-          {/* Images Gallery */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {[
-              img1,
-              img2,
-              img3,
-              img4,
-              img5,
-              img6,
-            ].map((src, index) => (
-              <div
-                key={index}
-                className="aspect-[4/3] rounded-2xl overflow-hidden shadow-md"
-                data-aos="fade-up"
-                data-aos-delay={index * 80}
-              >
-                <img
-                  src={src}
-                  alt={`Boundless feature ${index + 1}`}
-                  className="w-full h-full object-cover"
+          {/* Images Carousel */}
+          <div className="max-w-5xl mx-auto">
+            <Carousel
+              className="w-full"
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              setApi={setCarouselApi}
+            >
+              <CarouselContent className="pb-4">
+                {[img1, img2, img3, img4, img5, img6].map((src, index) => (
+                  <CarouselItem
+                    key={index}
+                    className="sm:basis-1/2 lg:basis-1/3"
+                    data-aos="fade-up"
+                    data-aos-delay={index * 80}
+                  >
+                    <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-md">
+                      <img
+                        src={src}
+                        alt={`Boundless feature ${index + 1}`}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <div className="pointer-events-none">
+                <CarouselPrevious
+                  className="pointer-events-auto !absolute !left-0 !top-1/2 !-translate-y-1/2 sm:!-left-4 md:!-left-6"
+                  aria-label="Previous media"
+                />
+                <CarouselNext
+                  className="pointer-events-auto !absolute !right-0 !top-1/2 !-translate-y-1/2 sm:!-right-4 md:!-right-6"
+                  aria-label="Next media"
                 />
               </div>
-            ))}
+            </Carousel>
           </div>
 
 
