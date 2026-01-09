@@ -39,14 +39,33 @@ import { useEffect, useState } from "react";
 
 const Boundless = () => {
   const [carouselApi, setCarouselApi] = useState<CarouselApi | null>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const slides = [img1, img2, img3, img4, img5, img6];
 
   useEffect(() => {
     if (!carouselApi) return;
+    const onSelect = () => {
+      const snap = carouselApi.selectedScrollSnap() ?? 0;
+      setCurrentIndex(snap % slides.length);
+    };
+    onSelect();
+    carouselApi.on("select", onSelect);
+    carouselApi.on("reInit", onSelect);
+
     const id = setInterval(() => {
-      carouselApi.scrollNext();
+      if (!carouselApi) return;
+      if (carouselApi.canScrollNext()) {
+        carouselApi.scrollNext();
+      } else {
+        carouselApi.scrollTo(0);
+      }
     }, 3500);
-    return () => clearInterval(id);
-  }, [carouselApi]);
+    return () => {
+      carouselApi.off("select", onSelect);
+      carouselApi.off("reInit", onSelect);
+      clearInterval(id);
+    };
+  }, [carouselApi, slides.length]);
   const keyFeatures = [
     {
       icon: Users,
@@ -238,23 +257,35 @@ const Boundless = () => {
               setApi={setCarouselApi}
             >
               <CarouselContent className="pb-4">
-                {[img1, img2, img3, img4, img5, img6].map((src, index) => (
+                {slides.map((src, index) => {
+                  const isActive = currentIndex === index;
+                  return (
                   <CarouselItem
                     key={index}
                     className="sm:basis-1/2 lg:basis-1/3"
                     data-aos="fade-up"
                     data-aos-delay={index * 80}
                   >
-                    <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-md">
+                    <div
+                      className={`aspect-[4/3] rounded-2xl overflow-hidden shadow-md transition-transform transition-shadow duration-300 ${
+                        isActive
+                          ? "scale-[1.03] shadow-2xl ring-1 ring-[#2aa6a6]/30"
+                          : "scale-95 sm:scale-100"
+                      }`}
+                      style={{
+                        transformOrigin: "center",
+                      }}
+                    >
                       <img
                         src={src}
                         alt={`Boundless feature ${index + 1}`}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain bg-background"
                         loading="lazy"
                       />
                     </div>
                   </CarouselItem>
-                ))}
+                );
+                })}
               </CarouselContent>
               <div className="pointer-events-none">
                 <CarouselPrevious
