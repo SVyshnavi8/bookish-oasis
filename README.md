@@ -1,73 +1,65 @@
-# Welcome to your Lovable project
+# LibraryOne Website
 
-## Project info
+Marketing site for LibraryOne digital library services (Boundless, ePopUp, TS360, Content Café, Bibliostat). Built with Vite + React + TypeScript + Tailwind + shadcn/ui and react-helmet-async.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Quick start
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# prerequisites: Node 18+ and npm
+npm install
 npm run dev
+# app runs at http://localhost:5173/
 ```
 
-**Edit a file directly in GitHub**
+## Build & preview
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```sh
+npm run build
+npm run preview   # serves the production build locally
+```
 
-**Use GitHub Codespaces**
+## Project structure
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- `src/` React app source
+  - `pages/` route views (Home, Solutions, Boundless, TS360, ePopUp, Content Café, Bibliostat, Contact, Request Demo, Privacy, 404)
+  - `components/` shared UI (Header, Footer, Hero, CTA, Carousel, SEO helper)
+  - `layouts/` layout wrappers
+  - `assets/` images and logos
+- `public/` static assets (`robots.txt`, `sitemap.xml`, `404.html`)
+- `index.html` Vite entry
 
-## What technologies are used for this project?
+## Routing
 
-This project is built with:
+- Uses `react-router-dom` with `BrowserRouter` (clean URLs).
+- Main routes: `/`, `/solutions`, `/libraries`, `/about`, `/resources`, `/ts360`, `/products/boundless`, `/products/epopup`, `/products/content-cafe`, `/products/bibliostat`, `/contact`, `/request-demo`, `/privacy-policy`, `*` (404).
+- SPA rewrites handled by `vercel.json` if deployed to Vercel.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## SEO & accessibility
 
-## How can I deploy this project?
+- `react-helmet-async` for per-page title/description/meta.
+- `public/sitemap.xml` and `robots.txt` included.
+- Skip-link, main landmarks, focus-visible styles, reduced-motion support.
+- Footer and header links use clean routes; request demo lives at `/request-demo`.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Styling & UI
 
-## Can I connect a custom domain to my Lovable project?
+- Tailwind CSS with custom tokens; global font: Inter.
+- shadcn/ui components with Embla-based carousels.
+- AOS animations respecting `prefers-reduced-motion`.
 
-Yes, you can!
+## Scripts
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- `npm run dev` – start dev server
+- `npm run build` – production build
+- `npm run preview` – serve built assets locally
+- `npm run lint` – run ESLint
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Deployment
+
+- Any static host works (Vercel recommended). Ensure SPA rewrite to `index.html` (already configured via `vercel.json`).
+
+## Notes
+
+- Request Demo route is `/request-demo`.
+- Removed legacy auth/browse pages (`login`, `register`, `forgot-password`, `browse`).
+- Keep `robots.txt` and `sitemap.xml` in `public/` for crawlers.***
