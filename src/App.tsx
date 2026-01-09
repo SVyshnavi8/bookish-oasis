@@ -65,13 +65,13 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/ts360" element={<TS360 />} />
-            <Route path="/boundless" element={<Boundless />} />
-            <Route path="/content-cafe" element={<ContentCafe />} />
-            <Route path="/epopup" element={<EPopUp />} />
-            <Route path="/bibliostat" element={<Bibliostat />} /> {/* ← Added route */}
+            <Route path="/products/boundless" element={<Boundless />} />
+            <Route path="/products/content-cafe" element={<ContentCafe />} />
+            <Route path="/products/epopup" element={<EPopUp />} />
+            <Route path="/products/bibliostat" element={<Bibliostat />} /> {/* ← Added route */}
             <Route path="/contact" element={<Contact />} />
             <Route path="/demo" element={<Demo />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} /> 
             <Route path="/terms-and-conditions" element={<PrivacyPolicy />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -13,11 +13,11 @@ import logoHeader from "@/assets/logoheader.png";
 
 const products = [
   { label: "Solutions Overview", to: "/solutions" },
-  { label: "Boundless", to: "/boundless" },
+  { label: "Boundless", to: "/products/boundless" },
   { label: "ePopUp Library", to: "/epopup" },
-  { label: "TS360", to: "/ts360" },
-  { label: "Content Café", to: "/content-cafe" },
-  { label: "Bibliostat CollectConnect", to: "/bibliostat" },
+  { label: "TS360", to: "/products/ts360" },
+  { label: "Content Café", to: "/products/content-cafe" },
+  { label: "Bibliostat CollectConnect", to: "/products/bibliostat" },
 ];
 
 const explore = [

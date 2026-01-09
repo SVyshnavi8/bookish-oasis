@@ -1,6 +1,6 @@
 import MainLayout from "@/layouts/MainLayout";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Check, ChevronsUpDown, X } from "lucide-react";
+import { CheckCircle, Check, ChevronsUpDown, X, Sparkles, ShieldCheck, Clock } from "lucide-react";
 import Seo from "@/components/Seo";
 
 import {
@@ -58,12 +58,36 @@ const Demo = () => {
         description="Request a LibraryOne demo to see Boundless, ePopUp, TS360, Content Café, and Bibliostat in action with your library’s use cases."
         path="/demo"
       />
-      <section className="pt-32 pb-20 md:pt-40">
-        <div className="editorial-container">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+      <section className="relative pt-32 pb-24 md:pt-40 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0b5fa5]/8 via-[#2aa6a6]/6 to-transparent pointer-events-none" />
+        <div className="editorial-container relative space-y-10">
+
+          {/* Page Heading */}
+          <div className="space-y-3 text-center lg:text-left max-w-3xl" data-aos="fade-up">
+            <div className="inline-flex items-center gap-2 rounded-full bg-secondary/60 px-3 py-1 text-xs font-semibold text-foreground">
+              <Sparkles className="w-4 h-4 text-[#2aa6a6]" />
+              Live product walkthrough
+            </div>
+            <h1 className="editorial-headline">Request a Demo</h1>
+            <p className="editorial-body">
+              See how LibraryOne can power discovery, outreach, and analytics for your library. Tell us your goals—we’ll tailor the walkthrough.
+            </p>
+            <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+              <span className="inline-flex items-center gap-2">
+                <Clock className="w-4 h-4 text-[#2aa6a6]" />
+                We respond within 1 business day
+              </span>
+              <span className="inline-flex items-center gap-2">
+                <ShieldCheck className="w-4 h-4 text-[#2aa6a6]" />
+                No obligation, no pressure
+              </span>
+            </div>
+          </div>
+
+          <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-start">
 
             {/* FORM – LEFT */}
-            <form className="space-y-6">
+            <form className="space-y-6 bg-background/70 border border-border/60 rounded-2xl p-6 md:p-8 shadow-lg shadow-black/5 backdrop-blur-sm">
 
               {/* First Name + Last Name */}
               <div className="grid sm:grid-cols-2 gap-4">
@@ -227,29 +251,44 @@ const Demo = () => {
             </form>
 
             {/* RIGHT CONTENT */}
-            <div>
-              <h1 className="editorial-headline mb-6">Request a Demo</h1>
+            <div className="space-y-6">
+              <div className="bg-background/70 border border-border/60 rounded-2xl p-6 md:p-8 shadow-lg shadow-black/5 backdrop-blur-sm space-y-6">
+                <h2 className="text-2xl font-semibold text-foreground">What to expect</h2>
+                <ul className="space-y-4">
+                  {[
+                    "A tailored walkthrough of the products you select",
+                    "Discussion of outreach, discovery, and analytics goals",
+                    "Implementation steps and estimated timelines",
+                    "Pricing guidance based on your library profile",
+                  ].map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-center gap-3 text-muted-foreground"
+                    >
+                      <CheckCircle className="w-5 h-5 text-[#2aa6a6] flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-              <p className="editorial-body mb-8">
-                See how LibraryOne can transform your library&apos;s digital experience.
-              </p>
-
-              <ul className="space-y-4">
-                {[
-                  "Personalized walkthrough",
-                  "Custom pricing",
-                  "Implementation timeline",
-                  "Q&A with experts",
-                ].map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-center gap-3 text-muted-foreground"
-                  >
-                    <CheckCircle className="w-5 h-5 text-[#2aa6a6] flex-shrink-0" />
-                    {item}
+              <div className="bg-secondary/40 border border-border/60 rounded-2xl p-6 shadow-md shadow-black/5 space-y-3">
+                <h3 className="text-lg font-semibold text-foreground">Why libraries choose LibraryOne</h3>
+                <ul className="space-y-2 text-sm text-foreground/80">
+                  <li className="flex items-start gap-2">
+                    <Sparkles className="w-4 h-4 mt-0.5 text-[#2aa6a6]" />
+                    Boundless, ePopUp, TS360, Content Café, and Bibliostat in one ecosystem.
                   </li>
-                ))}
-              </ul>
+                  <li className="flex items-start gap-2">
+                    <ShieldCheck className="w-4 h-4 mt-0.5 text-[#2aa6a6]" />
+                    Built for libraries with patron privacy and accessibility in mind.
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Clock className="w-4 h-4 mt-0.5 text-[#2aa6a6]" />
+                    Fast onboarding and a responsive support team.
+                  </li>
+                </ul>
+              </div>
             </div>
 
           </div>

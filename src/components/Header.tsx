@@ -5,11 +5,11 @@ import logoHeader from "@/assets/logoheader.png";
 
 /* ---------- Solutions Dropdown Links ---------- */
 const solutionLinks = [
-  { name: "Boundless", path: "/boundless" },
+  { name: "Boundless", path: "/products/boundless" },
   { name: "TS360", path: "/ts360" },
-  { name: "ePopUp", path: "/epopup" },
-  { name: "Content Café", path: "/content-cafe" },
-  { name: "Bibliostat CollectConnect", path: "/bibliostat" },
+  { name: "ePopUp", path: "/products/epopup" },
+  { name: "Content Café", path: "/products/content-cafe" },
+  { name: "Bibliostat CollectConnect", path: "/products/bibliostat" },
 ];
 
 const Header = () => {
