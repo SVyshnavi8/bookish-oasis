@@ -11,7 +11,6 @@ import "aos/dist/aos.css";
 import ScrollToTop from "@/components/ScrollToTop";
 
 import Index from "./pages/Index";
-import Browse from "./pages/Browse";
 import Solutions from "./pages/Solutions";
 import Libraries from "./pages/Libraries";
 import About from "./pages/About";
@@ -21,9 +20,6 @@ import Boundless from "./pages/Boundless";
 import ContentCafe from "./pages/ContentCafe";
 import EPopUp from "./pages/EPopUp";
 import Bibliostat from "./pages/Bibliostat"; // ← Added
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import ForgotPassword from "./pages/ForgotPassword";
 import Contact from "./pages/Contact";
 import Demo from "./pages/Demo";
 import NotFound from "./pages/NotFound";
@@ -64,7 +60,6 @@ const App = () => {
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/browse" element={<Browse />} />
             <Route path="/solutions" element={<Solutions />} />
             <Route path="/libraries" element={<Libraries />} />
             <Route path="/about" element={<About />} />
@@ -74,9 +69,6 @@ const App = () => {
             <Route path="/content-cafe" element={<ContentCafe />} />
             <Route path="/epopup" element={<EPopUp />} />
             <Route path="/bibliostat" element={<Bibliostat />} /> {/* ← Added route */}
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/demo" element={<Demo />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
