@@ -1,6 +1,7 @@
 import MainLayout from "@/layouts/MainLayout";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Check, ChevronsUpDown, X } from "lucide-react";
+import Seo from "@/components/Seo";
 
 import {
   Command,
@@ -52,6 +53,11 @@ const Demo = () => {
 
   return (
     <MainLayout>
+      <Seo
+        title="Request a demo"
+        description="Request a LibraryOne demo to see Boundless, ePopUp, TS360, Content Café, and Bibliostat in action with your library’s use cases."
+        path="/demo"
+      />
       <section className="pt-32 pb-20 md:pt-40">
         <div className="editorial-container">
           <div className="grid lg:grid-cols-2 gap-16 items-start">

@@ -2,6 +2,7 @@ import MainLayout from "@/layouts/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Search, Star, Bookmark, MessageSquare, Sparkles, FileText, BookMarked, Eye, Link2, Heart, Target, Wrench, DollarSign, CheckCircle, BookOpen, Database, TrendingUp } from "lucide-react";
+import Seo from "@/components/Seo";
 
 const ContentCafe = () => {
   const features = [
@@ -29,6 +30,11 @@ const ContentCafe = () => {
 
   return (
     <MainLayout>
+      <Seo
+        title="Content Café enrichment"
+        description="Content Café by LibraryOne delivers rich discovery, reviews, and enrichment metadata to boost patron engagement across your catalog."
+        path="/content-cafe"
+      />
       {/* Hero */}
       <section
         className="pt-32 pb-12 md:pt-40 md:pb-16"

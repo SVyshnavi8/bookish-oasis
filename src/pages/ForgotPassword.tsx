@@ -2,6 +2,7 @@ import MainLayout from "@/layouts/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Seo from "@/components/Seo";
 import { ArrowLeft } from "lucide-react";
 
 const ForgotPassword = () => {
@@ -15,6 +16,11 @@ const ForgotPassword = () => {
 
   return (
     <MainLayout>
+      <Seo
+        title="Reset password"
+        description="Reset your LibraryOne account password securely to regain access."
+        path="/forgot-password"
+      />
       <section className="min-h-screen flex items-center justify-center py-20">
         <div className="w-full max-w-md px-6">
           {!submitted ? (

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Sparkles, BarChart3, Globe, MessageSquare, PieChart } from "lucide-react";
 import libraryInterior from "@/assets/library-interior.jpg";
+import Seo from "@/components/Seo";
 
 const Solutions = () => {
   const solutions = [
@@ -40,6 +41,11 @@ const Solutions = () => {
 
   return (
     <MainLayout>
+      <Seo
+        title="Library solutions for modern libraries"
+        description="Explore LibraryOne solutions—Boundless, ePopUp, TS360, Content Café, and Bibliostat—built to power discovery, outreach, analytics, and engagement."
+        path="/solutions"
+      />
       {/* Hero */}
       <section className="pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="editorial-container">

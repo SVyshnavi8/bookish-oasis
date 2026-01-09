@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import libraryBg from "@/assets/ts360.png";
 import { ArrowRight, BarChart3, TrendingUp, PieChart, Database, AlertCircle, BookOpen, Laptop, Target, Users, DollarSign, Layers, Info, ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import Seo from "@/components/Seo";
 
 const TS360 = () => {
   const features = [
@@ -70,6 +71,11 @@ const TS360 = () => {
 
   return (
     <MainLayout>
+      <Seo
+        title="TS360 collection analytics"
+        description="TS360 by LibraryOne delivers collection analytics, budget insights, and integrated data to guide smarter acquisitions and patron-centric collections."
+        path="/ts360"
+      />
       {/* Hero */}
       {/* ================= TS360 HERO SECTION ================= */}
       <section

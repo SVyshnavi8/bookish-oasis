@@ -2,6 +2,7 @@ import MainLayout from "@/layouts/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, FileText, Video, BookOpen, TrendingUp } from "lucide-react";
+import Seo from "@/components/Seo";
 
 const Resources = () => {
   const resources = [
@@ -37,6 +38,11 @@ const Resources = () => {
 
   return (
     <MainLayout>
+      <Seo
+        title="Library resources and insights"
+        description="Case studies, webinars, press updates, and analytics resources to help libraries maximize impact with LibraryOne’s digital services."
+        path="/resources"
+      />
       {/* Hero */}
       <section className="pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="editorial-container">

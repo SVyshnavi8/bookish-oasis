@@ -2,6 +2,7 @@ import MainLayout from "@/layouts/MainLayout";
 import BookRow from "@/components/BookRow";
 import CTASection from "@/components/CTASection";
 import { Search } from "lucide-react";
+import Seo from "@/components/Seo";
 import bookCover1 from "@/assets/book-cover-1.jpg";
 import bookCover2 from "@/assets/book-cover-2.jpg";
 import bookCover3 from "@/assets/book-cover-3.jpg";
@@ -72,6 +73,11 @@ const Browse = () => {
 
   return (
     <MainLayout>
+      <Seo
+        title="Browse digital collections"
+        description="Explore featured eBooks and audiobooks through LibraryOne’s browsing experience built for discovery, relevance, and reader engagement."
+        path="/browse"
+      />
       {/* Hero */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-20">
         <div className="editorial-container">

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Building2, Users, BookOpen, Globe } from "lucide-react";
 import libraryInterior from "@/assets/library-interior.jpg";
 import readingRoom from "@/assets/reading-room.jpg";
+import Seo from "@/components/Seo";
 
 const Libraries = () => {
   const benefits = [
@@ -31,6 +32,11 @@ const Libraries = () => {
 
   return (
     <MainLayout>
+      <Seo
+        title="Solutions for libraries"
+        description="See how LibraryOne empowers public, academic, and consortia libraries with digital collections, outreach, and analytics that scale."
+        path="/libraries"
+      />
       {/* Hero */}
       <section className="pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="editorial-container">

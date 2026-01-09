@@ -14,6 +14,7 @@ import {
   Globe,
   Sliders,
 } from "lucide-react";
+import Seo from "@/components/Seo";
 
 const tiles = [
   {
@@ -39,6 +40,11 @@ const tiles = [
 const Bibliostat = () => {
   return (
     <MainLayout>
+      <Seo
+        title="Bibliostat CollectConnect"
+        description="Bibliostat CollectConnect by LibraryOne helps libraries capture, analyze, and present data to demonstrate impact and guide strategic decisions."
+        path="/bibliostat"
+      />
       {/* Hero */}
       <section
         className="pt-32 pb-12 md:pt-40 md:pb-16"

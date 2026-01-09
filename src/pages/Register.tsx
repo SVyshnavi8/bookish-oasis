@@ -2,6 +2,7 @@ import MainLayout from "@/layouts/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Seo from "@/components/Seo";
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -16,6 +17,11 @@ const Register = () => {
 
   return (
     <MainLayout>
+      <Seo
+        title="Create account"
+        description="Create your LibraryOne account to access digital library services, demos, and resources."
+        path="/register"
+      />
       <section className="min-h-screen flex items-center justify-center py-20">
         <div className="w-full max-w-md px-6">
           <div className="text-center mb-8">

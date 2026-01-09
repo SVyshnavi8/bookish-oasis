@@ -6,10 +6,16 @@ import libraryInterior from "@/assets/library-interior.jpg";
 import readingRoom from "@/assets/reading-room.jpg";
 import aboutImage1 from "@/assets/about1.jpg";
 import aboutImage2 from "@/assets/about2.jpg";
+import Seo from "@/components/Seo";
 
 const About = () => {
   return (
     <MainLayout>
+      <Seo
+        title="About LibraryOne"
+        description="Learn about LibraryOne’s mission, team, and commitment to long-term stewardship of digital library services like Boundless and more."
+        path="/about"
+      />
       {/* Hero + Vision (Merged) */}
       <section
         className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden"

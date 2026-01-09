@@ -2,6 +2,7 @@ import MainLayout from "@/layouts/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Seo from "@/components/Seo";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -14,6 +15,11 @@ const Login = () => {
 
   return (
     <MainLayout>
+      <Seo
+        title="Login"
+        description="Sign in to your LibraryOne account to access your library tools and services."
+        path="/login"
+      />
       <section className="min-h-screen flex items-center justify-center py-20">
         <div className="w-full max-w-md px-6">
           <div className="text-center mb-8">

@@ -1,4 +1,5 @@
 import MainLayout from "@/layouts/MainLayout";
+import Seo from "@/components/Seo";
 
 import React from "react";
 
@@ -24,6 +25,11 @@ const Section = ({
 const PrivacyPolicy = () => {
   return (
     <MainLayout>
+      <Seo
+        title="Privacy Policy"
+        description="Read LibraryOne’s Privacy Policy to understand how we collect, use, and protect your information across our services."
+        path="/privacy-policy"
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 pt-32 pb-20 md:pt-40 md:pb-24">
         <div className="absolute inset-0">

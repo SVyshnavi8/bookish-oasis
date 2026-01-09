@@ -26,6 +26,7 @@ import {
 } from "lucide-react";
 import boundlessVisual from "@/assets/boundless-visual.jpg";
 import digitalReading from "@/assets/digital-reading.jpg";
+import Seo from "@/components/Seo";
 
 const Boundless = () => {
   const keyFeatures = [
@@ -110,6 +111,11 @@ const Boundless = () => {
 
   return (
     <MainLayout>
+      <Seo
+        title="Boundless digital library platform"
+        description="Boundless by LibraryOne delivers ebooks, audiobooks, outreach tools, and customizable discovery with TS360 integration and age-appropriate controls."
+        path="/boundless"
+      />
       {/* Hero */}
       <section
         className="pt-24 md:pt-32 pb-16"

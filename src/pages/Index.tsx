@@ -36,6 +36,7 @@ import bookCover5 from "@/assets/book-cover-5.jpg";
 import bookCover6 from "@/assets/book-cover-6.jpg";
 import bookCover7 from "@/assets/book-cover-7.jpg";
 import bookCover8 from "@/assets/book-cover-8.jpg";
+import Seo from "@/components/Seo";
 
 const Index = () => {
   const productFeatures = [
@@ -85,6 +86,11 @@ const Index = () => {
 
   return (
     <MainLayout>
+      <Seo
+        title="LibraryOne | Digital library services"
+        description="Discover LibraryOne’s connected suite of digital products—Boundless, ePopUp, TS360, Content Café, and Bibliostat—to engage patrons and streamline library operations."
+        path="/"
+      />
       <HeroSection />
       {/* ================= CLEAN INTRO SECTION ================= */}
       <section

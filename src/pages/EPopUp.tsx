@@ -6,6 +6,7 @@ import bostonImage from "@/assets/boston1.png";
 import louisImage from "@/assets/Louis.png";
 import extendImage from "@/assets/beyond2.jpg";
 import epopupImage from "@/assets/epopup.jpg";
+import Seo from "@/components/Seo";
 
 const EPopUp = () => {
   const features = [
@@ -33,6 +34,11 @@ const EPopUp = () => {
 
   return (
     <MainLayout>
+      <Seo
+        title="ePopUp Library outreach"
+        description="ePopUp Library by LibraryOne brings newspapers, magazines, and digital content into the community with multilingual access and on-site discovery."
+        path="/epopup"
+      />
       {/* Hero with Image */}
       <section className="pt-32 pb-12 md:pt-40 md:pb-16" data-aos="fade-up">
         <div className="editorial-container">

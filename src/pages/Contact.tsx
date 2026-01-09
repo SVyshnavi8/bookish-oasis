@@ -1,6 +1,7 @@
 import MainLayout from "@/layouts/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Mail, MapPin, Check, ChevronsUpDown, X, Sparkles } from "lucide-react";
+import Seo from "@/components/Seo";
 
 import {
   Command,
@@ -52,6 +53,11 @@ const Contact = () => {
 
   return (
     <MainLayout>
+      <Seo
+        title="Contact LibraryOne"
+        description="Get in touch with LibraryOne for product inquiries, partnerships, or support. We respond within one business day."
+        path="/contact"
+      />
       <section className="relative pt-32 pb-20 md:pt-40 overflow-hidden" data-aos="fade-up">
         <div className="absolute inset-0 bg-gradient-to-br from-[#0b5fa5]/6 via-[#2aa6a6]/6 to-transparent pointer-events-none" />
         <div className="editorial-container relative">
