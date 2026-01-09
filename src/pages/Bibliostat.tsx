@@ -74,7 +74,7 @@ const Bibliostat = () => {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <Link to="/demo?product=bibliostat">
+            <Link to="/request-demo?product=bibliostat">
                   <Button variant="hero" size="lg">
                     Request Demo
                     <ArrowRight className="w-5 h-5 ml-2" />

@@ -56,7 +56,7 @@ const Demo = () => {
       <Seo
         title="Request a demo"
         description="Request a LibraryOne demo to see Boundless, ePopUp, TS360, Content Café, and Bibliostat in action with your library’s use cases."
-        path="/demo"
+        path="/request-demo"
       />
       <section className="relative pt-32 pb-24 md:pt-40 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#0b5fa5]/8 via-[#2aa6a6]/6 to-transparent pointer-events-none" />

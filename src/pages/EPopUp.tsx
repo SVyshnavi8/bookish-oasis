@@ -55,7 +55,7 @@ const EPopUp = () => {
                 ePopUp Library helps libraries meet their community outreach goals by making digital resources visible, accessible, and relevant in the places where people already are. Take your digital collection directly into their communities—at hospitals, public transport, schools, neighborhoods and more
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link to="/demo?product=epopup">
+                <Link to="/request-demo?product=epopup">
                   <Button variant="hero" size="lg">
                     Request Demo
                     <ArrowRight className="w-5 h-5 ml-2" />

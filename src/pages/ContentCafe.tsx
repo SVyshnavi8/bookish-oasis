@@ -63,7 +63,7 @@ const ContentCafe = () => {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <Link to="/demo?product=content-cafe">
+                <Link to="/request-demo?product=content-cafe">
                   <Button variant="hero" size="lg">
                     Request Demo
                     <ArrowRight className="w-5 h-5 ml-2" />

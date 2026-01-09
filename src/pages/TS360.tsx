@@ -157,7 +157,7 @@ const TS360 = () => {
 
             {/* CTA */}
             <div data-aos="zoom-in" data-aos-delay="550">
-              <Link to="/demo?product=ts360">
+              <Link to="/request-demo?product=ts360">
                 <Button
                   size="lg"
                   variant="outline"

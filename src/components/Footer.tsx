@@ -25,7 +25,7 @@ const explore = [
   { label: "Libraries", to: "/libraries" },
   { label: "Resources", to: "/resources" },
   { label: "About", to: "/about" },
-  { label: "Request Demo", to: "/demo" },
+  { label: "Request Demo", to: "/request-demo" },
   { label: "Contact", to: "/contact" },
 ];
 

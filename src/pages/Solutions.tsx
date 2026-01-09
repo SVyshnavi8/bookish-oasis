@@ -143,7 +143,7 @@ const Solutions = () => {
             your library's digital presence.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/demo">
+            <Link to="/request-demo">
               <Button variant="hero" size="lg">
                 Schedule Demo
                 <ArrowRight className="w-5 h-5" />

@@ -51,7 +51,7 @@ const Libraries = () => {
                 we partner with libraries of all sizes to deliver exceptional 
                 digital experiences to their patrons.
               </p>
-              <Link to="/demo">
+              <Link to="/request-demo">
                 <Button variant="hero" size="lg">
                   Partner With Us
                   <ArrowRight className="w-5 h-5" />
@@ -158,7 +158,7 @@ const Libraries = () => {
             that fit your needs and budget.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/demo">
+            <Link to="/request-demo">
               <Button variant="hero" size="lg">
                 Request Demo
                 <ArrowRight className="w-5 h-5" />

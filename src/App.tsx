@@ -70,7 +70,7 @@ const App = () => {
             <Route path="/products/epopup" element={<EPopUp />} />
             <Route path="/products/bibliostat" element={<Bibliostat />} /> {/* ← Added route */}
             <Route path="/contact" element={<Contact />} />
-            <Route path="/demo" element={<Demo />} />
+            <Route path="/request-demo" element={<Demo />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} /> 
             <Route path="/terms-and-conditions" element={<PrivacyPolicy />} />
             <Route path="*" element={<NotFound />} />
