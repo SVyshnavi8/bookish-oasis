@@ -103,7 +103,7 @@ const TS360 = () => {
             <h2
               className="font-display font-medium tracking-tight
                text-4xl sm:text-5xl md:text-6xl lg:text-7xl
-               text-[#2aa6a6] text-center mb-2"
+               text-[#2aa6a6] text-start mb-2"
               data-aos="fade-up"
               data-aos-delay="100"
             >

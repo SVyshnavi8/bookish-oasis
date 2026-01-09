@@ -24,13 +24,13 @@ import { cn } from "@/lib/utils";
 const products = [
   { value: "boundless", label: "Boundless" },
   { value: "ts360", label: "TS360" },
-  { value: "epopup", label: "ePopUp" },
+  { value: "epopup", label: "ePopUp Library" },
   { value: "content-cafe", label: "Content Café" },
   { value: "bibliostat", label: "Bibliostat CollectConnect" },
 
   // New non-product options
-  { value: "general-enquiry", label: "General enquiry" },
   { value: "partnership", label: "Partnership" },
+  { value: "general-enquiry", label: "General Enquiry" },
 ];
 
 const Contact = () => {
@@ -64,7 +64,14 @@ const Contact = () => {
 
           {/* Page Heading */}
           <div className="mb-10 space-y-3 text-center lg:text-left" data-aos="fade-up">
-            <p className="uppercase text-xs tracking-[0.25em] text-muted-foreground">Contact</p>
+            <p
+              className="uppercase font-bold text-xs tracking-[0.25em]
+  bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0]
+  bg-clip-text text-transparent"
+            >
+              Contact
+            </p>
+
             <h1 className="editorial-headline text-4xl md:text-5xl">Get in Touch</h1>
             <p className="editorial-body max-w-3xl mx-auto lg:mx-0">
               Have questions? We’d love to hear from you. Share a bit about what you need and we’ll connect you with the right team.
@@ -243,9 +250,14 @@ const Contact = () => {
               data-aos-delay="200"
             >
               <div className="space-y-2">
-                <p className="uppercase text-xs tracking-[0.25em] text-muted-foreground">
+                <p
+                  className="uppercase font-bold text-xs tracking-[0.25em]
+  bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0]
+  bg-clip-text text-transparent"
+                >
                   Contact
                 </p>
+
                 <h2 className="text-2xl font-semibold">Reach us directly</h2>
                 <p className="text-muted-foreground">
                   Prefer a quick note? Email or visit—whatever is easiest for you.

@@ -217,8 +217,6 @@ const EPopUp = () => {
         </div>
       </section>
 
-
-      {/* Meet people where they are */}
       <section
         className="editorial-section bg-secondary/10 py-12 md:py-16"
         data-aos="fade-up"
@@ -226,103 +224,110 @@ const EPopUp = () => {
         <div className="editorial-container w-full">
           {/* Section Title */}
           <h2
-            className="editorial-subheadline font-semibold text-balance text-center mb-14"
+            className="editorial-subheadline font-semibold text-balance text-center mb-12 md:mb-16"
             data-aos="fade-up"
           >
             Meet people where they are
           </h2>
 
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="max-w-6xl mx-auto space-y-14 md:space-y-20">
 
-            {/* LEFT: IMAGE – further reduced height */}
-            <div
-              className="relative w-full h-[360px] md:h-[420px] rounded-3xl overflow-hidden shadow-xl"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-            >
-              <img
-                src={epopupImage}
-                alt="People using digital devices together in a public community space"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* RIGHT: TEXT */}
-            <div className="space-y-8">
-
-              <p
-                className="editorial-body text-lg text-center max-w-3xl mx-auto lg:text-left lg:mx-0"
-                data-aos="fade-up"
-                data-aos-delay="200"
+            {/* Main Content Block – alternating image/text */}
+            <div className="grid md:grid-cols-2 gap-8 md:gap-14 items-center">
+              {/* Image Left */}
+              <div
+                className="relative w-full h-[260px] sm:h-[280px] md:h-[340px] rounded-2xl overflow-hidden shadow-lg"
+                data-aos="fade-right"
               >
-                Libraries increasingly serve communities beyond their buildings.
-                ePopUp Library enables libraries to extend their presence into these
-                spaces with purpose and clarity
-              </p>
-
-              <p
-                className="text-center text-muted-foreground lg:text-left"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                With ePopUp Library, libraries can:
-              </p>
-
-              {/* Staggered benefits – tightened but readable */}
-              <div className="space-y-6">
-                <div
-                  className="flex items-center gap-5 max-w-lg"
-                  data-aos="fade-right"
-                  data-aos-delay="400"
-                >
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
-                    <Target className="w-6 h-6 text-[#2aa6a6]" />
-                  </div>
-                  <p className="editorial-body text-lg">
-                    Support outreach and engagement initiatives
-                  </p>
-                </div>
-
-                <div
-                  className="flex items-center gap-5 max-w-lg ml-auto"
-                  data-aos="fade-left"
-                  data-aos-delay="500"
-                >
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
-                    <Users2 className="w-6 h-6 text-[#2aa6a6]" />
-                  </div>
-                  <p className="editorial-body text-lg">
-                    Reach new and underserved audiences
-                  </p>
-                </div>
-
-                <div
-                  className="flex items-center gap-5 max-w-lg"
-                  data-aos="fade-right"
-                  data-aos-delay="600"
-                >
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
-                    <Building2 className="w-6 h-6 text-[#2aa6a6]" />
-                  </div>
-                  <p className="editorial-body text-lg">
-                    Align digital access with community programming
-                  </p>
-                </div>
-
-                <div
-                  className="flex items-center gap-5 max-w-lg ml-auto"
-                  data-aos="fade-left"
-                  data-aos-delay="700"
-                >
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center">
-                    <Handshake className="w-6 h-6 text-[#2aa6a6]" />
-                  </div>
-                  <p className="editorial-body text-lg">
-                    Reinforce the library’s role as a community partner
-                  </p>
-                </div>
+                <img
+                  src={epopupImage}
+                  alt="Community members engaging with digital devices at an outdoor library event"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
 
+              {/* Text Right */}
+              <div className="space-y-7" data-aos="fade-left">
+                <p className="editorial-body text-lg text-center md:text-left leading-relaxed">
+                  Libraries increasingly serve communities beyond their buildings.
+                  ePopUp Library enables libraries to extend their presence into these
+                  spaces with purpose and clarity.
+                </p>
+
+                <p className="text-center text-muted-foreground md:text-left font-medium">
+                  With ePopUp Library, libraries can:
+                </p>
+
+                <div className="space-y-5">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center mt-1">
+                      <Target className="w-5 h-5 text-[#2aa6a6]" />
+                    </div>
+                    <p className="editorial-body text-base md:text-lg">Support outreach and engagement initiatives</p>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center mt-1">
+                      <Users2 className="w-5 h-5 text-[#2aa6a6]" />
+                    </div>
+                    <p className="editorial-body text-base md:text-lg">Reach new and underserved audiences</p>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center mt-1">
+                      <Building2 className="w-5 h-5 text-[#2aa6a6]" />
+                    </div>
+                    <p className="editorial-body text-base md:text-lg">Align digital access with community programming</p>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center mt-1">
+                      <Handshake className="w-5 h-5 text-[#2aa6a6]" />
+                    </div>
+                    <p className="editorial-body text-base md:text-lg">Reinforce the library’s role as a community partner</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Horizontal Gallery of 3 Images – Closing Visual Statement */}
+            <div className="text-center" data-aos="fade-up" data-aos-delay="200">
+              <p className="text-muted-foreground text-lg mb-8">
+                Real communities, real connections — ePopUp brings the library to them
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                {/* Image 1 */}
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+                  <img
+                    src={epopupImage}
+                    alt="People using digital library services outdoors"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </div>
+
+                {/* Image 2 */}
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+                  <img
+                    src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                    alt="Library outreach team connecting with community"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </div>
+
+                {/* Image 3 */}
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+                  <img
+                    src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                    alt="Diverse group enjoying accessible library resources"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </div>
 
           </div>
@@ -331,7 +336,8 @@ const EPopUp = () => {
 
 
       {/* From discovery to membership */}
-      <section className="editorial-section bg-secondary/20 py-14 md:py-18" data-aos="fade-up">
+      <section className="editorial-section bg-gradient-to-r
+                  from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 py-14 md:py-18" data-aos="fade-up">
         <div className="editorial-container">
           <div className="max-w-6xl mx-auto text-center">
 
@@ -395,7 +401,7 @@ const EPopUp = () => {
 
 
       {/* Case Studies - New Styling: Inline Image + Text (No Cards) */}
-      <section className="editorial-section bg-secondary/10 pt-16 md:pt-20 pb-12" data-aos="fade-up">
+      <section className="editorial-section bg-secondary/60 pt-16 md:pt-20 pb-12" data-aos="fade-up">
         <div className="editorial-container">
           <h2
             className="editorial-subheadline font-semibold text-balance text-center mb-14"
