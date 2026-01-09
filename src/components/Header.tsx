@@ -39,7 +39,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-[60px] sm:h-[64px] md:h-[80px]">
 
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center" aria-label="LibraryOne home">
             <img
               src={logoHeader}
               alt="LibraryOne"
@@ -73,7 +73,7 @@ const Header = () => {
             </Link>
 
             {/* Products and Services */}
-            <div className="relative group flex items-center h-full">
+            <div className="relative group flex items-center h-full" role="presentation">
               <Link
                 to="/solutions"
                 className={`inline-flex items-center gap-1 text-base lg:text-lg font-medium tracking-wide h-full whitespace-nowrap ${
@@ -87,13 +87,18 @@ const Header = () => {
               </Link>
 
               {/* Dropdown */}
-              <div className="absolute left-0 top-full mt-2 w-72 rounded-xl bg-background border border-border/50 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <div
+                className="absolute left-0 top-full mt-2 w-72 rounded-xl bg-background border border-border/50 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+                role="menu"
+                aria-label="Products and services"
+              >
                 <div className="py-2">
                   {solutionLinks.map((item) => (
                     <Link
                       key={item.name}
                       to={item.path}
                       className="block px-5 py-2 text-base tracking-wide text-muted-foreground hover:bg-secondary/40 hover:text-foreground"
+                      role="menuitem"
                     >
                       {item.name}
                     </Link>

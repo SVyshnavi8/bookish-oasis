@@ -144,9 +144,9 @@ const Footer = () => {
         <div className="mt-10 pt-6 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-3 text-background/60">
           <p>© {currentYear} LibraryOne. All rights reserved.</p>
           <div className="flex gap-5">
-            <Link to="/contact" className="hover:text-background">
+            {/* <Link to="/contact" className="hover:text-background">
               Contact
-            </Link>
+            </Link> */}
             <Link to="/terms-and-conditions" className="hover:text-background">
               Terms and Conditions
             </Link>

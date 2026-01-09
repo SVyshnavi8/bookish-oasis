@@ -55,8 +55,10 @@ const App = () => {
         <Toaster />
         <Sonner />
 
-        {/* Router for client-side routing */}
         <BrowserRouter>
+          <a href="#main-content" className="skip-link">
+            Skip to main content
+          </a>
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
