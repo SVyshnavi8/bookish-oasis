@@ -160,7 +160,7 @@ const About = () => {
             >
               <img
                 src={libraryInterior}
-                alt="LibraryOne headquarters"
+                alt="Modern library interior with patrons reading"
                 className="w-full h-full object-cover"
               />
             </div>

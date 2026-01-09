@@ -35,8 +35,11 @@ const App = () => {
     setMounted(true);
   }, []);
 
-  // Initialize AOS for scroll animations
+  // Initialize AOS for scroll animations (respect reduced motion)
   useEffect(() => {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (prefersReducedMotion.matches) return;
+
     AOS.init({
       duration: 800,
       easing: "ease-out-cubic",

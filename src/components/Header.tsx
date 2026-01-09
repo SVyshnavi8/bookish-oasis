@@ -16,6 +16,7 @@ const solutionLinks = [
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -25,6 +26,16 @@ const Header = () => {
   }, []);
 
   const isActive = (path: string) => location.pathname === path;
+
+  const handleSolutionsKeyDown = (event: React.KeyboardEvent<HTMLAnchorElement>) => {
+    if (event.key === "Enter" || event.key === " " || event.key === "ArrowDown") {
+      event.preventDefault();
+      setIsSolutionsOpen(true);
+    }
+    if (event.key === "Escape") {
+      setIsSolutionsOpen(false);
+    }
+  };
 
   return (
     <header
@@ -73,7 +84,12 @@ const Header = () => {
             </Link>
 
             {/* Products and Services */}
-            <div className="relative group flex items-center h-full" role="presentation">
+            <div
+              className="relative group flex items-center h-full"
+              role="presentation"
+              onMouseEnter={() => setIsSolutionsOpen(true)}
+              onMouseLeave={() => setIsSolutionsOpen(false)}
+            >
               <Link
                 to="/solutions"
                 className={`inline-flex items-center gap-1 text-base lg:text-lg font-medium tracking-wide h-full whitespace-nowrap ${
@@ -81,6 +97,12 @@ const Header = () => {
                     ? "text-foreground"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
+                aria-haspopup="menu"
+                aria-expanded={isSolutionsOpen}
+                aria-controls="solutions-menu"
+                onFocus={() => setIsSolutionsOpen(true)}
+                onBlur={() => setIsSolutionsOpen(false)}
+                onKeyDown={handleSolutionsKeyDown}
               >
                 Products and Services
                 <ChevronDown className="w-4 h-4 mt-0.5" />
@@ -88,7 +110,10 @@ const Header = () => {
 
               {/* Dropdown */}
               <div
-                className="absolute left-0 top-full mt-2 w-72 rounded-xl bg-background border border-border/50 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+                id="solutions-menu"
+                className={`absolute left-0 top-full mt-2 w-72 rounded-xl bg-background border border-border/50 shadow-xl transition-all duration-200 ${
+                  isSolutionsOpen ? "opacity-100 visible" : "opacity-0 invisible"
+                }`}
                 role="menu"
                 aria-label="Products and services"
               >
@@ -99,6 +124,8 @@ const Header = () => {
                       to={item.path}
                       className="block px-5 py-2 text-base tracking-wide text-muted-foreground hover:bg-secondary/40 hover:text-foreground"
                       role="menuitem"
+                      onFocus={() => setIsSolutionsOpen(true)}
+                      onBlur={() => setIsSolutionsOpen(false)}
                     >
                       {item.name}
                     </Link>
@@ -156,6 +183,8 @@ const Header = () => {
             className="md:hidden p-2 rounded-lg border border-border/60 bg-background/80 backdrop-blur"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-menu"
           >
             {isMobileMenuOpen ? (
               <X className="w-6 h-6" />
@@ -167,7 +196,10 @@ const Header = () => {
 
         {/* ================= Mobile Menu ================= */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-border/50 bg-background/95 backdrop-blur-md shadow-inner">
+          <div
+            id="mobile-menu"
+            className="md:hidden border-t border-border/50 bg-background/95 backdrop-blur-md shadow-inner"
+          >
             <div className="flex flex-col gap-6 px-6 py-6">
 
               <Link
