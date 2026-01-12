@@ -29,8 +29,8 @@ const products = [
   { value: "bibliostat", label: "Bibliostat CollectConnect" },
 
   // New options
-  { value: "general-enquiry", label: "General Enquiry" },
-  { value: "partnership", label: "Partnership" },
+  //{ value: "general-enquiry", label: "General Enquiry" },
+  //{ value: "partnership", label: "Partnership" },
 ];
 
 const Demo = () => {
