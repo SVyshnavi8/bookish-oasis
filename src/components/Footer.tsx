@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import {
   Facebook,
+  Twitter,
   Linkedin,
   Instagram,
   Mail,
@@ -31,6 +32,7 @@ const socials = [
   { Icon: Instagram, label: "Instagram", href: "https://www.instagram.com/libraryonedotcom" },
   { Icon: Facebook, label: "Facebook", href: "https://facebook.com/libraryonedotcom" },
   { Icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/library-one" },
+  { Icon: Twitter, label: "X", href: "https://x.com/Libraryonellc" },
 ];
 
 const Footer = () => {
