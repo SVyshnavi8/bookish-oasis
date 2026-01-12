@@ -243,7 +243,7 @@ const TS360 = () => {
 
       {/* A Clear Focus Section */}
       <section
-        className="py-16 bg-secondary/10"
+        className="pt-10 pb-8 bg-secondary/10"
         data-aos="fade-up"
       >
         <div className="editorial-container">
@@ -252,7 +252,7 @@ const TS360 = () => {
             {/* Text */}
             <div className="space-y-4 order-2 lg:order-1">
 
-              <h2 className="editorial-subheadline font-semibold text-balance mt-0 md:-mt-12">
+              <h2 className="editorial-subheadline font-semibold text-balance">
                 A clear focus
               </h2>
 
@@ -281,10 +281,11 @@ const TS360 = () => {
                 </li>
               </ul>
 
-              <p className="editorial-body mt-6">
+              <p className="mt-4 text-lg md:text-xl font-medium text-foreground leading-snug max-w-xl">
                 This structure preserves TS360’s value for librarians managing both
                 print and digital collections
               </p>
+
             </div>
 
             {/* Image */}

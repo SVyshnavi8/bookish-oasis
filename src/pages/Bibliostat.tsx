@@ -122,7 +122,7 @@ const Bibliostat = () => {
                       bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0]" />
 
             {/* Text */}
-            <p className="text-xl md:text-2xl font-semibold text-foreground leading-snug">
+            <p className="text-2xl md:text-3xl font-semibold text-foreground leading-snug">
               Bibliostat CollectConnect supports the full data lifecycle
             </p>
 

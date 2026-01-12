@@ -6,14 +6,14 @@ import heroImage from "@/assets/hero-library.jpg";
 const HeroSection = () => {
   return (
     <section
-      className="relative flex items-center pt-24 md:pt-32 pb-14 md:pb-16 lg:pb-24 overflow-hidden"
+      className="relative pt-24 md:pt-32 pb-14 md:pb-16 lg:pb-24 overflow-hidden"
       data-aos="fade-up"
     >
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-secondary/50 via-background to-background" />
 
       <div className="editorial-container relative z-10 w-full">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center pt-16 md:pt-0">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-start pt-16 md:pt-0">
 
           {/* ================= CONTENT ================= */}
           <div
@@ -31,12 +31,13 @@ const HeroSection = () => {
               >
                 Digital products and services that help libraries serve their
                 communities —
-                <span className="block font-serif italic leading-[1.2] pb-1 
-                bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] 
-                bg-clip-text text-transparent">
+                <span
+                  className="block font-serif italic leading-[1.2] pb-1 
+                  bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] 
+                  bg-clip-text text-transparent"
+                >
                   Everywhere
                 </span>
-
               </h1>
 
               {/* Description */}
@@ -69,6 +70,17 @@ const HeroSection = () => {
                     Talk to Us
                   </Button>
                 </Link>
+              </div>
+
+              {/* ================= WHITE SPACE LINE ================= */}
+              <div
+                className="flex items-center h-[180px]"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <h2 className="text-2xl md:text-3xl font-semibold text-foreground max-w-5xl whitespace-nowrap">
+                  Digital library services company dedicated to supporting libraries and their communities
+                </h2>
               </div>
 
             </div>

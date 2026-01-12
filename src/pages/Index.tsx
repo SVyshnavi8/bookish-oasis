@@ -116,13 +116,6 @@ const Index = () => {
             {/* RIGHT : TEXT CONTENT */}
             <div className="space-y-10">
 
-              {/* Top Heading */}
-              <div data-aos="fade-up" data-aos-delay="100">
-                <h2 className="editorial-subheadline font-semibold text-balance text-left">
-                  Digital library services company dedicated to supporting libraries and their communities
-                </h2>
-              </div>
-
               {/* Sub Heading */}
               <h3
                 data-aos="fade-up"
