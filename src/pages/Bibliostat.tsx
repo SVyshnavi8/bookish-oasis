@@ -74,7 +74,7 @@ const Bibliostat = () => {
               </p>
 
               <div className="flex flex-wrap gap-4">
-            <Link to="/request-demo?product=bibliostat">
+                <Link to="/request-demo?product=bibliostat">
                   <Button variant="hero" size="lg">
                     Request Demo
                     <ArrowRight className="w-5 h-5 ml-2" />
@@ -102,7 +102,7 @@ const Bibliostat = () => {
 
       {/* Punch line */}
       <section
-        className="relative py-16 md:py-20 overflow-hidden"
+        className="relative py-10 md:py-12 overflow-hidden"
         data-aos="fade-up"
       >
         {/* Layered gradient background */}
@@ -156,7 +156,7 @@ const Bibliostat = () => {
               administration environment designed specifically for libraries
             </p>
 
-            <ul className="space-y-2 text-muted-foreground">
+            <ul className="space-y-4 text-muted-foreground">
               {[
                 "Modern, intuitive survey management workflows",
                 "Real-time edit checks that reduce errors at entry",
@@ -217,7 +217,7 @@ const Bibliostat = () => {
               context
             </p>
 
-            <ul className="space-y-2 text-muted-foreground">
+            <ul className="space-y-5 text-muted-foreground">
               <li className="flex gap-2">
                 <BarChart3 className="w-4 h-4 text-[#2aa6a6] mt-1" />
                 Analyze performance over time across hundreds of data points
@@ -240,6 +240,30 @@ const Bibliostat = () => {
         </div>
       </section>
 
+      {/* Tiles */}
+      {/* <section
+        className="relative py-16 overflow-hidden
+       bg-gradient-to-br from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5"
+        data-aos="fade-up"
+        data-aos-duration="700"
+      >
+        <div className="editorial-container grid lg:grid-cols-3 gap-10 text-center">
+          {tiles.map((tile, i) => (
+            <div
+              key={i}
+              className="space-y-4"
+              data-aos="fade-up"
+              data-aos-delay={i * 200}
+            >
+              <tile.icon className="w-10 h-10 mx-auto text-[#2aa6a6]" />
+              <h3 className="editorial-subheadline font-semibold text-balance text-xl font-medium">
+                {tile.title}
+              </h3>
+            </div>
+          ))}
+        </div>
+      </section> */}
+
       {/* Visibility */}
       <section
         className="py-16 bg-secondary/20"
@@ -261,7 +285,7 @@ const Bibliostat = () => {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="aspect-[3/2] rounded-2xl overflow-hidden shadow-lg">
+          <div className="aspect-[5/2] rounded-2xl overflow-hidden shadow-lg">
             <img
               src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
               alt="Role-based dashboards"
@@ -284,7 +308,7 @@ const Bibliostat = () => {
           <div className="grid lg:grid-cols-2 gap-10 items-start">
 
             {/* LEFT SIDE — IMAGE */}
-            <div className="aspect-[3/2] rounded-2xl overflow-hidden shadow-lg">
+            <div className="aspect-[4/2] rounded-2xl overflow-hidden shadow-lg">
               <img
                 src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
                 alt="Peer comparison discussion"
@@ -298,7 +322,7 @@ const Bibliostat = () => {
                 Peer comparison that delivers meaningful context
               </h2>
 
-              <ul className="space-y-4">
+              <ul className="space-y-5">
                 <li className="flex items-start gap-3">
                   <Users className="w-5 h-5 text-[#2aa6a6] mt-0.5 flex-shrink-0" />
                   <span className="text-muted-foreground leading-relaxed">
@@ -333,9 +357,6 @@ const Bibliostat = () => {
         </div>
       </section>
 
-
-
-
       {/* Bridge punch line */}
       <section
         className="py-2 bg-secondary/10"
@@ -351,46 +372,19 @@ const Bibliostat = () => {
 
       </section>
 
-      {/* Tiles */}
-      <section
-        className="py-16 bg-secondary/20"
-        data-aos="fade-up"
-        data-aos-duration="700"
-      >
-        <div className="editorial-container grid lg:grid-cols-3 gap-10 text-center">
-          {tiles.map((tile, i) => (
-            <div
-              key={i}
-              className="space-y-4"
-              data-aos="fade-up"
-              data-aos-delay={i * 200}
-            >
-              <tile.icon className="w-10 h-10 mx-auto text-[#2aa6a6]" />
-              <h3 className="editorial-subheadline font-semibold text-balance text-xl font-medium">
-                {tile.title}
-              </h3>
-            </div>
-          ))}
-        </div>
-      </section>
-
-
       {/* Closing */}
-      <section
+      {/* <section
         className="editorial-section bg-gradient-to-r from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5 py-16"
         data-aos="fade-up"
       >
         <div className="editorial-container text-center">
 
-          {/* Heading */}
           <h2
             className="editorial-subheadline font-semibold text-balance text-center mb-6 text-foreground"
           >
             Bibliostat CollectConnect
           </h2>
 
-
-          {/* Description */}
           <p
             className="editorial-body text-lg md:text-xl max-w-5xl mx-auto mb-8 leading-snug text-muted-foreground"
             data-aos="fade-up"
@@ -399,7 +393,6 @@ const Bibliostat = () => {
             Built for libraries. Trusted by agencies. Designed for impact
           </p>
 
-          {/* CTA */}
           <div data-aos="zoom-in" data-aos-delay="700">
             <Link to="/contact?product=content-cafe">
               <Button variant="hero" size="lg">
@@ -410,9 +403,61 @@ const Bibliostat = () => {
           </div>
 
         </div>
+      </section> */}
+
+      <section
+        className="relative py-20 overflow-hidden
+  bg-gradient-to-br from-[#0b5fa5]/5 via-[#2aa6a6]/5 to-[#4cc9c0]/5"
+        data-aos="fade-up"
+      >
+        <div className="editorial-container text-center">
+
+          {/* Heading */}
+          <h2
+            className="editorial-subheadline font-semibold text-balance mb-4 text-foreground"
+            data-aos="fade-up"
+          >
+            Bibliostat CollectConnect
+          </h2>
+
+          {/* Small Text */}
+          <p
+            className="editorial-body text-lg md:text-xl max-w-4xl mx-auto mb-12 leading-snug text-muted-foreground"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Built for libraries. Trusted by agencies. Designed for impact.
+          </p>
+
+          {/* Tiles */}
+          <div className="grid lg:grid-cols-3 gap-10 max-w-6xl mx-auto mb-14">
+            {tiles.map((tile, i) => (
+              <div
+                key={i}
+                className="space-y-4"
+                data-aos="fade-up"
+                data-aos-delay={i * 200}
+              >
+                <tile.icon className="w-10 h-10 mx-auto text-[#2aa6a6]" />
+                <h3 className="editorial-subheadline text-xl font-medium">
+                  {tile.title}
+                </h3>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div data-aos="zoom-in" data-aos-delay="600">
+            <Link to="/contact?product=content-cafe">
+              <Button variant="hero" size="lg">
+                Contact Us
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </Link>
+          </div>
+
+        </div>
       </section>
-
-
     </MainLayout>
   );
 };

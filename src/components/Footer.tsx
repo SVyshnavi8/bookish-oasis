@@ -4,7 +4,6 @@ import {
   Twitter,
   Linkedin,
   Instagram,
-  Youtube,
   Mail,
   Phone,
   MapPin,
@@ -30,11 +29,10 @@ const explore = [
 ];
 
 const socials = [
-  { Icon: Facebook, label: "Facebook", href: "#" },
-  { Icon: Twitter, label: "Twitter", href: "#" },
-  { Icon: Linkedin, label: "LinkedIn", href: "#" },
-  { Icon: Instagram, label: "Instagram", href: "#" },
-  { Icon: Youtube, label: "YouTube", href: "#" },
+  { Icon: Instagram, label: "Instagram", href: "https://www.instagram.com/libraryonedotcom" },
+  { Icon: Facebook, label: "Facebook", href: "https://facebook.com/libraryonedotcom" },
+  { Icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/library-one" },
+  { Icon: Twitter, label: "X", href: "https://x.com/Libraryonellc" },
 ];
 
 const Footer = () => {
@@ -63,6 +61,8 @@ const Footer = () => {
                   key={label}
                   href={href}
                   aria-label={label}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-background/60 transition-all duration-300 ease-out hover:text-background hover:-translate-y-1 hover:drop-shadow-[0_0_6px_rgba(76,201,192,0.6)]"
                 >
                   <Icon className="w-5 h-5" />
