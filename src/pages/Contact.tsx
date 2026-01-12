@@ -69,7 +69,7 @@ const Contact = () => {
   bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0]
   bg-clip-text text-transparent"
             >
-              Contact
+
             </p>
 
             <h1 className="editorial-headline text-4xl md:text-5xl">Get in Touch</h1>
@@ -255,7 +255,7 @@ const Contact = () => {
   bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0]
   bg-clip-text text-transparent"
                 >
-                  Contact
+                
                 </p>
 
                 <h2 className="text-2xl font-semibold">Reach us directly</h2>

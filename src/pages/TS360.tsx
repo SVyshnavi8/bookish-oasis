@@ -369,10 +369,11 @@ const TS360 = () => {
               </ul>
 
               {/* Supporting line — NOT a closing */}
-              <p className="editorial-body mt-6 text-muted-foreground">
+              <p className="mt-4 text-lg md:text-xl font-medium text-foreground leading-snug max-w-xl">
                 In addition to the TS360 platform, LibraryOne offers collection
                 development services that support both digital and print strategies
               </p>
+
 
             </div>
           </div>
