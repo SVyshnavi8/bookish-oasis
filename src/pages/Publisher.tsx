@@ -51,7 +51,7 @@ const PublisherPartnerships = () => {
               </h1>
 
               <p className="editorial-body text-xl max-w-3xl">
-                LibraryOne partners with publishers to ensure <strong className="text-[#0b5fa5]">continuity</strong>, <strong className="text-[#2aa6a6]">transparency</strong>, and <strong className="text-[#4cc9c0]">sustainable growth</strong> in the library market.
+                LibraryOne partners with publishers to ensure <strong className="text-[#4cc9c0]">continuity</strong>, <strong className="text-[#4cc9c0]">transparency</strong>, and <strong className="text-[#4cc9c0]">sustainable growth</strong> in the library market.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
@@ -98,7 +98,7 @@ const PublisherPartnerships = () => {
           </div>
 
           <p className="text-lg md:text-xl leading-relaxed text-muted-foreground" data-aos="fade-up" data-aos-delay="200">
-            LibraryOne was formed at a moment when critical digital library services were at risk of being discontinued. That moment highlighted a broader need in the market: a company <strong className="text-[#0b5fa5]">dedicated solely to library-focused digital platforms</strong>, without competing priorities or shifting corporate strategies.
+            LibraryOne was formed at a moment when critical digital library services were at risk of being discontinued. That moment highlighted a broader need in the market: a company <strong className="text-[#4cc9c0]">dedicated solely to library-focused digital platforms</strong>, without competing priorities or shifting corporate strategies.
           </p>
 
           <p className="text-lg md:text-xl font-medium" data-aos="fade-up" data-aos-delay="300">
@@ -246,9 +246,14 @@ const PublisherPartnerships = () => {
               ))}
             </div>
 
-            <p className="text-xl font-semibold mt-12 italic text-[#0b5fa5]" data-aos="fade-up" data-aos-delay="600">
+            <p
+              className="text-xl font-semibold mt-12 text-black"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
               By providing a stable alternative, we help ensure no single approach defines the entire market — benefiting publishers, libraries, and readers alike.
             </p>
+
           </div>
         </div>
       </section>
