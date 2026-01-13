@@ -1,3 +1,4 @@
+
 import MainLayout from "@/layouts/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -7,6 +8,8 @@ import louisImage from "@/assets/Louis.png";
 import extendImage from "@/assets/beyond2.jpg";
 import epopupImage from "@/assets/epopup.jpg";
 import Seo from "@/components/Seo";
+import epopupImage2 from "@/assets/epopupImage2.png";
+import epopupImage3 from "@/assets/epopupimage3.png";
 
 const EPopUp = () => {
   const features = [
@@ -236,11 +239,11 @@ const EPopUp = () => {
             <div className="grid md:grid-cols-2 gap-8 md:gap-14 items-center">
               {/* Image Left */}
               <div
-                className="relative w-full h-[260px] sm:h-[280px] md:h-[340px] rounded-2xl overflow-hidden shadow-lg"
+                className="relative w-full h-[350px] sm:h-[350px] md:h-[340px] rounded-2xl overflow-hidden shadow-lg"
                 data-aos="fade-right"
               >
                 <img
-                  src={epopupImage}
+                  src={epopupImage2}
                   alt="Community members engaging with digital devices at an outdoor library event"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -259,7 +262,7 @@ const EPopUp = () => {
                   With ePopUp Library, libraries can:
                 </p>
 
-                <div className="space-y-5">
+                <div className="space-y-4">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center mt-1">
                       <Target className="w-5 h-5 text-[#2aa6a6]" />
@@ -321,7 +324,7 @@ const EPopUp = () => {
                 {/* Image 3 */}
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
                   <img
-                    src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                    src={epopupImage3}
                     alt="Diverse group enjoying accessible library resources"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     loading="lazy"

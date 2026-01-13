@@ -89,7 +89,6 @@ const Contact = () => {
               <div className="space-y-2">
                 <div className="inline-flex items-center gap-2 rounded-full bg-secondary/40 px-3 py-1 text-xs font-semibold text-foreground">
                   <Sparkles className="w-4 h-4 text-[#2aa6a6]" />
-                  We respond within 1 business day
                 </div>
                 <h2 className="text-2xl md:text-3xl font-semibold text-foreground">Tell us how we can help</h2>
                 <p className="text-muted-foreground">
@@ -257,10 +256,8 @@ const Contact = () => {
                 >
                 
                 </p>
-
-                <h2 className="text-2xl font-semibold">Reach us directly</h2>
                 <p className="text-muted-foreground">
-                  Prefer a quick note? Email or visit—whatever is easiest for you.
+                  Prefer a quick note? Email us anytime.
                 </p>
               </div>
 
