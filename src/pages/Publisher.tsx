@@ -13,7 +13,6 @@ import "aos/dist/aos.css";
 
 const PublisherPartnerships = () => {
   useEffect(() => {
-    // Small timeout helps with hydration/timing issues in some React setups
     const timer = setTimeout(() => {
       AOS.init({
         duration: 800,       // Slightly faster for modern feel
