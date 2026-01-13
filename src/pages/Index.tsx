@@ -98,6 +98,15 @@ const Index = () => {
         className="relative py-12 md:py-16 lg:py-20 bg-background overflow-hidden"
       >
         <div className="editorial-container">
+          <h1
+            className="editorial-subheadline font-semibold text-balance text-center max-w-4xl mx-auto mb-12 md:mb-16"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Digital library services company dedicated to supporting libraries and their communities
+          </h1>
+
+
           <div className="max-w-6xl mx-auto grid lg:grid-cols-[0.9fr_1.1fr] gap-12 lg:gap-20 items-center">
 
             {/* LEFT : IMAGE (Reduced Width) */}

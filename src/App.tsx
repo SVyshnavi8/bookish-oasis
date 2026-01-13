@@ -24,6 +24,8 @@ import Contact from "./pages/Contact";
 import Demo from "./pages/Demo";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import PublisherPartnerships from "./pages/Publisher";
+
 
 const queryClient = new QueryClient();
 
@@ -78,6 +80,7 @@ const App = () => {
             <Route path="/request-demo" element={<Demo />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} /> 
             <Route path="/terms-and-conditions" element={<PrivacyPolicy />} />
+            <Route path="/publishers" element={<PublisherPartnerships />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

@@ -75,15 +75,15 @@ const Header = () => {
               onMouseEnter={() => setIsSolutionsOpen(true)}
               onMouseLeave={() => setIsSolutionsOpen(false)}
             >
-              <Link
-                to="/solutions"
-                className="inline-flex items-center gap-1 text-base lg:text-lg font-medium text-muted-foreground hover:text-foreground"
+              <button
+                type="button"
+                className="inline-flex items-center gap-1 text-base lg:text-lg font-medium text-muted-foreground hover:text-foreground cursor-pointer"
                 aria-haspopup="menu"
                 aria-expanded={isSolutionsOpen}
               >
                 Products & Services
                 <ChevronDown className="w-4 h-4" />
-              </Link>
+              </button>
 
               <div
                 className={`absolute left-0 mt-2 w-72 rounded-xl bg-background border shadow-xl transition-all ${
@@ -153,9 +153,13 @@ const Header = () => {
               <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
 
               <div>
-                <Link to="/solutions" onClick={() => setIsMobileMenuOpen(false)}>
+                <button
+                  type="button"
+                  className="text-left"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
                   Products & Services
-                </Link>
+                </button>
 
                 <div className="pl-4 mt-3 flex flex-col gap-2">
                   {solutionLinks.map((item) => (

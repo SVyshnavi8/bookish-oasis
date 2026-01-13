@@ -120,13 +120,13 @@ const Footer = () => {
                 <Mail className="w-4 h-4 mt-0.5" />
                 <span>info@libraryone.com</span>
               </Link>
-              <a
+              {/* <a
                 href="tel:18007753700"
                 className="inline-flex items-start gap-3 hover:text-background transition-colors"
               >
                 <Phone className="w-4 h-4 mt-0.5" />
                 <span>1-800-775-3700</span>
-              </a>
+              </a> */}
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-0.5" />
                 <p className="leading-snug">
