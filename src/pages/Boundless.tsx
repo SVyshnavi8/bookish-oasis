@@ -350,7 +350,8 @@ const Boundless = () => {
                     {pillar.num}
                   </div>
 
-                  <h3 className="text-2xl font-serif font-medium leading-snug">
+                  <h3 className="text-xl md:text-2xl font-serif font-medium leading-tight whitespace-nowrap
+">
                     {pillar.title}
                   </h3>
                 </div>
