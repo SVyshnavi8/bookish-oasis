@@ -123,7 +123,7 @@ const Index = () => {
             </div>
 
             {/* RIGHT : TEXT CONTENT */}
-            <div className="space-y-10">
+            <div className="h-[300px] md:h-[360px] flex flex-col justify-start space-y-10">
 
               {/* Sub Heading */}
               <h3

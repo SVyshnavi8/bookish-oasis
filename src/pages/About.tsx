@@ -196,33 +196,35 @@ const About = () => {
             </div>
 
             <div>
-              <p
-                className="editorial-body text-lg leading-relaxed text-foreground/90"
-                data-aos="fade-left"
-                data-aos-delay="300"
-              >
-                For publishers and library partners, continuity matters. The systems,
-                workflows, and institutional knowledge that made this business valuable
-                did not disappear—they were preserved intentionally
-              </p>
-            </div>
+  <p
+    className="editorial-body text-xl md:text-xl leading-relaxed text-foreground/90"
+    data-aos="fade-left"
+    data-aos-delay="300"
+  >
+    For publishers and library partners, continuity matters. The systems,
+    workflows, and institutional knowledge that made this business valuable
+    did not disappear—they were preserved intentionally
+  </p>
+</div>
+
           </div>
 
           {/* Second block: Text LEFT, Image RIGHT */}
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <p
-                className="editorial-body text-lg leading-relaxed text-foreground/90"
-                data-aos="fade-right"
-                data-aos-delay="200"
-              >
-                The same experienced team remains in place, bringing decades of combined
-                expertise in content distribution, library services, and publisher
-                partnerships. We understand the operational realities of libraries, the
-                commercial imperatives of publishers, and the importance of dependable
-                execution on both sides
-              </p>
-            </div>
+  <p
+    className="editorial-body text-xl md:text-xl leading-relaxed text-foreground/90"
+    data-aos="fade-right"
+    data-aos-delay="200"
+  >
+    The same experienced team remains in place, bringing decades of combined
+    expertise in content distribution, library services, and publisher
+    partnerships. We understand the operational realities of libraries, the
+    commercial imperatives of publishers, and the importance of dependable
+    execution on both sides
+  </p>
+</div>
+
 
             <div className="flex justify-center">
               <img
@@ -249,26 +251,27 @@ const About = () => {
 
             {/* Left rail — label */}
             <div className="lg:col-span-3">
-              <h3
-                  className="editorial-subheadline font-semibold text-balance"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <span className="text-foreground">Miss</span>
-                  <span
-                    className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0]
-                         bg-clip-text text-transparent"
-                  >
-                    ion
-                  </span>
-                </h3>
-            </div>
+  <h3
+    className="editorial-subheadline font-semibold text-balance text-3xl md:text-4xl lg:text-5xl"
+    data-aos="fade-up"
+    data-aos-delay="100"
+  >
+    <span className="text-foreground">Miss</span>
+    <span
+      className="bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0]
+           bg-clip-text text-transparent"
+    >
+      ion
+    </span>
+  </h3>
+</div>
+
 
             {/* Right content */}
             <div className="lg:col-span-9 space-y-6">
 
               <h2 className="text-3xl md:text-4xl font-semibold leading-tight text-foreground">
-                Supporting libraries with purpose, stability, and care
+                Supporting libraries with purpose, and stability
               </h2>
 
               {/* Gradient underline — same as LibraryOne */}
@@ -365,17 +368,18 @@ const About = () => {
       {/* Leadership Quote */}
       <section className="editorial-section bg-foreground text-background py-16">
         <div className="editorial-container">
-          <div
-            className="max-w-3xl mx-auto text-center"
-            data-aos="fade-up"
-          >
-            <blockquote className="text-2xl md:text-3xl font-serif leading-relaxed">
-              "Libraries are more than buildings filled with books. They are
-              community centers, learning hubs, and gateways to opportunity.
-              Our job is to help them thrive in the digital era"
-            </blockquote>
-          </div>
-        </div>
+  <div
+    className="max-w-3xl mx-auto text-center"
+    data-aos="fade-up"
+  >
+    <blockquote className="text-xl md:text-2xl font-serif leading-relaxed text-center">
+      “Libraries are more than buildings filled with books.<br />
+      They are community centers, learning hubs, and gateways to <br /> opportunity.
+      Our job is to help them thrive in the digital era.”
+    </blockquote>
+  </div>
+</div>
+
       </section>
 
       {/* Looking Ahead */}

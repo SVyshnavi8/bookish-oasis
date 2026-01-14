@@ -393,11 +393,14 @@ const EPopUp = () => {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <p className="text-lg md:text-xl font-semibold text-muted-foreground tracking-wide text-center mt-8"
-              data-aos="fade-up"
-              data-aos-delay="600">
-              ePopUp Library doesn’t replace the physical library — it helps bring people to it
-            </p>
+            <p
+  className="text-xl md:text-2xl font-semibold text-muted-foreground tracking-wide text-center mt-8"
+  data-aos="fade-up"
+  data-aos-delay="600"
+>
+  ePopUp Library doesn’t replace the physical library — it helps bring people to it
+</p>
+
           </div>
         </div>
       </section>

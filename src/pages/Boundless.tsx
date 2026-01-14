@@ -187,7 +187,7 @@ const Boundless = () => {
               data-aos-delay="200"
             >
               <h1 className="editorial-headline mb-0 leading-none">
-                The Digital library platform —
+                The Digital Library Platform —
                 <span className="block font-serif italic bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">
                   Built for libraries
                 </span>
