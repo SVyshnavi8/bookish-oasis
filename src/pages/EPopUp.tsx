@@ -440,7 +440,7 @@ const EPopUp = () => {
               ePopUp Library enables libraries to extend their presence into these
               spaces with purpose and clarity
             </p>
-          </div>gi
+          </div>
 
           {/* ================= IMAGE LEFT / CONTENT RIGHT ================= */}
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 md:gap-14 items-center">
