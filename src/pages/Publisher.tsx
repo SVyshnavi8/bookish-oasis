@@ -246,7 +246,7 @@ const PublisherPartnerships = () => {
         <div className="editorial-container max-w-5xl mx-auto text-center space-y-10">
           <div data-aos="fade-up" data-aos-delay="100">
             <h2 className="editorial-subheadline font-semibold mb-10">
-              Independent by Design
+              Independent by design
             </h2>
             <p className="text-xl leading-relaxed text-muted-foreground">
               LibraryOne operates <strong>independently</strong>, with a clear mandate
@@ -342,7 +342,7 @@ const PublisherPartnerships = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            Long-Term Partner
+            Long-term partner
           </h2>
 
           {/* Paragraph */}

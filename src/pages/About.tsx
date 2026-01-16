@@ -285,7 +285,7 @@ const About = () => {
               <p className="text-lg md:text-xl leading-relaxed text-foreground/90">
                 We empower libraries with trusted digital content and services that help
                 them serve patrons equitably, deepen community engagement, and support
-                lifelong learning.
+                lifelong learning
               </p>
 
             </div>
@@ -375,7 +375,7 @@ const About = () => {
             <blockquote className="text-xl md:text-2xl font-serif leading-relaxed text-center">
               “Libraries are more than buildings filled with books.<br />
               They are community centers, learning hubs, and gateways to <br /> opportunity.
-              Our job is to help them thrive in the digital era.”
+              Our job is to help them thrive in the digital era”
             </blockquote>
           </div>
         </div>

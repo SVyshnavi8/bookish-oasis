@@ -72,10 +72,32 @@ const Contact = () => {
 
             </p>
 
-            <h1 className="editorial-headline text-4xl md:text-5xl">Get in Touch</h1>
-            <p className="editorial-body max-w-3xl mx-auto lg:mx-0">
+            <h1
+              className="editorial-headline text-4xl md:text-5xl flex justify-center lg:justify-start flex-wrap"
+            >
+              {"Get in Touch".split("").map((char, index) => (
+                <span
+                  key={index}
+                  className="inline-block opacity-0 animate-letter"
+                  style={{ animationDelay: `${index * 0.06}s` }}
+                >
+                  {char === " " ? "\u00A0" : char}
+                </span>
+              ))}
+            </h1>
+
+            {/* Underline — appears just AFTER the heading */}
+            <div
+              className="mx-auto lg:mx-0 h-1 w-24 rounded-full
+             bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0]
+             opacity-0 animate-underline"
+              style={{ animationDelay: "1.1s" }}  // delay AFTER letters finish
+            />
+
+
+            {/* <p className="editorial-body max-w-3xl mx-auto lg:mx-0">
               Have questions? We’d love to hear from you. Share a bit about what you need and we’ll connect you with the right team.
-            </p>
+            </p> */}
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
@@ -90,10 +112,13 @@ const Contact = () => {
                 <div className="inline-flex items-center gap-2 rounded-full bg-secondary/40 px-3 py-1 text-xs font-semibold text-foreground">
                   <Sparkles className="w-4 h-4 text-[#2aa6a6]" />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-semibold text-foreground">Tell us how we can help</h2>
+                <p className="editorial-body max-w-3xl mx-auto lg:mx-0">
+                  Have questions? We’d love to hear from you. Share a bit about what you need and we’ll connect you with the right team
+                </p>
+                {/* <h2 className="text-2xl md:text-3xl font-semibold text-foreground">Tell us how we can help</h2>
                 <p className="text-muted-foreground">
                   Share your details and we’ll connect you with the right team.
-                </p>
+                </p> */}
               </div>
 
               {/* Name + Organization */}

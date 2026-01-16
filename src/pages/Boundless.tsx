@@ -449,7 +449,7 @@ const Boundless = () => {
             </h2>
 
             <p className="editorial-body text-lg max-w-4xl mx-auto leading-relaxed">
-              From migration to engagement, Boundless gives you the tools to build,
+              From discovery to engagement, Boundless gives you the tools to build,
               manage, and grow a powerful digital collection that truly belongs to
               your library
             </p>
