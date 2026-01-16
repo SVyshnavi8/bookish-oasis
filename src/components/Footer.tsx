@@ -13,8 +13,8 @@ import logoHeader from "@/assets/logoheader.png";
 const products = [
   { label: "Solutions Overview", to: "/solutions" },
   { label: "Boundless", to: "/products/boundless" },
-  { label: "ePopUp Library", to: "/epopup" },
-  { label: "TS360", to: "/products/ts360" },
+  { label: "ePopUp Library", to: "products/epopup" },
+  { label: "TS360", to: "/ts360" },
   { label: "Content Café", to: "/products/content-cafe" },
   { label: "Bibliostat CollectConnect", to: "/products/bibliostat" },
 ];
@@ -53,7 +53,7 @@ const Footer = () => {
             </Link>
             <p className="text-background/70 leading-relaxed max-w-sm">
               Empowering libraries with innovative digital solutions that keep
-              patrons connected to content anywhere.
+              patrons connected to content anywhere
             </p>
             <div className="flex gap-4 pt-2">
               {socials.map(({ Icon, label, href }) => (
