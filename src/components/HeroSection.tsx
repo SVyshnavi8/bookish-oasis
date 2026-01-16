@@ -56,16 +56,17 @@ const HeroSection = () => {
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              <Link to="/solutions">
+              {/* <Link to="/solutions">
                 <Button variant="hero" size="lg">
                   Explore Our Products
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
-              </Link>
+              </Link> */}
 
               <Link to="/contact">
-                <Button variant="hero-outline" size="lg">
+                <Button variant="hero" size="lg">
                   Talk to Us
+                  <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
             </div>
