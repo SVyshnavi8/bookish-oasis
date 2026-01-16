@@ -75,28 +75,28 @@ const Boundless = () => {
     {
       icon: LinkIcon,
       title: "No Dead Ends",
-      description: "Even though Boundless is a platform for your digital collection, it seamlessly connects your print and digital collections.",
+      description: "Even though Boundless is a platform for your digital collection, it seamlessly connects your print and digital collections",
     },
     {
       icon: ShoppingBag,
       title: "TS360 Integration",
-      description: "Shop and add new titles directly to Boundless via TS360. Also available are our collection development services.",
+      description: "Shop and add new titles directly to Boundless via TS360. Also available are our collection development services",
     },
     {
       icon: Shield,
       title: "Patron Type Authentication",
-      description: "Boundless fully supports patron type authentication.",
+      description: "Boundless fully supports patron type authentication",
     },
     {
       icon: Search,
       title: "Greater Control Over Content Discovery",
       description:
-        "Effective tools to control the content discovery in a thoughtful, responsible way—supporting age-appropriate access while preserving choice, privacy, and intellectual freedom. ",
+        "Effective tools to control the content discovery in a thoughtful, responsible way—supporting age-appropriate access while preserving choice, privacy, and intellectual freedom",
     },
     {
       icon: Palette,
       title: "Customizable UI",
-      description: "Library-branded UI with complete customization based on your library’s preferences.",
+      description: "Library-branded UI with complete customization based on your library’s preferences",
     },
   ];
 
@@ -104,42 +104,42 @@ const Boundless = () => {
     {
       icon: BookOpen,
       title: "Rich Digital Formats",
-      description: "Boundless supports ebooks, eAudio, Videos, Videobooks, Newspapers, Magazines, and more.",
+      description: "Boundless supports ebooks, eAudio, Videos, Videobooks, Newspapers, Magazines, and more",
       image: "https://static1.squarespace.com/static/5c06ab74da02bc6a8954dab1/5e7a17138a5547407c687268/5ede9037084d712c07767e41/1591644535067/woman-sitting-on-chair-using-black-ipad-196649.jpg?format=1500w",
       alt: "Patron enjoying rich digital formats on a tablet",
     },
     {
       icon: Trophy,
       title: "Patron Engagement",
-      description: "Through built-in Reading Programs and Challenges where patrons get incentivized to read more.",
+      description: "Through built-in Reading Programs and Challenges where patrons get incentivized to read more",
       image: "https://d1ivb2c2d81ilf.cloudfront.net/city/Connect/Blog/_1740x1070_crop_center-center_none/Girls-at-the-library-holding-books.jpg",
       alt: "Children participating in a library reading challenge",
     },
     {
       icon: UserCheck,
       title: "Age-Based Profiles",
-      description: "Ensure that patrons only see age-appropriate content with profile-based filtering.",
+      description: "Ensure that patrons only see age-appropriate content with profile-based filtering",
       image: "https://thgmwriters.com/wp-content/uploads/2023/01/Book-reading-data-statistics-United-States-2022-age.png",
       alt: "Parent setting up age-appropriate content filters on a library app",
     },
     {
       icon: Heart,
       title: "Personalization",
-      description: "Personalized interface and recommendations based on patrons choice and activity.",
+      description: "Personalized interface and recommendations based on patrons choice and activity",
       image: "https://isbndb.com/blog/wp-content/uploads/2024/07/bookbub-app.jpg",
       alt: "Personalized book recommendations on an ebook app",
     },
     {
       icon: Smile,
       title: "Ease of Use",
-      description: "A clean, intuitive experience designed for patrons of all ages and technical comfort levels—so accessing library content feels natural and welcoming.",
+      description: "A clean, intuitive experience designed for patrons of all ages and technical comfort levels—so accessing library content feels natural and welcoming",
       image: "https://seniorlivingnearme.com/hs-fs/hubfs/Old-man-wearing-eyeglasses-to-2.jpg?width=2000&height=1333&name=Old-man-wearing-eyeglasses-to-2.jpg",
       alt: "Senior patron using an easy-to-use digital library app",
     },
     {
       icon: Accessibility,
       title: "Accessibility",
-      description: "Designed to support inclusive access through mobile-friendly design and compatibility with assistive technologies.",
+      description: "Designed to support inclusive access through mobile-friendly design and compatibility with assistive technologies",
       image: "https://www.levelaccess.com/wp-content/uploads/2021/09/Accessible-native-mobile-apps.png",
       alt: "Accessible mobile app design for inclusive library access",
     },
@@ -150,7 +150,7 @@ const Boundless = () => {
     <MainLayout>
       <Seo
         title="Boundless digital library platform"
-        description="Boundless by LibraryOne delivers ebooks, audiobooks, outreach tools, and customizable discovery with TS360 integration and age-appropriate controls."
+        description="Boundless by LibraryOne delivers ebooks, audiobooks, outreach tools, and customizable discovery with TS360 integration and age-appropriate controls"
         path="/boundless"
       />
       {/* Hero */}
@@ -187,9 +187,9 @@ const Boundless = () => {
               data-aos-delay="200"
             >
               <h1 className="editorial-headline mb-0 leading-none">
-                The Digital Library Platform —
+                The digital library platform —
                 <span className="block font-serif italic bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">
-                  Built for libraries
+                  built for libraries
                 </span>
               </h1>
 

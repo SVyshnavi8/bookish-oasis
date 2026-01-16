@@ -120,7 +120,7 @@ const TS360 = () => {
             >
               A trusted collection development platform—
               <span className="block mt-1 italic gradient-text">
-                Supporting both digital and print strategies
+                supporting both digital and print strategies
               </span>
             </h1>
 
@@ -133,7 +133,7 @@ const TS360 = () => {
             >
               Long relied upon by librarians as a trusted tool for collection
               development, TS360 continues to support thoughtful planning and
-              evaluation across formats.
+              evaluation across formats
             </p>
 
             {/* Extended Description */}
@@ -152,7 +152,7 @@ const TS360 = () => {
               </span>.{" "}
               This approach allows libraries to maintain continuity in their
               collection strategy while aligning transactional workflows with
-              today’s digital priorities.
+              today’s digital priorities
             </p>
 
             {/* CTA */}
@@ -219,7 +219,7 @@ const TS360 = () => {
                       Print ordering is no longer supported on TS360.
                     </strong>{" "}
                     TS360 remains available as a subscription product for print and
-                    digital collection development.
+                    digital collection development
                   </p>
 
                   <p>
@@ -228,7 +228,7 @@ const TS360 = () => {
                     </strong>{" "}
                     Systems are currently transitioning to LibraryOne’s infrastructure.
                     Communication and guidance will be shared as functionality becomes
-                    available.
+                    available
                   </p>
 
                 </div>

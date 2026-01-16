@@ -45,14 +45,14 @@ const Index = () => {
       title: "Boundless",
       description:
         "A trusted digital content platform that helps libraries extend access, discovery, and engagement beyond their physical walls",
-      link: "/boundless",
+      link: "products/boundless",
     },
     {
       icon: Globe,
       title: "ePopUp Library",
       description:
         "A community outreach platform that brings the library directly into neighborhoods, schools, and partner locations",
-      link: "/epopup",
+      link: "products/epopup",
     },
     {
       icon: Layers,
@@ -66,14 +66,14 @@ const Index = () => {
       title: "Bibliostat CollectConnect",
       description:
         "Data, analytics, and insight tools that help libraries demonstrate impact and support strategic decision-making",
-      link: "/bibliostat",
+      link: "products/bibliostat",
     },
     {
       icon: Coffee,
       title: "Content Café",
       description:
         "Content enrichment and discovery services that enhance patron engagement and improve visibility across collections",
-      link: "/content-cafe",
+      link: "products/content-cafe",
     },
   ];
 
@@ -88,7 +88,7 @@ const Index = () => {
     <MainLayout>
       <Seo
         title="LibraryOne | Digital library services"
-        description="Discover LibraryOne’s connected suite of digital products—Boundless, ePopUp, TS360, Content Café, and Bibliostat—to engage patrons and streamline library operations."
+        description="Discover LibraryOne’s connected suite of digital products—Boundless, ePopUp, TS360, Content Café, and Bibliostat—to engage patrons and streamline library operations"
         path="/"
       />
       <HeroSection />
@@ -293,7 +293,7 @@ const Index = () => {
                   Access
                 </h4>
                 <p className="text-muted-foreground">
-                  Ensure patrons can reliably access digital resources anytime, anywhere—removing barriers and supporting equity.
+                  Ensure patrons can reliably access digital resources anytime, anywhere—removing barriers and supporting equity
                 </p>
               </div>
             </div>
@@ -310,7 +310,7 @@ const Index = () => {
                   Engagement
                 </h4>
                 <p className="text-muted-foreground">
-                  Improve discovery, usability, and interaction across digital collections to better connect patrons with content.
+                  Improve discovery, usability, and interaction across digital collections to better connect patrons with content
                 </p>
               </div>
             </div>
@@ -327,7 +327,7 @@ const Index = () => {
                   Community Outreach
                 </h4>
                 <p className="text-muted-foreground">
-                  Extend the library’s presence into the community through targeted digital access and outreach initiatives.
+                  Extend the library’s presence into the community through targeted digital access and outreach initiatives
                 </p>
               </div>
             </div>

@@ -1,15 +1,25 @@
-
 import MainLayout from "@/layouts/MainLayout";
+import { useEffect, useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Globe, Newspaper, Languages, Clock, QrCode, LinkIcon, Users, Sparkles, Target, Users2, Building2, Handshake, UserPlus, BookOpen, Footprints, ArrowRightCircle } from "lucide-react";
 import bostonImage from "@/assets/boston1.png";
 import louisImage from "@/assets/Louis.png";
-import extendImage from "@/assets/beyond2.jpg";
+import extendImage from "@/assets/epopupcollage.jpg";
 import epopupImage from "@/assets/epopup.jpg";
+import epopupImage1 from "@/assets/epopup.jpg";
 import Seo from "@/components/Seo";
 import epopupImage2 from "@/assets/epopupImage2.png";
 import epopupImage3 from "@/assets/epopupimage3.png";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const EPopUp = () => {
   const features = [
@@ -35,6 +45,36 @@ const EPopUp = () => {
     },
   ];
 
+
+  // Carousel state
+  const [carouselApi, setCarouselApi] = useState<any>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Autoplay plugin - using useRef to prevent recreation on every render
+  const autoplayPlugin = useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true })
+  );
+
+  // Slides (images)
+  const slides = [
+    "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    epopupImage1,
+    epopupImage2,
+    epopupImage3,
+  ];
+
+  // Track active slide
+  useEffect(() => {
+    if (!carouselApi) return;
+
+    setCurrentIndex(carouselApi.selectedScrollSnap());
+
+    carouselApi.on("select", () => {
+      setCurrentIndex(carouselApi.selectedScrollSnap());
+    });
+  }, [carouselApi]);
+
+
   return (
     <MainLayout>
       <Seo
@@ -51,7 +91,7 @@ const EPopUp = () => {
               <h1 className="editorial-headline mb-0 leading-none">
                 Extend your library beyond its walls -
                 <span className="block font-serif italic bg-gradient-to-r from-[#0b5fa5] via-[#2aa6a6] to-[#4cc9c0] bg-clip-text text-transparent">
-                  The possibilities are boundless
+                  the possibilities are boundless
                 </span>
               </h1>
               <p className="editorial-body mb-8">
@@ -154,7 +194,7 @@ const EPopUp = () => {
                     <Sparkles className="w-6 h-6 text-[#2aa6a6]" />
                   </div>
                   <p className="editorial-body text-lg leading-relaxed">
-                    Curate digital collections targeted for these locations.
+                    Curate digital collections targeted for these locations
                   </p>
                 </li>
 
@@ -220,12 +260,11 @@ const EPopUp = () => {
         </div>
       </section>
 
-      <section
+      {/* <section
         className="editorial-section bg-secondary/10 py-12 md:py-16"
         data-aos="fade-up"
       >
         <div className="editorial-container w-full">
-          {/* Section Title */}
           <h2
             className="editorial-subheadline font-semibold text-balance text-center mb-12 md:mb-16"
             data-aos="fade-up"
@@ -235,9 +274,9 @@ const EPopUp = () => {
 
           <div className="max-w-6xl mx-auto space-y-14 md:space-y-20">
 
-            {/* Main Content Block – alternating image/text */}
+            
             <div className="grid md:grid-cols-2 gap-8 md:gap-14 items-center">
-              {/* Image Left */}
+             
               <div
                 className="relative w-full h-[350px] sm:h-[350px] md:h-[340px] rounded-2xl overflow-hidden shadow-lg"
                 data-aos="fade-right"
@@ -250,12 +289,11 @@ const EPopUp = () => {
                 />
               </div>
 
-              {/* Text Right */}
               <div className="space-y-7" data-aos="fade-left">
                 <p className="editorial-body text-lg text-center md:text-left leading-relaxed">
                   Libraries increasingly serve communities beyond their buildings.
                   ePopUp Library enables libraries to extend their presence into these
-                  spaces with purpose and clarity.
+                  spaces with purpose and clarity
                 </p>
 
                 <p className="text-center text-muted-foreground md:text-left font-medium">
@@ -294,14 +332,14 @@ const EPopUp = () => {
               </div>
             </div>
 
-            {/* Horizontal Gallery of 3 Images – Closing Visual Statement */}
+            
             <div className="text-center" data-aos="fade-up" data-aos-delay="200">
-              <p className="text-muted-foreground text-lg mb-8">
-                Real communities, real connections — ePopUp brings the library to them
-              </p>
-
+              <div className="mt-12 text-center mb-8">
+                <p className="text-lg md:text-xl font-semibold text-muted-foreground tracking-wide text-center mt-8">
+                  Real communities, real connections — ePopUp brings the library to them
+                </p>
+              </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                {/* Image 1 */}
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
                   <img
                     src={epopupImage}
@@ -311,7 +349,6 @@ const EPopUp = () => {
                   />
                 </div>
 
-                {/* Image 2 */}
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
                   <img
                     src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
@@ -321,7 +358,6 @@ const EPopUp = () => {
                   />
                 </div>
 
-                {/* Image 3 */}
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
                   <img
                     src={epopupImage3}
@@ -335,7 +371,151 @@ const EPopUp = () => {
 
           </div>
         </div>
+      </section> */}
+
+      <section
+        className="editorial-section bg-secondary/10 py-12 md:py-16"
+        data-aos="fade-up"
+      >
+        <div className="editorial-container w-full">
+
+          {/* ================= HEADING ================= */}
+          <h2
+            className="editorial-subheadline font-semibold text-balance text-center mb-12"
+            data-aos="fade-up"
+          >
+            Meet people where they are
+          </h2>
+
+          {/* ================= IMAGE CAROUSEL ================= */}
+          <div className="max-w-5xl mx-auto mb-12">
+            <Carousel
+              className="w-full"
+              opts={{ align: "start", loop: true }}
+              setApi={setCarouselApi}
+              plugins={[autoplayPlugin.current]}
+            >
+              <CarouselContent className="pb-4">
+                {slides.map((src, index) => {
+                  const isActive = currentIndex === index;
+
+                  return (
+                    <CarouselItem
+                      key={index}
+                      className="sm:basis-1/2 lg:basis-1/3"
+                      data-aos="fade-up"
+                      data-aos-delay={index * 80}
+                    >
+                      <div
+                        className={`aspect-[4/3] rounded-2xl overflow-hidden bg-background transition-all duration-300
+                    ${isActive
+                            ? "scale-[1.03] shadow-2xl ring-1 ring-[#2aa6a6]/30"
+                            : "scale-95 sm:scale-100 shadow-md"
+                          }`}
+                      >
+                        <img
+                          src={src}
+                          alt="ePopUp Library in community spaces"
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                      </div>
+                    </CarouselItem>
+                  );
+                })}
+              </CarouselContent>
+
+              {/* Arrows */}
+              <div className="pointer-events-none">
+                <CarouselPrevious className="pointer-events-auto !absolute !left-0 !top-1/2 !-translate-y-1/2 sm:!-left-4" />
+                <CarouselNext className="pointer-events-auto !absolute !right-0 !top-1/2 !-translate-y-1/2 sm:!-right-4" />
+              </div>
+            </Carousel>
+          </div>
+
+          {/* ================= PARAGRAPH ================= */}
+          <div className="max-w-3xl mx-auto text-center mb-14">
+            <p className="editorial-body text-lg leading-relaxed text-muted-foreground">
+              Libraries increasingly serve communities beyond their buildings.
+              ePopUp Library enables libraries to extend their presence into these
+              spaces with purpose and clarity
+            </p>
+          </div>gi
+
+          {/* ================= IMAGE LEFT / CONTENT RIGHT ================= */}
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 md:gap-14 items-center">
+
+            {/* Image Left */}
+            <div
+              className="relative w-full h-[300px] md:h-[290px] rounded-2xl overflow-hidden shadow-lg"
+              data-aos="fade-right"
+            >
+              <img
+                src={epopupImage2}
+                alt="Community members engaging with digital library access"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+
+            {/* Points Right */}
+            <div className="space-y-7" data-aos="fade-left">
+
+              <p className="text-center md:text-left font-medium text-muted-foreground">
+                With ePopUp Library, libraries can:
+              </p>
+
+              <div className="space-y-4">
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center mt-1">
+                    <Target className="w-5 h-5 text-[#2aa6a6]" />
+                  </div>
+                  <p className="editorial-body text-base md:text-lg">
+                    Support outreach and engagement initiatives
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center mt-1">
+                    <Users2 className="w-5 h-5 text-[#2aa6a6]" />
+                  </div>
+                  <p className="editorial-body text-base md:text-lg">
+                    Reach new and underserved audiences
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center mt-1">
+                    <Building2 className="w-5 h-5 text-[#2aa6a6]" />
+                  </div>
+                  <p className="editorial-body text-base md:text-lg">
+                    Align digital access with community programming
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#0b5fa5]/10 via-[#2aa6a6]/10 to-[#4cc9c0]/10 flex items-center justify-center mt-1">
+                    <Handshake className="w-5 h-5 text-[#2aa6a6]" />
+                  </div>
+                  <p className="editorial-body text-base md:text-lg">
+                    Reinforce the library’s role as a community partner
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div className="mt-12 text-center mb-8">
+            <p className="text-lg md:text-xl font-semibold text-muted-foreground tracking-wide text-center mt-8">
+              Real communities, real connections — ePopUp brings the library to them
+            </p>
+          </div>
+
+        </div>
       </section>
+
+
 
 
       {/* From discovery to membership */}
@@ -394,12 +574,12 @@ const EPopUp = () => {
           </div>
           <div className="mt-12 text-center">
             <p
-  className="text-xl md:text-2xl font-semibold text-muted-foreground tracking-wide text-center mt-8"
-  data-aos="fade-up"
-  data-aos-delay="600"
->
-  ePopUp Library doesn’t replace the physical library — it helps bring people to it
-</p>
+              className="text-xl md:text-2xl font-semibold text-muted-foreground tracking-wide text-center mt-8"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              ePopUp Library doesn’t replace the physical library — it helps bring people to it
+            </p>
 
           </div>
         </div>
@@ -407,7 +587,7 @@ const EPopUp = () => {
 
 
       {/* Case Studies - New Styling: Inline Image + Text (No Cards) */}
-      <section className="editorial-section bg-secondary/60 pt-16 md:pt-20 pb-12" data-aos="fade-up">
+      {/* <section className="editorial-section bg-secondary/60 pt-16 md:pt-20 pb-12" data-aos="fade-up">
         <div className="editorial-container">
           <h2
             className="editorial-subheadline font-semibold text-balance text-center mb-14"
@@ -417,14 +597,12 @@ const EPopUp = () => {
           </h2>
 
           <div className="space-y-16">
-
-            {/* Boston Public Library */}
             <div
               className="grid lg:grid-cols-2 gap-8 items-center"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              {/* IMAGE */}
+
               <div className="rounded-xl overflow-hidden shadow-md bg-muted/10">
                 <img
                   src={bostonImage}
@@ -433,7 +611,6 @@ const EPopUp = () => {
                 />
               </div>
 
-              {/* TEXT */}
               <div className="space-y-5">
                 <h3 className="text-2xl font-serif font-medium">
                   Boston Public Library
@@ -456,13 +633,12 @@ const EPopUp = () => {
               </div>
             </div>
 
-            {/* St. Louis County Library */}
             <div
               className="grid lg:grid-cols-2 gap-8 items-center lg:grid-flow-dense"
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              {/* TEXT */}
+
               <div className="order-2 lg:order-1 space-y-5">
                 <h3 className="text-2xl font-serif font-medium">
                   St. Louis County Library
@@ -484,12 +660,92 @@ const EPopUp = () => {
                 </a>
               </div>
 
-              {/* IMAGE */}
               <div className="order-1 lg:order-2 rounded-xl overflow-hidden shadow-md bg-muted/10">
                 <img
                   src={louisImage}
                   alt="St. Louis County Library ePopUp outreach"
                   className="w-full h-auto object-contain md:h-96 md:object-cover"
+                />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section> */}
+
+      <section className="editorial-section bg-secondary/60 py-20" data-aos="fade-up">
+        <div className="editorial-container">
+
+          <h2 className="editorial-subheadline font-semibold text-center mb-20">
+            Case studies
+          </h2>
+
+          <div className="space-y-20">
+
+            {/* Boston */}
+            <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-center">
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src={bostonImage}
+                  alt="Boston Public Library ePopUp deployment"
+                  className="w-full h-[380px] object-cover"
+                />
+              </div>
+
+              <div className="relative pl-8 space-y-4">
+                <span className="absolute left-0 top-0 h-full w-[3px] bg-gradient-to-b from-[#0b5fa5] to-[#4cc9c0]" />
+
+                <h3 className="text-2xl font-serif font-medium">
+                  Boston Public Library
+                </h3>
+
+                <p className="editorial-body text-muted-foreground">
+                  Bringing digital collections to commuters on the MBTA with
+                  “Browse, Borrow, Board”
+                </p>
+
+                <a
+                  href="https://www.bpl.org/news/browse-borrow-board/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-[#2aa6a6] font-medium"
+                >
+                  Learn more
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </a>
+              </div>
+            </div>
+
+            {/* St. Louis */}
+            <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-12 items-center">
+              <div className="relative pr-8 space-y-4 text-right">
+                <span className="absolute right-0 top-0 h-full w-[3px] bg-gradient-to-b from-[#0b5fa5] to-[#4cc9c0]" />
+
+                <h3 className="text-2xl font-serif font-medium">
+                  St. Louis County Library
+                </h3>
+
+                <p className="editorial-body text-muted-foreground">
+                  Extending digital access to community locations with dedicated ePopUp
+                  collections, including children’s content
+                </p>
+
+                <a
+                  href="https://www.slcl.org/resources/epop-up-library"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-end text-[#2aa6a6] font-medium"
+                >
+                  Learn more
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </a>
+              </div>
+
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src={louisImage}
+                  alt="St. Louis County Library ePopUp outreach"
+                  className="w-full h-[380px] object-cover"
                 />
               </div>
             </div>
